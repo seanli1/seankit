@@ -6,6 +6,8 @@
 //  Copyright © 2019 86 Houses LLC. All rights reserved.
 //
 
+import Foundation
+
 public extension UIView {
     
     /// Attempt to get the parent view controller of any UIView subclass.

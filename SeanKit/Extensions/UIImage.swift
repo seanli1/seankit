@@ -6,6 +6,8 @@
 //  Copyright © 2019 86 Houses LLC. All rights reserved.
 //
 
+import Foundation
+
 public extension UIImage {
     
     func resized(to: CGSize) -> UIImage {
