@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Array where Element: Hashable {
+public extension Array where Element: Hashable {
     
     /// Return an array with duplicates removed. Elements must be Hashable.
     func removingDuplicates() -> [Element] {

@@ -8,7 +8,7 @@
 
 import Foundation
 
-func okAlert(_ title: String?, _ message: String?, _ viewController: UIViewController) {
+public func okAlert(_ title: String?, _ message: String?, _ viewController: UIViewController) {
     let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
     viewController.present(alert, animated: true, completion: nil)
