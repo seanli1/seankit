@@ -18,12 +18,12 @@ public class VersionTracker {
     private let versionKey = "versionKey"
     
     /// Save the current app version to memory.
-    func saveCurrentAppVersion() {
+    public func saveCurrentAppVersion() {
         userDefaults.set(getCurrentAppVersion(), forKey: versionKey)
     }
     
     /// Returns the currently running app version.
-    func getCurrentAppVersion() -> String {
+    public func getCurrentAppVersion() -> String {
         let dictionary = Bundle.main.infoDictionary!
         let version = dictionary["CFBundleShortVersionString"] as! String
         let build = dictionary["CFBundleVersion"] as! String
@@ -31,7 +31,7 @@ public class VersionTracker {
     }
     
     /// Returns the last recorded version number of this app. Running this also overwrites last saved version number, meaning this can only be run once.
-    func getPreviousAppVersion() -> String? {
+    public func getPreviousAppVersion() -> String? {
         let storedVersion = userDefaults.value(forKey: versionKey) // Any?
         if let storedVersion = storedVersion as? String {
             return storedVersion
