@@ -22,6 +22,7 @@
 		B4439ABB2263E6A100630663 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439ABA2263E6A100630663 /* String.swift */; };
 		B4439ABE2263E91200630663 /* EasterEgg.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439ABD2263E91200630663 /* EasterEgg.swift */; };
 		B4439ACC2263ED8300630663 /* dynamicActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AA72263DFE800630663 /* dynamicActionSheet.swift */; };
+		B4439AF62263F4F000630663 /* presentDisclaimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AF52263F4F000630663 /* presentDisclaimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		B4439AB82263E61E00630663 /* QRGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGenerator.swift; sourceTree = "<group>"; };
 		B4439ABA2263E6A100630663 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B4439ABD2263E91200630663 /* EasterEgg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasterEgg.swift; sourceTree = "<group>"; };
+		B4439AF52263F4F000630663 /* presentDisclaimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presentDisclaimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				B4439AAA2263E0B100630663 /* topController.swift */,
 				B4439AAC2263E12300630663 /* okAlert.swift */,
 				B4439AB22263E23500630663 /* vibrate.swift */,
+				B4439AF52263F4F000630663 /* presentDisclaimer.swift */,
 			);
 			path = "Convenience Functions";
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			files = (
 				B4439AA62263DA7700630663 /* VersionTracker.swift in Sources */,
 				B4439ABB2263E6A100630663 /* String.swift in Sources */,
+				B4439AF62263F4F000630663 /* presentDisclaimer.swift in Sources */,
 				B4439AB52263E39A00630663 /* Array.swift in Sources */,
 				B4439AB32263E23500630663 /* vibrate.swift in Sources */,
 				B4439A8D2263D2AD00630663 /* UIView.swift in Sources */,
