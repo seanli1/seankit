@@ -11,7 +11,7 @@ import Foundation
 
 public extension String {
     
-    mutating func asCleanURL() {
+    mutating func makeCleanURL() {
         if self.hasPrefix("http://") {
             self.removeFirst(7)
         } else if self.hasPrefix("https://") {
@@ -23,7 +23,7 @@ public extension String {
     }
     
     /// Adds `http://` if there is not one included. Does nothing if string is empty.
-    mutating func withHttp() {
+    mutating func addHttpPrefix() {
         if self == "" {
             return
         }
@@ -37,7 +37,7 @@ public extension String {
     
     
     
-    mutating func formattedAsPhoneNumber() {
+    mutating func formatAsPhoneNumber() {
         if self.count == 11 { // US numbers with country code
             for x in (0 ..< self.count).reversed() {
                 if x == 1 || x == 4 || x == 7 {

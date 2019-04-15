@@ -15,7 +15,7 @@ public class BasicScrollingViewController: UIViewController {
      PROPERTIES
      ********************************************************************************/
     
-    let messageTextView: UITextView = {
+    public let messageTextView: UITextView = {
         let tv = UITextView()
         tv.isEditable = false
         tv.isSelectable = false
@@ -24,15 +24,15 @@ public class BasicScrollingViewController: UIViewController {
         tv.font = UIFont.systemFont(ofSize: 18, weight: .light)
         return tv
     }()
-    let scrollView = UIScrollView()
-    let contentView = UIView()
+    public let scrollView = UIScrollView()
+    public let contentView = UIView()
     
     
     /********************************************************************************
      FUNCTIONS
      ********************************************************************************/
     
-    convenience init(_ title: String?, message: String?) {
+    public convenience init(_ title: String?, message: String?) {
         self.init()
         self.title = title
         messageTextView.text = message

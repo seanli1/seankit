@@ -11,7 +11,9 @@ import Foundation
 
 public class QRGenerator {
     
-    func createCode(_ fromString: String) -> UIImage {
+    public init() {}
+    
+    public func createCode(_ fromString: String) -> UIImage {
         let transform = CGAffineTransform(scaleX: 5, y: 5)
         let data = fromString.data(using: .ascii)
         let filter = CIFilter(name: "CIQRCodeGenerator")!
