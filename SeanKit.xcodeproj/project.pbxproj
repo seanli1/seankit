@@ -64,6 +64,7 @@
 			children = (
 				B4439A832263CDCA00630663 /* SeanKit */,
 				B4439A822263CDCA00630663 /* Products */,
+				B47BEF7322652F540075CEE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +99,6 @@
 				B4439A982263D6F900630663 /* UIImage.swift */,
 				B4439A9E2263D85100630663 /* UILabel.swift */,
 				B4439AB42263E39A00630663 /* Array.swift */,
-				B4439AB62263E48E00630663 /* BasicScrollingViewController.swift */,
 				B4439ABA2263E6A100630663 /* String.swift */,
 			);
 			path = Extensions;
@@ -107,6 +107,7 @@
 		B4439AA92263E07900630663 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B4439AB62263E48E00630663 /* BasicScrollingViewController.swift */,
 				B4439AB82263E61E00630663 /* QRGenerator.swift */,
 			);
 			path = Classes;
@@ -138,6 +139,13 @@
 				B4439ABD2263E91200630663 /* EasterEgg.swift */,
 			);
 			path = EasterEgg;
+			sourceTree = "<group>";
+		};
+		B47BEF7322652F540075CEE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
