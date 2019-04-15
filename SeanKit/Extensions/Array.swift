@@ -18,8 +18,20 @@ public extension Array where Element: Hashable {
         }
     }
     
+    
     /// Removes duplicates from an array. Elements must be hashable.
     mutating func removeDuplicates() {
         self = self.removingDuplicates()
+    }
+    
+    
+    func getIndexOf(string: String) -> Int? {
+        for x in 0 ..< count {
+            if self[x] as? String == string {
+                return x
+            }
+        }
+        print("Error: String not found in array")
+        return nil
     }
 }

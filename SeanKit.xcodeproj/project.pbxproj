@@ -23,6 +23,7 @@
 		B4439ABE2263E91200630663 /* EasterEgg.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439ABD2263E91200630663 /* EasterEgg.swift */; };
 		B4439ACC2263ED8300630663 /* dynamicActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AA72263DFE800630663 /* dynamicActionSheet.swift */; };
 		B4439AF62263F4F000630663 /* presentDisclaimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AF52263F4F000630663 /* presentDisclaimer.swift */; };
+		B4439B3D2264166600630663 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439B3C2264166600630663 /* UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		B4439ABA2263E6A100630663 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B4439ABD2263E91200630663 /* EasterEgg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasterEgg.swift; sourceTree = "<group>"; };
 		B4439AF52263F4F000630663 /* presentDisclaimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presentDisclaimer.swift; sourceTree = "<group>"; };
+		B4439B3C2264166600630663 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +80,10 @@
 			children = (
 				B4439ABC2263E8F100630663 /* EasterEgg */,
 				B4439AA92263E07900630663 /* Classes */,
-				B4439AA52263DA7700630663 /* VersionTracker.swift */,
 				B4439A8E2263D2B000630663 /* Extensions */,
 				B4439AAE2263E18B00630663 /* Convenience Functions */,
 				B4439AAF2263E19D00630663 /* Testing Functions */,
+				B4439AA52263DA7700630663 /* VersionTracker.swift */,
 				B4439A842263CDCA00630663 /* SeanKit.h */,
 				B4439A852263CDCA00630663 /* Info.plist */,
 			);
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				B4439A8C2263D2AD00630663 /* UIView.swift */,
+				B4439B3C2264166600630663 /* UIImageView.swift */,
 				B4439A982263D6F900630663 /* UIImage.swift */,
 				B4439A9E2263D85100630663 /* UILabel.swift */,
 				B4439AB42263E39A00630663 /* Array.swift */,
@@ -224,6 +227,7 @@
 				B4439A8D2263D2AD00630663 /* UIView.swift in Sources */,
 				B4439A9F2263D85100630663 /* UILabel.swift in Sources */,
 				B4439AB72263E48E00630663 /* BasicScrollingViewController.swift in Sources */,
+				B4439B3D2264166600630663 /* UIImageView.swift in Sources */,
 				B4439ABE2263E91200630663 /* EasterEgg.swift in Sources */,
 				B4439AB92263E61E00630663 /* QRGenerator.swift in Sources */,
 				B4439ACC2263ED8300630663 /* dynamicActionSheet.swift in Sources */,
