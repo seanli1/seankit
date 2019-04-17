@@ -68,7 +68,6 @@
 			children = (
 				B4439A832263CDCA00630663 /* SeanKit */,
 				B4439A822263CDCA00630663 /* Products */,
-				B47BEF7322652F540075CEE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,13 +144,6 @@
 				B4439ABD2263E91200630663 /* EasterEgg.swift */,
 			);
 			path = EasterEgg;
-			sourceTree = "<group>";
-		};
-		B47BEF7322652F540075CEE3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
