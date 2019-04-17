@@ -16,7 +16,6 @@ public class ScannerViewController: UIViewController, AVCaptureMetadataOutputObj
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         // EXPLANATION:
         
         // AVCaptureSession()

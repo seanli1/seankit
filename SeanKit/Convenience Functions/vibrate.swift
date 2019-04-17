@@ -7,9 +7,15 @@
 //
 
 import Foundation
+import AVFoundation
 
-
-public func vibrate(_ intensity: UIImpactFeedbackGenerator.FeedbackStyle) {
-    let generator = UIImpactFeedbackGenerator(style: intensity)
-    generator.impactOccurred()
+/// Vibrates with specific intensity. If entered nil, plays a default system vibrate.
+public func vibrate(_ intensity: UIImpactFeedbackGenerator.FeedbackStyle?) {
+    if let intensity = intensity {
+        let generator = UIImpactFeedbackGenerator(style: intensity)
+        generator.impactOccurred()
+    } else {
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+    }
 }
+

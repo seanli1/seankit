@@ -15,7 +15,6 @@
 		B4439AAB2263E0B100630663 /* topController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AAA2263E0B100630663 /* topController.swift */; };
 		B4439AAD2263E12300630663 /* okAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AAC2263E12300630663 /* okAlert.swift */; };
 		B4439AB12263E1BB00630663 /* Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB02263E1BB00630663 /* Testing.swift */; };
-		B4439AB32263E23500630663 /* vibrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB22263E23500630663 /* vibrate.swift */; };
 		B4439AB52263E39A00630663 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB42263E39A00630663 /* Array.swift */; };
 		B4439AB72263E48E00630663 /* BasicScrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB62263E48E00630663 /* BasicScrollingViewController.swift */; };
 		B4439AB92263E61E00630663 /* QRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB82263E61E00630663 /* QRGenerator.swift */; };
@@ -25,6 +24,7 @@
 		B4439AF62263F4F000630663 /* presentDisclaimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AF52263F4F000630663 /* presentDisclaimer.swift */; };
 		B4439B3D2264166600630663 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439B3C2264166600630663 /* UIImageView.swift */; };
 		B4538A002266BBA200B14142 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45389FF2266BBA200B14142 /* ScannerViewController.swift */; };
+		B4538A112266CD0700B14142 /* vibrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB22263E23500630663 /* vibrate.swift */; };
 		B47BEF8222659E260075CEE3 /* downloadStringFromFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47BEF8122659E260075CEE3 /* downloadStringFromFile.swift */; };
 /* End PBXBuildFile section */
 
@@ -229,8 +229,8 @@
 				B4439ABB2263E6A100630663 /* String.swift in Sources */,
 				B4439AF62263F4F000630663 /* presentDisclaimer.swift in Sources */,
 				B4439AB52263E39A00630663 /* Array.swift in Sources */,
-				B4439AB32263E23500630663 /* vibrate.swift in Sources */,
 				B4439A8D2263D2AD00630663 /* UIView.swift in Sources */,
+				B4538A112266CD0700B14142 /* vibrate.swift in Sources */,
 				B4439A9F2263D85100630663 /* UILabel.swift in Sources */,
 				B4439AB72263E48E00630663 /* BasicScrollingViewController.swift in Sources */,
 				B4439B3D2264166600630663 /* UIImageView.swift in Sources */,
