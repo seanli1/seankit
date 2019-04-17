@@ -24,6 +24,7 @@
 		B4439ACC2263ED8300630663 /* dynamicActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AA72263DFE800630663 /* dynamicActionSheet.swift */; };
 		B4439AF62263F4F000630663 /* presentDisclaimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AF52263F4F000630663 /* presentDisclaimer.swift */; };
 		B4439B3D2264166600630663 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439B3C2264166600630663 /* UIImageView.swift */; };
+		B4538A002266BBA200B14142 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45389FF2266BBA200B14142 /* ScannerViewController.swift */; };
 		B47BEF8222659E260075CEE3 /* downloadStringFromFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47BEF8122659E260075CEE3 /* downloadStringFromFile.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		B4439ABD2263E91200630663 /* EasterEgg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasterEgg.swift; sourceTree = "<group>"; };
 		B4439AF52263F4F000630663 /* presentDisclaimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presentDisclaimer.swift; sourceTree = "<group>"; };
 		B4439B3C2264166600630663 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		B45389FF2266BBA200B14142 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		B47BEF8122659E260075CEE3 /* downloadStringFromFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = downloadStringFromFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 			children = (
 				B4439AB62263E48E00630663 /* BasicScrollingViewController.swift */,
 				B4439AB82263E61E00630663 /* QRGenerator.swift */,
+				B45389FF2266BBA200B14142 /* ScannerViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				B4439AB92263E61E00630663 /* QRGenerator.swift in Sources */,
 				B4439ACC2263ED8300630663 /* dynamicActionSheet.swift in Sources */,
 				B4439AAD2263E12300630663 /* okAlert.swift in Sources */,
+				B4538A002266BBA200B14142 /* ScannerViewController.swift in Sources */,
 				B4439A992263D6F900630663 /* UIImage.swift in Sources */,
 				B4439AB12263E1BB00630663 /* Testing.swift in Sources */,
 				B4439AAB2263E0B100630663 /* topController.swift in Sources */,
