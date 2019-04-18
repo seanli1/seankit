@@ -9,7 +9,13 @@
 import AVFoundation
 import UIKit
 
+public protocol ScannerViewControllerDelegate {
+    func found(code: String)
+}
+
 public class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+    
+    public var scannerDelegate: ScannerViewControllerDelegate!
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
     
@@ -131,15 +137,10 @@ public class ScannerViewController: UIViewController, AVCaptureMetadataOutputObj
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
             guard let stringValue = readableObject.stringValue else { return }
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
-            found(code: stringValue)
+            scannerDelegate.found(code: stringValue)
         }
         
         dismiss(animated: true)
-    }
-    
-    
-    public func found(code: String) {
-        print(code)
     }
     
     
