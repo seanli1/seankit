@@ -14,7 +14,7 @@ private var player: AVAudioPlayer!
 private var eggFound = false
 
 
-public func playEasterEgg() {
+public func playEasterEgg(onCompletion: @escaping () -> ()) {
     if !eggFound {
         eggFound = true
         guard let path = Bundle.main.path(forResource: "ring", ofType: "wav") else {
@@ -49,6 +49,7 @@ public func playEasterEgg() {
             }, completion: { (nil) in
                 imageView.removeFromSuperview()
                 eggFound = false
+                onCompletion()
             })
         })
     }
