@@ -22,5 +22,22 @@ public extension UIImage {
             return UIImage()
         }
     }
-    
+
+//    Why the heck is this not working??
+//    /// Saves to Documents directory as jpg.
+//    func saveToDocuments(filename: String) {
+//        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+//        let fileURL = documentsDirectory.appendingPathComponent(filename)
+//
+//        FileManager.default.createFile(atPath: fileURL.path, contents: nil, attributes: nil)
+//
+//        if let data = self.jpegData(compressionQuality: 1.0) {
+//            do {
+//                try data.write(to: fileURL)
+//                print("saved data successfully")
+//            } catch {
+//                print("error saving file to documents:", error)
+//            }
+//        }
+//    }
 }
