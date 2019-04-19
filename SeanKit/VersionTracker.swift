@@ -13,7 +13,7 @@ public let userDefaults = UserDefaults.standard
 /// Helps handle tracking the version the user has installed.
 public class VersionTracker {
     
-    private init() {}
+    public init() {}
     
     private let versionKey = "versionKey"
     
