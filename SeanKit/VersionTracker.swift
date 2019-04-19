@@ -30,15 +30,16 @@ public class VersionTracker {
         return "\(version)b\(build)"
     }
     
-    /// Returns the last recorded version number of this app. Running this also overwrites last saved version number, meaning this can only be run once.
+    /// Returns the last recorded version number of this app.
     public func getPreviousAppVersion() -> String? {
-        let storedVersion = userDefaults.value(forKey: versionKey) // Any?
+        let storedVersion = userDefaults.value(forKey: versionKey)
         if let storedVersion = storedVersion as? String {
             return storedVersion
         } else {
             return nil
         }
     }
+    
 }
 
 
