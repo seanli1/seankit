@@ -24,31 +24,22 @@ public class ScannerViewController: UIViewController, AVCaptureMetadataOutputObj
         
         // EXPLANATION:
         
-        // AVCaptureSession()
-        // To record anything, you create a "session" for it.
+        // Think of it like a jam session:
+        // AVCaptureSession - This is the jam itself. Not the people, instruments, room, etc. This is the session.
+        // AVCaptureDevice - This is your instrument, like a guitar.
+        // AVCaptureDeviceInput - That device needs an input. This is the musician.
+        // AVCaptureMetadataOutput - That device also needs an output. This is the amp.
+        
+        // Like most code, we build everything from scratch in space. We make a device that has an input and an output.
+        // Then we add that constructed device to the session.
+        // Up until now, everything is happening invisibly. To see what's going on, we need to add an AVCaptureVideoPreviewLayer on the session. This acts like a regular view.
         
         
-        // Then walk away from it for a second. In our case, we're doing video, so we:
+        // Some notes that don't fit the analogy:
+        // - We specify that the output is looking for certain codes (.qr, etc.)
+        // - This metadata output object also needs a delegate, which is self.
+        // - Because the VC is the delegate, we call a function that gets called when an output is read. In this case, this function also stops the camera session. It also extracts the string.
         
-        // - create the device which can capture video. -- AVCaptureDevice.default(for: .video)
-        
-        // - get the video input from that device. -- AVCaptureDeviceInput(device: videoCaptureDevice)
-        
-        // Finally, add it as an input to the capture session if possible.
-        
-        // Then, not only do we need to add an input to capture session, but also an output for metadata (scanning codes) -- AVVCaptureMetadataOutput().
-        
-        // We specify that the output is looking for certain codes (.qr, etc.)
-        
-        // This metadata output object also needs a delegate, which is self.
-        
-        // Because the VC is the delegate, we call a function that gets called when an output is read. In this case, this function also stops the camera session. It also extracts the string.
-        
-        
-        
-        // Keep in mind that this whole time, the user does not SEE anything. For the user to see the active video, we need to create a preview layer on that session -- AVCaptureVideoPreviewLayer(session: ourAVCaptureSession)
-        
-        // We set up this preview layer just like we set any view.
         
         
         
