@@ -15,12 +15,8 @@ public class VersionTracker {
     
     public init() {}
     
-    private let versionKey = "versionKey"
+    private let versionListKey = "versionListKey"
     
-    /// Save the current app version to memory.
-    public func saveCurrentAppVersion() {
-        userDefaults.set(getCurrentAppVersion(), forKey: versionKey)
-    }
     
     /// Returns the currently running app version.
     public func getCurrentAppVersion() -> String {
@@ -30,16 +26,23 @@ public class VersionTracker {
         return "\(version)b\(build)"
     }
     
-    /// Returns the last recorded version number of this app.
-    public func getPreviousAppVersion() -> String? {
-        let storedVersion = userDefaults.value(forKey: versionKey)
-        if let storedVersion = storedVersion as? String {
-            return storedVersion
+    /// Update the version list. Good to have this implemented since first release.
+    public func updateVersionList() -> [String] {
+        var newArray: [String]!
+        if let stored = userDefaults.value(forKey: versionListKey) as? [String] {
+            newArray = stored
         } else {
-            return nil
+            newArray = []
         }
+        newArray.append(getCurrentAppVersion())
+        newArray.removeDuplicates()
+        
+        userDefaults.set(newArray, forKey: versionListKey)
+        
+        print("Latest version list: \(newArray!)")
+        
+        return newArray
     }
-    
 }
 
 
