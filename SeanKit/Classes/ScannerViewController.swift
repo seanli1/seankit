@@ -140,7 +140,7 @@ public class ScannerViewController: UIViewController, AVCaptureMetadataOutputObj
             scannerDelegate.found(code: stringValue)
         }
         
-        dismiss(animated: true)
+//        dismiss(animated: true)
     }
     
     

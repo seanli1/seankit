@@ -35,6 +35,7 @@ public extension String {
         }
     }
     
+    
     mutating func formatAsPhoneNumber() {
         if self.count == 11 { // US numbers with country code
             for x in (0 ..< self.count).reversed() {
