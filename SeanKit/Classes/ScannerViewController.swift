@@ -143,4 +143,5 @@ public class ScannerViewController: UIViewController, AVCaptureMetadataOutputObj
     public override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
     }
+    
 }
