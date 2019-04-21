@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+/// Singleton for convenient QR generation functions in SeanKit.
 public class QRGenerator {
     
     private init() {}

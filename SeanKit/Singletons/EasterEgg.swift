@@ -16,7 +16,6 @@ public class EasterEgg {
     private static var player: AVAudioPlayer!
     private static var eggFound = false
     
-    
      public static func play(onCompletion: @escaping () -> ()) {
         if !eggFound {
             eggFound = true

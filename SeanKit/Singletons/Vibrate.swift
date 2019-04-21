@@ -9,7 +9,7 @@
 import Foundation
 import AVFoundation
 
-
+/// Singleton for convenient Vibrate functions in SeanKit.
 public class Vibrate {
     
     private init() {}

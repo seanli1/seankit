@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+/// Singleton for convenient app testing functions in SeanKit.
 public class Tester {
     
     private init() {}

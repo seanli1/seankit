@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+/// Singleton for convenient downloading functions in SeanKit.
 public class Download {
     
     private init() {}
