@@ -11,7 +11,7 @@ import Foundation
 public let userDefaults = UserDefaults.standard
 
 /// Helps handle tracking the version the user has installed.
-public class VersionTracker {
+public class AppHelper {
     
     private init() {}
     
@@ -43,6 +43,26 @@ public class VersionTracker {
         
         return newArray
     }
+    
+    
+    /// In `UserDefaults.standard`, move the stored object from one key to the other, and clear the original key.
+    static public func changeSaveKeyForObject(fromKey: String, toKey: String) {
+        
+        if let stored = userDefaults.value(forKey: fromKey) {
+            
+            print("Updating key: \(fromKey)")
+            print("To key: \(toKey)")
+            print("With value: \(stored)\n")
+            
+            userDefaults.removeObject(forKey: fromKey)
+            
+            userDefaults.set(stored, forKey: toKey)
+        } else {
+            print("Key was clean: \(fromKey)\n")
+        }
+    }
+    
+
 }
 
 

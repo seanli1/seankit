@@ -11,7 +11,7 @@
 		B4439A8D2263D2AD00630663 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439A8C2263D2AD00630663 /* UIView.swift */; };
 		B4439A992263D6F900630663 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439A982263D6F900630663 /* UIImage.swift */; };
 		B4439A9F2263D85100630663 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439A9E2263D85100630663 /* UILabel.swift */; };
-		B4439AA62263DA7700630663 /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AA52263DA7700630663 /* VersionTracker.swift */; };
+		B4439AA62263DA7700630663 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AA52263DA7700630663 /* AppHelper.swift */; };
 		B4439AAB2263E0B100630663 /* topController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AAA2263E0B100630663 /* topController.swift */; };
 		B4439AAD2263E12300630663 /* QuickAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AAC2263E12300630663 /* QuickAlert.swift */; };
 		B4439AB12263E1BB00630663 /* Tester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB02263E1BB00630663 /* Tester.swift */; };
@@ -36,7 +36,7 @@
 		B4439A8C2263D2AD00630663 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		B4439A982263D6F900630663 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		B4439A9E2263D85100630663 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
-		B4439AA52263DA7700630663 /* VersionTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionTracker.swift; sourceTree = "<group>"; };
+		B4439AA52263DA7700630663 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 		B4439AA72263DFE800630663 /* dynamicActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dynamicActionSheet.swift; sourceTree = "<group>"; };
 		B4439AAA2263E0B100630663 /* topController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topController.swift; sourceTree = "<group>"; };
 		B4439AAC2263E12300630663 /* QuickAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAlert.swift; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 				B4439AB82263E61E00630663 /* QRGenerator.swift */,
 				B47BEF8122659E260075CEE3 /* Download.swift */,
 				B4439AB02263E1BB00630663 /* Tester.swift */,
-				B4439AA52263DA7700630663 /* VersionTracker.swift */,
+				B4439AA52263DA7700630663 /* AppHelper.swift */,
 				B4439ABD2263E91200630663 /* EasterEgg.swift */,
 			);
 			path = Singletons;
@@ -220,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4439AA62263DA7700630663 /* VersionTracker.swift in Sources */,
+				B4439AA62263DA7700630663 /* AppHelper.swift in Sources */,
 				B4439ABB2263E6A100630663 /* String.swift in Sources */,
 				B4439AF62263F4F000630663 /* presentDisclaimer.swift in Sources */,
 				B4439AB52263E39A00630663 /* Array.swift in Sources */,
