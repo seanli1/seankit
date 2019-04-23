@@ -8,6 +8,7 @@
 
 import Foundation
 
+public var firstTime = false
 private let disclaimer = "disclaimer" // Save key
 
 public extension UIViewController {
@@ -17,6 +18,8 @@ public extension UIViewController {
         if let disclaimerSaved = userDefaults.value(forKey: disclaimer) as? Bool {
             if disclaimerSaved { return } // Only returns if there was a disclaimer saved. Otherwise, all other cases move on.
         }
+        
+        firstTime = true
         let destVC = DisclaimerVC()
         
         let string = "\(title ?? "")\n\n\(message)"
