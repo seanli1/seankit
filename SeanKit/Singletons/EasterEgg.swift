@@ -19,20 +19,50 @@ public class EasterEgg {
      public static func play(onCompletion: @escaping () -> ()) {
         if !eggFound {
             eggFound = true
-            guard let path = Bundle.main.path(forResource: "ring", ofType: "wav") else {
+            
+            var correctFramework: Bundle?
+            
+            for x in Bundle.allFrameworks {
+                if x.bundlePath.contains("SeanKit", caseSensitive: false) {
+                    correctFramework = x
+                }
+            }
+            
+            if correctFramework == nil {
+                print("Framework `SeanKit` not found.")
+                return
+            }
+            
+            guard let path = correctFramework!.path(forResource: "ring", ofType: "wav") else {
                 print("'ring.wav' was not found for easter egg.")
                 return
             }
+            
+            
             let url = URL(fileURLWithPath: path)
             do {
                 player = try AVAudioPlayer(contentsOf: url)
                 player.play()
             } catch {
-                print("Error creating player with URL")
+                print("Error creating player with URL.")
             }
-            let image = UIImage(named: "seanonthebeach")
+            
+            var image: UIImage?
+            
+            if let imagePath = correctFramework!.path(forResource: "seanonthebeach", ofType: "jpeg") {
+                let imageUrl = URL(fileURLWithPath: imagePath)
+                do {
+                    let imageData = try Data(contentsOf: imageUrl)
+                    image = UIImage(data: imageData)
+                } catch {
+                    print("Could not convert easter egg image to data.")
+                }
+            } else {
+                print("'seanonthebeach' picture not found.")
+            }
+            
             if image == nil {
-                print("Must add picture 'seanonthebeach' to Assets.cxassets folder for easter egg.")
+                print("'seanonthebeach' image was found nil.")
                 return
             }
             guard let window = UIApplication.shared.keyWindow else { return }
