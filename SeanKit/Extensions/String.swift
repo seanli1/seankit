@@ -62,4 +62,18 @@ public extension String {
             return
         }
     }
+    
+    
+    /// Same results as `contains(other:StringProtocol)`, except with ability to ignore the case.
+    func contains(string: String, ignoreCase: Bool) -> Bool {
+        
+        if !ignoreCase {
+            return self.contains(string)
+        }
+        
+        let testString = string.lowercased()
+        let testSelf = self.lowercased()
+        
+        return testSelf.contains(testString)
+    }
 }
