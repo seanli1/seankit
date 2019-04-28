@@ -42,8 +42,8 @@ public class BasicScrollingViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         navigationController?.navigationBar.prefersLargeTitles = true
-        let leftButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
-        navigationItem.leftBarButtonItem = leftButton
+        let rightButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
+        navigationItem.rightBarButtonItem = rightButton
     }
     
     
