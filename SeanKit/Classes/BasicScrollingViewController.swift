@@ -9,7 +9,7 @@
 import Foundation
 
 
-public class BasicScrollingViewController: UIViewController {
+open class BasicScrollingViewController: UIViewController {
     
     /********************************************************************************
      PROPERTIES
@@ -38,7 +38,7 @@ public class BasicScrollingViewController: UIViewController {
         messageTextView.text = message
     }
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -47,7 +47,7 @@ public class BasicScrollingViewController: UIViewController {
     }
     
     
-    public override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setUpSubviews()
     }
