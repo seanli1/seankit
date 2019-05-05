@@ -11,6 +11,7 @@ import Foundation
 
 public extension String {
     
+    /// Remove all `www.` and `http://` type stuff at the beginning of the string, if any.
     mutating func makeCleanURL() {
         if self.hasPrefix("http://") {
             self.removeFirst(7)
@@ -22,16 +23,33 @@ public extension String {
         }
     }
     
+    /// Makes any string start with `https://www.`, even if it started with a different version of it.
+    mutating func makeProperURL() {
+        self.makeCleanURL()
+        self.addWWWPrefix()
+        self.addHttpPrefix(addSForHttps: true)
+    }
+    
+    
+    /// Adds `www.` if there is not one at the beginning. Does nothing if string is empty.
+    mutating func addWWWPrefix() {
+        if self == "" {
+            return
+        }
+        if !self.hasPrefix("www.") {
+            self = "www.\(self)"
+        }
+    }
+    
+    
     /// Adds `http://` if there is not one included. Does nothing if string is empty.
-    mutating func addHttpPrefix() {
+    mutating func addHttpPrefix(addSForHttps: Bool) {
         if self == "" {
             return
         }
         if !self.hasPrefix("http://") && !self.hasPrefix("https://") {
-            let newString = "http://\(self)"
+            let newString = addSForHttps ? "https://\(self)" : "http://\(self)"
             self = newString
-        } else {
-            return
         }
     }
     
