@@ -9,18 +9,28 @@
 import Foundation
 
 public extension UIImage {
+
+    
+    // This version is worse than the one below. Why? Keeping here just to examine later.
+//    func resized(to: CGSize) -> UIImage {
+//        UIGraphicsBeginImageContext(to)
+//        self.draw(in: CGRect(origin: .zero, size: to))
+//        let result = UIGraphicsGetImageFromCurrentImageContext()
+//        UIGraphicsEndImageContext()
+//        if let result = result {
+//            return result
+//        } else {
+//            print("Could not resize image")
+//            return UIImage()
+//        }
+//    }
     
     func resized(to: CGSize) -> UIImage {
-        UIGraphicsBeginImageContext(to)
-        self.draw(in: CGRect(origin: .zero, size: to))
-        let result = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        if let result = result {
-            return result
-        } else {
-            print("Could not resize image")
-            return UIImage()
+        let renderer = UIGraphicsImageRenderer(size: to)
+        let image = renderer.image { _ in
+            self.draw(in: CGRect.init(origin: CGPoint.zero, size: to))
         }
+        return image
     }
 
 //    Why the heck is this not working??
