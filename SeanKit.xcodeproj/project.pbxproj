@@ -28,6 +28,7 @@
 		B4727EB32276260900743241 /* ring.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4727EB22276260900743241 /* ring.wav */; };
 		B47BEF8222659E260075CEE3 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47BEF8122659E260075CEE3 /* Download.swift */; };
 		B4B76043226A93AB00A489FC /* getDocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B76042226A93AB00A489FC /* getDocumentsDirectory.swift */; };
+		B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C91BC72280E78A00618A33 /* UIScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		B4727EB22276260900743241 /* ring.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ring.wav; sourceTree = "<group>"; };
 		B47BEF8122659E260075CEE3 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 		B4B76042226A93AB00A489FC /* getDocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getDocumentsDirectory.swift; sourceTree = "<group>"; };
+		B4C91BC72280E78A00618A33 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				B4439A8C2263D2AD00630663 /* UIView.swift */,
+				B4C91BC72280E78A00618A33 /* UIScrollView.swift */,
 				B4439B3C2264166600630663 /* UIImageView.swift */,
 				B4439A982263D6F900630663 /* UIImage.swift */,
 				B4439A9E2263D85100630663 /* UILabel.swift */,
@@ -231,6 +234,7 @@
 				B4439AB52263E39A00630663 /* Array.swift in Sources */,
 				B4439A8D2263D2AD00630663 /* UIView.swift in Sources */,
 				B4538A112266CD0700B14142 /* Vibrate.swift in Sources */,
+				B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */,
 				B4439A9F2263D85100630663 /* UILabel.swift in Sources */,
 				B4439AB72263E48E00630663 /* BasicScrollingViewController.swift in Sources */,
 				B4439B3D2264166600630663 /* UIImageView.swift in Sources */,
