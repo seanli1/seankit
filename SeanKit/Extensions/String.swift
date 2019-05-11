@@ -24,15 +24,25 @@ public extension String {
     }
     
     /// Makes any string start with `https://www.`, even if it started with a different version of it.
-    mutating func makeProperURL() {
+    mutating func makeProperURL(addSForHttps: Bool) {
         self.makeCleanURL()
-        self.addWWWPrefix()
-        self.addHttpPrefix(addSForHttps: true)
+        self.addWwwPrefix()
+        self.addHttpPrefix(addSForHttps: addSForHttps)
+    }
+    
+    
+    /// Returns a variation of any string that starts with `https://www.`, even if it started with a different version of it.
+    func asProperURL(addSForHttps: Bool) -> String {
+        var str = self
+        str.makeCleanURL()
+        str.addWwwPrefix()
+        str.addHttpPrefix(addSForHttps: addSForHttps)
+        return str
     }
     
     
     /// Adds `www.` if there is not one at the beginning. Does nothing if string is empty.
-    mutating func addWWWPrefix() {
+    mutating func addWwwPrefix() {
         if self == "" {
             return
         }
