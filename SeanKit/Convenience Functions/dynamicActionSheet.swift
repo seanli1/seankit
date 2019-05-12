@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+/// Simply returns a `UIAlertController` that is either `.alert` or `.actionSheet` depending on if it's an iPad.
 public func dynamicActionSheet(title: String?, message: String?) -> UIAlertController {
     if UI_USER_INTERFACE_IDIOM() == .pad {
         return UIAlertController(title: title, message: message, preferredStyle: .alert)
