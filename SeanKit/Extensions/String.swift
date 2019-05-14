@@ -41,6 +41,7 @@ public extension String {
     }
     
     
+    
     /// Adds `www.` if there is not one at the beginning. Does nothing if string is empty.
     mutating func addWwwPrefix() {
         if self == "" {
