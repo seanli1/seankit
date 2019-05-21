@@ -30,6 +30,7 @@
 		B47BEF8222659E260075CEE3 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47BEF8122659E260075CEE3 /* Download.swift */; };
 		B4B76043226A93AB00A489FC /* getDocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B76042226A93AB00A489FC /* getDocumentsDirectory.swift */; };
 		B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C91BC72280E78A00618A33 /* UIScrollView.swift */; };
+		B4F844BC2294B012004E7284 /* getDataFromAddresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F844BB2294B012004E7284 /* getDataFromAddresses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		B47BEF8122659E260075CEE3 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 		B4B76042226A93AB00A489FC /* getDocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getDocumentsDirectory.swift; sourceTree = "<group>"; };
 		B4C91BC72280E78A00618A33 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
+		B4F844BB2294B012004E7284 /* getDataFromAddresses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getDataFromAddresses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				B4439AAA2263E0B100630663 /* topController.swift */,
 				B4439AF52263F4F000630663 /* presentDisclaimer.swift */,
 				B4B76042226A93AB00A489FC /* getDocumentsDirectory.swift */,
+				B4F844BB2294B012004E7284 /* getDataFromAddresses.swift */,
 			);
 			path = "Convenience Functions";
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				B4439AAB2263E0B100630663 /* topController.swift in Sources */,
 				B449627E2286A0F700845574 /* UITableView.swift in Sources */,
 				B47BEF8222659E260075CEE3 /* Download.swift in Sources */,
+				B4F844BC2294B012004E7284 /* getDataFromAddresses.swift in Sources */,
 				B4B76043226A93AB00A489FC /* getDocumentsDirectory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
