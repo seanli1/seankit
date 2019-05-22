@@ -15,21 +15,10 @@ class ViewController: UIViewController {
         var string: String
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        var addresses = [String]()
-        
-        addresses.append("https://seanli.nyc")
-        addresses.append("https://revolverlighting.com/")
-        addresses.append("https://raw.githubusercontent.com/seanli1/appfiles/master/greenlist/greentasks.json")
-        addresses.append("https://bitbucket.org/seanli1/appfiles/raw/master/greenlist/greentasks.json")
-        addresses.append("https://raw.githubusercontent.com/seanli1/githubappfiles/master/greenlist/greentasks.json")
-        addresses.append("https://bitbucket.org/seanli1/githubappfiles/raw/master/greenlist/greentasks.json")
-        
-        getDataFromAddresses(addresses, executeOnFirstOnly: true, completion: <#T##(String, Data) -> Void#>)
+        AppHelper.check()
     }
     
     
