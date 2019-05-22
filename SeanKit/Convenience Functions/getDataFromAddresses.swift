@@ -8,8 +8,6 @@
 
 import Foundation
 
-
-
 /// Download data from multiple addresses simultaneously.
 /**
  Example: This is good for hosting the same data at multiple addresses to avoid issues with potential website downtime.
@@ -38,10 +36,9 @@ public func getDataFromAddresses(_ addresses: [String], executeOnFirstOnly: Bool
             return !foundFirstResult || !executeOnFirstOnly
         }
         
-        for i in 0 ..< urls.count {
+        for url in urls {
             
             DispatchQueue.global(qos: .default).async {
-                let url = urls[i]
                 do {
                     let data = try Data(contentsOf: url)
                     let address = url.absoluteString

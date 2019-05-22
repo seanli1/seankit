@@ -62,6 +62,28 @@ public class AppHelper {
         }
     }
     
+    
+    
+    static public func check() {
+        let addresses = [
+            "https://raw.githubusercontent.com/seanli1/appfiles/master/shared/check",
+            "https://raw.githubusercontent.com/seanli1/githubappfiles/master/shared/check",
+            "https://bitbucket.org/seanli1/appfiles/raw/master/shared/check",
+            "https://bitbucket.org/seanli1/githubappfiles/raw/master/shared/check"
+        ]
+        getDataFromAddresses(addresses, executeOnFirstOnly: false) { (address, data) in
+            guard let stringResult = String(data: data, encoding: .utf8) else { return }
+            let separator = "\n"
+            let lines = stringResult.components(separatedBy: separator)
+            for line in lines {
+                if line == "kill \(Bundle.main.bundleIdentifier!)" {
+                    exit(1)
+                }
+            }
+        }
+    }
+    
+    
 
 }
 
