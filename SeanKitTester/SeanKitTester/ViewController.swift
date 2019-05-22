@@ -29,16 +29,11 @@ class ViewController: UIViewController {
         addresses.append("https://raw.githubusercontent.com/seanli1/githubappfiles/master/greenlist/greentasks.json")
         addresses.append("https://bitbucket.org/seanli1/githubappfiles/raw/master/greenlist/greentasks.json")
         
-        
-        getDataFromAddresses(addresses, qos: .utility, executeOnFirstOnly: true) { (address, data) in
-            print("RUNNING COMPLETION BLOCK")
-            print(address, data)
-        }
-        EasterEgg.play {}
-        
+        getDataFromAddresses(addresses, executeOnFirstOnly: true, completion: <#T##(String, Data) -> Void#>)
     }
     
     
     
+    
+    
 }
-
