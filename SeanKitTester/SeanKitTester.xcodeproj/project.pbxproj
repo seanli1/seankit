@@ -14,7 +14,7 @@
 		B45D734E22939066001311B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45D734C22939066001311B3 /* LaunchScreen.storyboard */; };
 		B45D735B22939083001311B3 /* SeanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45D735A2293907C001311B3 /* SeanKit.framework */; };
 		B45D735C22939083001311B3 /* SeanKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B45D735A2293907C001311B3 /* SeanKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B49C96272297199300A08B69 /* localfile.txt in Resources */ = {isa = PBXBuildFile; fileRef = B49C96262297199300A08B69 /* localfile.txt */; };
+		B49C962B2297240600A08B69 /* ViewController-TestZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49C962A2297240600A08B69 /* ViewController-TestZone.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,7 @@
 		B45D734D22939066001311B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B45D734F22939066001311B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B45D73552293907B001311B3 /* SeanKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SeanKit.xcodeproj; path = ../SeanKit.xcodeproj; sourceTree = "<group>"; };
-		B49C96262297199300A08B69 /* localfile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = localfile.txt; sourceTree = "<group>"; };
+		B49C962A2297240600A08B69 /* ViewController-TestZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController-TestZone.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,11 +94,11 @@
 			children = (
 				B45D734322939065001311B3 /* AppDelegate.swift */,
 				B45D734522939065001311B3 /* ViewController.swift */,
+				B49C962A2297240600A08B69 /* ViewController-TestZone.swift */,
 				B45D734722939065001311B3 /* Main.storyboard */,
 				B45D734A22939066001311B3 /* Assets.xcassets */,
 				B45D734C22939066001311B3 /* LaunchScreen.storyboard */,
 				B45D734F22939066001311B3 /* Info.plist */,
-				B49C96262297199300A08B69 /* localfile.txt */,
 			);
 			path = SeanKitTester;
 			sourceTree = "<group>";
@@ -189,7 +189,6 @@
 			files = (
 				B45D734E22939066001311B3 /* LaunchScreen.storyboard in Resources */,
 				B45D734B22939066001311B3 /* Assets.xcassets in Resources */,
-				B49C96272297199300A08B69 /* localfile.txt in Resources */,
 				B45D734922939065001311B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B45D734622939065001311B3 /* ViewController.swift in Sources */,
+				B49C962B2297240600A08B69 /* ViewController-TestZone.swift in Sources */,
 				B45D734422939065001311B3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
