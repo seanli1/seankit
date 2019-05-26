@@ -8,6 +8,8 @@
 
 import Foundation
 
+public typealias AddressString = String
+
 /// Singleton for convenient downloading functions in SeanKit.
 public class Download {
     
@@ -59,10 +61,9 @@ public class Download {
                 completion(download)
             }
             
-        }.resume()
+            }.resume()
         
     }
-    
     
     /// Download data from multiple addresses simultaneously.
     /**
@@ -76,35 +77,31 @@ public class Download {
      - parameter executeOnFirstOnly: Set to `true` to run the completion block after finding the first valid result. Set to `false` to run the completion block upon finding every valid result.
      - returns: The `address` used to obtain that particular `data` object.
      */
-    static public func dataFromAddresses(_ addresses: [String], executeOnFirstOnly: Bool, completion: @escaping (_ address: String, _ data: Data) -> Void) {
+    static public func dataFromAddresses(_ addresses: [String], executeOnFirstOnly: Bool, completion: @escaping (_ address: AddressString, _ data: Data) -> Void) {
+        var urls = [URL]()
+        for address in addresses {
+            if URL(string: address) != nil {
+                urls.append(URL(string: address)!)
+            }
+        }
+        var foundFirstResult = false
         
-        DispatchQueue.global(qos: .default).async {
-            var urls = [URL]()
-            for address in addresses {
-                if URL(string: address) != nil {
-                    urls.append(URL(string: address)!)
-                }
-            }
-            
-            var foundFirstResult = false
-            
-            var keepLooking: Bool {
-                return !foundFirstResult || !executeOnFirstOnly
-            }
-            for url in urls {
-                DispatchQueue.global(qos: .default).async {
-                    do {
-                        let data = try Data(contentsOf: url)
-                        let address = url.absoluteString
-                        if keepLooking {
-                            completion(address, data)
-                            foundFirstResult = true
-                        }
-                    } catch {
-                        if keepLooking {
-                            print("Bad URL: \(url.absoluteString)")
-                            print("May need to check spelling of this address.")
-                        }
+        var keepLooking: Bool {
+            return !foundFirstResult || !executeOnFirstOnly
+        }
+        for url in urls {
+            DispatchQueue.global(qos: .default).async {
+                do {
+                    let data = try Data(contentsOf: url)
+                    let address = url.absoluteString
+                    if keepLooking {
+                        completion(address, data)
+                        foundFirstResult = true
+                    }
+                } catch {
+                    if keepLooking {
+                        print("Bad URL: \(url.absoluteString)")
+                        print("May need to check spelling of this address.")
                     }
                 }
             }

@@ -15,6 +15,7 @@
 		B45D735B22939083001311B3 /* SeanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45D735A2293907C001311B3 /* SeanKit.framework */; };
 		B45D735C22939083001311B3 /* SeanKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B45D735A2293907C001311B3 /* SeanKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B49C962B2297240600A08B69 /* ViewController-TestZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49C962A2297240600A08B69 /* ViewController-TestZone.swift */; };
+		B49C962E2297314700A08B69 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B49C962D2297314700A08B69 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		B45D734F22939066001311B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B45D73552293907B001311B3 /* SeanKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SeanKit.xcodeproj; path = ../SeanKit.xcodeproj; sourceTree = "<group>"; };
 		B49C962A2297240600A08B69 /* ViewController-TestZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController-TestZone.swift"; sourceTree = "<group>"; };
+		B49C962D2297314700A08B69 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				B45D734322939065001311B3 /* AppDelegate.swift */,
 				B45D734522939065001311B3 /* ViewController.swift */,
 				B49C962A2297240600A08B69 /* ViewController-TestZone.swift */,
+				B49C962D2297314700A08B69 /* data.json */,
 				B45D734722939065001311B3 /* Main.storyboard */,
 				B45D734A22939066001311B3 /* Assets.xcassets */,
 				B45D734C22939066001311B3 /* LaunchScreen.storyboard */,
@@ -190,6 +193,7 @@
 				B45D734E22939066001311B3 /* LaunchScreen.storyboard in Resources */,
 				B45D734B22939066001311B3 /* Assets.xcassets in Resources */,
 				B45D734922939065001311B3 /* Main.storyboard in Resources */,
+				B49C962E2297314700A08B69 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
