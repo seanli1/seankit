@@ -89,14 +89,18 @@ public class Download {
         var keepLooking: Bool {
             return !foundFirstResult || !executeOnFirstOnly
         }
+        
+        let queue = DispatchQueue(label: "dataQueue")
+        
         for url in urls {
-            DispatchQueue.global(qos: .default).async {
+            
+            queue.sync {
                 do {
                     let data = try Data(contentsOf: url)
                     let address = url.absoluteString
                     if keepLooking {
-                        completion(address, data)
                         foundFirstResult = true
+                        completion(address, data)
                     }
                 } catch {
                     if keepLooking {
