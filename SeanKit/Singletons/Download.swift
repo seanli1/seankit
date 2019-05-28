@@ -90,11 +90,8 @@ public class Download {
             return !foundFirstResult || !executeOnFirstOnly
         }
         
-        let queue = DispatchQueue(label: "dataQueue")
-        
         for url in urls {
-            
-            queue.sync {
+            DispatchQueue.main.async {
                 do {
                     let data = try Data(contentsOf: url)
                     let address = url.absoluteString
