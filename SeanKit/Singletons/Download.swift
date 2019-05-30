@@ -91,18 +91,23 @@ public class Download {
         }
         
         for url in urls {
-            DispatchQueue.main.async {
+            
+            DispatchQueue.global(qos: .userInteractive).async {
                 do {
                     let data = try Data(contentsOf: url)
                     let address = url.absoluteString
                     if keepLooking {
                         foundFirstResult = true
-                        completion(address, data)
+                        DispatchQueue.main.async {
+                            completion(address, data)
+                        }
                     }
                 } catch {
                     if keepLooking {
-                        print("Bad URL: \(url.absoluteString)")
-                        print("May need to check spelling of this address.")
+                        DispatchQueue.main.async {
+                            print("Bad URL: \(url.absoluteString)")
+                            print("May need to check spelling of this address.")
+                        }
                     }
                 }
             }
