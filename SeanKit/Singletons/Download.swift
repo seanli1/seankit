@@ -92,7 +92,7 @@ public class Download {
         
         for url in urls {
             
-            DispatchQueue.global(qos: .userInteractive).async {
+            DispatchQueue.global(qos: .utility).async {
                 do {
                     let data = try Data(contentsOf: url)
                     let address = url.absoluteString
