@@ -68,7 +68,6 @@ private class DisclaimerVC: UIViewController {
         view.backgroundColor = UIColor.white
         view.addSubview(textView)
         view.addSubview(button)
-        
         NSLayoutConstraint.activate([
             textView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
             textView.bottomAnchor.constraint(equalTo: button.topAnchor, constant: -20),
@@ -79,7 +78,6 @@ private class DisclaimerVC: UIViewController {
             button.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 40),
             button.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -40)
             ])
-        
         textView.textAlignment = .center
         button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
     }
@@ -87,9 +85,9 @@ private class DisclaimerVC: UIViewController {
     
     @objc func buttonPressed() {
         userDefaults.set(true, forKey: disclaimer)
-        textView.text = "Cool!"
+        textView.text = ""
         UIView.animate(withDuration: 0.5) {
-            self.view.backgroundColor = UIColor(red: 0.5, green: 1, blue: 0.5, alpha: 1)
+            self.view.backgroundColor = UIColor(red: 0.8, green: 1, blue: 0.8, alpha: 1)
         }
         Timer.scheduledTimer(withTimeInterval: 0.6, repeats: false) { (timer) in
             self.dismiss(animated: true, completion: nil)
