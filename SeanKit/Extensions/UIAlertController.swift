@@ -20,5 +20,10 @@ public extension UIAlertController {
         self.addAction(UIAlertAction(title: title, style: style, handler: handler))
     }
     
+    /// Shortcut to adding a default "Ok" UIAlertAction button.
+    func addOk(handler: ((UIAlertAction) -> Void)?) {
+        self.addAction(title: "Ok", style: .default, handler: handler)
+    }
+    
 }
 
