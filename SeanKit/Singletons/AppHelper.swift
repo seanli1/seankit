@@ -82,7 +82,7 @@ public class AppHelper {
         }
     }
     
-    /** Run this block if it hasn't run for `after` amount of time. Returns `true` if it has been longer than the time entered, or if it is the first time running.
+    /** Keep in mind that this block runs every time. It's up to you to make sure that you only run what you need to when it has been enough time, by checking against the completion block's `Bool`.
      
      Tips:
      - 60 secs per minute
