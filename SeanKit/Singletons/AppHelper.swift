@@ -82,25 +82,27 @@ public class AppHelper {
         }
     }
     
-    /** Returns `true` if it has been longer than the time entered, or if it is the first time running. Only returns `false` if user has run the app within the last `hasItBeen` amount of time.
+    /** Run this block if it hasn't run for `after` amount of time. Returns `true` if it has been longer than the time entered, or if it is the first time running.
      
      Tips:
      - 60 secs per minute
      - 3600 secs per hour
      - 86400 secs per day
  */
-    static public func timeSinceLastRun(hasItBeen: TimeInterval, completion: ((Bool) -> Void)) {
+    static public func runBlock(after: TimeInterval, block: ((Bool, TimeInterval) -> Void)) {
         let now = Date().timeIntervalSince1970
         if let saved = userDefaults.value(forKey: lastDateRunKey) as? TimeInterval {
-            if now - saved > hasItBeen {
-                completion(true)
+            let diff = now - saved
+            if diff > after {
+                block(true, diff)
+                userDefaults.setValue(now, forKey: lastDateRunKey)
             } else {
-                completion(false)
+                block(false, diff)
             }
         } else {
-            completion(true)
+            block(true, TimeInterval.infinity)
+            userDefaults.setValue(now, forKey: lastDateRunKey)
         }
-        userDefaults.setValue(now, forKey: lastDateRunKey)
     }
     
 }
