@@ -29,6 +29,7 @@
 		B4727EB32276260900743241 /* ring.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4727EB22276260900743241 /* ring.wav */; };
 		B47BEF8222659E260075CEE3 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47BEF8122659E260075CEE3 /* Download.swift */; };
 		B49C96292297235100A08B69 /* Manipulate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49C96282297235100A08B69 /* Manipulate.swift */; };
+		B4A37CA122A63F6700972488 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A37CA022A63F6700972488 /* UIAlertController.swift */; };
 		B4B76043226A93AB00A489FC /* getDocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B76042226A93AB00A489FC /* getDocumentsDirectory.swift */; };
 		B4BB00BD22A5F8BE00F607DE /* DispatchGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BB00BC22A5F8BE00F607DE /* DispatchGroup.swift */; };
 		B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C91BC72280E78A00618A33 /* UIScrollView.swift */; };
@@ -59,6 +60,7 @@
 		B4727EB22276260900743241 /* ring.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ring.wav; sourceTree = "<group>"; };
 		B47BEF8122659E260075CEE3 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 		B49C96282297235100A08B69 /* Manipulate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manipulate.swift; sourceTree = "<group>"; };
+		B4A37CA022A63F6700972488 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		B4B76042226A93AB00A489FC /* getDocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getDocumentsDirectory.swift; sourceTree = "<group>"; };
 		B4BB00BC22A5F8BE00F607DE /* DispatchGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroup.swift; sourceTree = "<group>"; };
 		B4C91BC72280E78A00618A33 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				B4439AB42263E39A00630663 /* Array.swift */,
 				B4439ABA2263E6A100630663 /* String.swift */,
 				B449627D2286A0F700845574 /* UITableView.swift */,
+				B4A37CA022A63F6700972488 /* UIAlertController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */,
 				B4439A9F2263D85100630663 /* UILabel.swift in Sources */,
 				B4439AB72263E48E00630663 /* BasicScrollingViewController.swift in Sources */,
+				B4A37CA122A63F6700972488 /* UIAlertController.swift in Sources */,
 				B4BB00BD22A5F8BE00F607DE /* DispatchGroup.swift in Sources */,
 				B49C96292297235100A08B69 /* Manipulate.swift in Sources */,
 				B4439B3D2264166600630663 /* UIImageView.swift in Sources */,
