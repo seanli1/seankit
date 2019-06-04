@@ -17,7 +17,6 @@ public extension DispatchGroup {
         let onlyComponentWithCount = componentWithCount.first
         let countString = onlyComponentWithCount?.filter( {CharacterSet.decimalDigits.contains(UnicodeScalar($0.lowercased()) ?? UnicodeScalar("")!)} )
         let count = Int(countString ?? "")
-        print(count)
         return count
     }
     
