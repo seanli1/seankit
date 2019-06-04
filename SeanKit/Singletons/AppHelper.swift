@@ -82,7 +82,7 @@ public class AppHelper {
         }
     }
     
-    /** Keep in mind that this block runs every time. It's up to you to make sure that you only run what you need to when it has been enough time, by checking against the completion block's `Bool`.
+    /** Keep in mind that this block runs every time. It's up to you to make sure that you only run what you need to when it has been enough time, by checking against the completion block's `Bool`. Make sure the real action only happens when `Bool` is `true`, and only use `false` cases to do mundane things. Any more might defeat the purpose.
      
      Tips:
      - 60 secs per minute
