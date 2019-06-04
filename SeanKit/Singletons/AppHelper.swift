@@ -16,7 +16,7 @@ public class AppHelper {
     private init() {}
     
     static private let versionListKey = "versionListKey"
-    
+    static private let lastDateRunKey = "lastDateRunKey"
     
     /// Returns the currently running app version.
     static public func getCurrentAppVersion() -> String {
@@ -80,6 +80,27 @@ public class AppHelper {
                 }
             }
         }
+    }
+    
+    /** Returns `true` if it has been longer than the time entered, or if it is the first time running. Only returns `false` if user has run the app within the last `hasItBeen` amount of time.
+     
+     Tips:
+     - 60 secs per minute
+     - 3600 secs per hour
+     - 86400 secs per day
+ */
+    static public func timeSinceLastRun(hasItBeen: TimeInterval, completion: ((Bool) -> Void)) {
+        let now = Date().timeIntervalSince1970
+        if let saved = userDefaults.value(forKey: lastDateRunKey) as? TimeInterval {
+            if now - saved > hasItBeen {
+                completion(true)
+            } else {
+                completion(false)
+            }
+        } else {
+            completion(true)
+        }
+        userDefaults.setValue(now, forKey: lastDateRunKey)
     }
     
 }
