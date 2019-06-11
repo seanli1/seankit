@@ -45,4 +45,66 @@ public extension UIView {
             })
         })
     }
+    
+    /// Add a gradient layer to this view. By default, goes diagonally across the entire view.
+    func setBackgroundGradient(_ colorOne: UIColor, _ colorTwo: UIColor, _ direction: GradientDirection) {
+        let gradLayer = CAGradientLayer()
+        gradLayer.frame = bounds
+        // start, end
+        gradLayer.colors = [colorOne.cgColor, colorTwo.cgColor]
+//        gradLayer.locations = [0.0, 1.0]
+        
+        
+        var startPoint: CGPoint!
+        var endPoint: CGPoint!
+        switch direction {
+        case .bottomLeftToTopRight:
+            startPoint = CGPoint(x: 0, y: 1)
+            endPoint = CGPoint(x: 1, y: 0)
+            
+        case .bottomRightToTopLeft:
+            startPoint = CGPoint(x: 1, y: 1)
+            endPoint = CGPoint(x: 0, y: 0)
+            
+        case .topLeftToBottomRight:
+            startPoint = CGPoint(x: 0, y: 0)
+            endPoint = CGPoint(x: 1, y: 1)
+            
+        case .topRightToBottomLeft:
+            startPoint = CGPoint(x: 1, y: 0)
+            endPoint = CGPoint(x: 0, y: 1)
+            
+        case .leftToRight:
+            startPoint = CGPoint(x: 0, y: 0.5)
+            endPoint = CGPoint(x: 1, y: 0.5)
+            
+        case .rightToLeft:
+            startPoint = CGPoint(x: 1, y: 0.5)
+            endPoint = CGPoint(x: 0, y: 0.5)
+            
+        case .topToBottom:
+            startPoint = CGPoint(x: 0.5, y: 0)
+            endPoint = CGPoint(x: 0.5, y: 1)
+            
+        case .bottomToTop:
+            startPoint = CGPoint(x: 0.5, y: 1)
+            endPoint = CGPoint(x: 0.5, y: 0)
+        }
+        
+        gradLayer.startPoint = startPoint
+        gradLayer.endPoint = endPoint
+        layer.insertSublayer(gradLayer, at: 0)
+    }
+    
+    enum GradientDirection {
+        // going clockwise
+        case topLeftToBottomRight
+        case topToBottom
+        case topRightToBottomLeft
+        case rightToLeft
+        case bottomRightToTopLeft
+        case bottomToTop
+        case bottomLeftToTopRight
+        case leftToRight
+    }
 }
