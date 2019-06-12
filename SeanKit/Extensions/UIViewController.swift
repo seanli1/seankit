@@ -31,4 +31,11 @@ public extension UIViewController {
         }
     }
     
+    /// Present an alert that has an Ok button.
+    func presentOkAlert(title: String?, message: String?, style: UIAlertController.Style, okPressedAction: ((UIAlertAction) -> Void)?) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: style)
+        alert.addOk(handler: completion)
+        present(alert, animated: true, completion: nil)
+    }
+    
 }
