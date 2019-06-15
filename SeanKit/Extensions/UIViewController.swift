@@ -22,7 +22,7 @@ public extension UIViewController {
             present(mailController, animated: true, completion: nil)
         } else {
             if show {
-                let alert = UIAlertController(title: "Can't send email!", message: "This device is not configured to send email.", preferredStyle: .alert)
+                let alert = UIAlertController(title: "Can't Send Email", message: "This device is not configured to send email.", preferredStyle: .alert)
                 alert.addAction(title: "Ok", style: .default, handler: nil)
                 self.present(alert, animated: true, completion: nil)
             } else {
@@ -34,7 +34,7 @@ public extension UIViewController {
     /// Present an alert that has an Ok button.
     func presentOkAlert(title: String?, message: String?, style: UIAlertController.Style, okPressedAction: ((UIAlertAction) -> Void)?) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: style)
-        alert.addOk(handler: completion)
+        alert.addOk(handler: okPressedAction)
         present(alert, animated: true, completion: nil)
     }
     
