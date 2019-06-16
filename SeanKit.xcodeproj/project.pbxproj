@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B40DC71C22B6DD970013C1C4 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DC71B22B6DD970013C1C4 /* UITextView.swift */; };
 		B4439A862263CDCA00630663 /* SeanKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B4439A842263CDCA00630663 /* SeanKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4439A8D2263D2AD00630663 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439A8C2263D2AD00630663 /* UIView.swift */; };
 		B4439A992263D6F900630663 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439A982263D6F900630663 /* UIImage.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B40DC71B22B6DD970013C1C4 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
 		B4439A812263CDCA00630663 /* SeanKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SeanKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4439A842263CDCA00630663 /* SeanKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeanKit.h; sourceTree = "<group>"; };
 		B4439A852263CDCA00630663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				B449627D2286A0F700845574 /* UITableView.swift */,
 				B4A37CA022A63F6700972488 /* UIAlertController.swift */,
 				B4A37CA222A6441200972488 /* UIViewController.swift */,
+				B40DC71B22B6DD970013C1C4 /* UITextView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				B4439A8D2263D2AD00630663 /* UIView.swift in Sources */,
 				B4538A112266CD0700B14142 /* Vibrate.swift in Sources */,
 				B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */,
+				B40DC71C22B6DD970013C1C4 /* UITextView.swift in Sources */,
 				B4439A9F2263D85100630663 /* UILabel.swift in Sources */,
 				B4439AB72263E48E00630663 /* BasicScrollingViewController.swift in Sources */,
 				B4A37CA122A63F6700972488 /* UIAlertController.swift in Sources */,
