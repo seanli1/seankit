@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B40DC71C22B6DD970013C1C4 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DC71B22B6DD970013C1C4 /* UITextView.swift */; };
+		B40DC71E22B6EB4C0013C1C4 /* VerticallyAlignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DC71D22B6EB4C0013C1C4 /* VerticallyAlignableLabel.swift */; };
 		B4439A862263CDCA00630663 /* SeanKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B4439A842263CDCA00630663 /* SeanKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4439A8D2263D2AD00630663 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439A8C2263D2AD00630663 /* UIView.swift */; };
 		B4439A992263D6F900630663 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439A982263D6F900630663 /* UIImage.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		B40DC71B22B6DD970013C1C4 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
+		B40DC71D22B6EB4C0013C1C4 /* VerticallyAlignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticallyAlignableLabel.swift; sourceTree = "<group>"; };
 		B4439A812263CDCA00630663 /* SeanKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SeanKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4439A842263CDCA00630663 /* SeanKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeanKit.h; sourceTree = "<group>"; };
 		B4439A852263CDCA00630663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				B4439AB62263E48E00630663 /* BasicScrollingViewController.swift */,
+				B40DC71D22B6EB4C0013C1C4 /* VerticallyAlignableLabel.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */,
 				B40DC71C22B6DD970013C1C4 /* UITextView.swift in Sources */,
 				B4439A9F2263D85100630663 /* UILabel.swift in Sources */,
+				B40DC71E22B6EB4C0013C1C4 /* VerticallyAlignableLabel.swift in Sources */,
 				B4439AB72263E48E00630663 /* BasicScrollingViewController.swift in Sources */,
 				B4A37CA122A63F6700972488 /* UIAlertController.swift in Sources */,
 				B4BB00BD22A5F8BE00F607DE /* DispatchGroup.swift in Sources */,
