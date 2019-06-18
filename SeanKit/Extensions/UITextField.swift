@@ -1,14 +1,15 @@
 //
-//  UITextView.swift
+//  UITextField.swift
 //  SeanKit
 //
-//  Created by Sean Li on 6/16/19.
+//  Created by Sean Li on 6/17/19.
 //  Copyright © 2019 86 Houses LLC. All rights reserved.
 //
 
 import UIKit
 
-public extension UITextView {
+
+public extension UITextField {
     
     /// Add a toolbar to the keyboard with a `Done` button on the right side.
     func addDoneButton() {

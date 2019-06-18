@@ -36,6 +36,7 @@
 		B4B76043226A93AB00A489FC /* getDocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B76042226A93AB00A489FC /* getDocumentsDirectory.swift */; };
 		B4BB00BD22A5F8BE00F607DE /* DispatchGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BB00BC22A5F8BE00F607DE /* DispatchGroup.swift */; };
 		B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C91BC72280E78A00618A33 /* UIScrollView.swift */; };
+		B4EFAA9D22B888AF00450722 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EFAA9C22B888AF00450722 /* UITextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		B4B76042226A93AB00A489FC /* getDocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getDocumentsDirectory.swift; sourceTree = "<group>"; };
 		B4BB00BC22A5F8BE00F607DE /* DispatchGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroup.swift; sourceTree = "<group>"; };
 		B4C91BC72280E78A00618A33 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
+		B4EFAA9C22B888AF00450722 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				B4A37CA022A63F6700972488 /* UIAlertController.swift */,
 				B4A37CA222A6441200972488 /* UIViewController.swift */,
 				B40DC71B22B6DD970013C1C4 /* UITextView.swift */,
+				B4EFAA9C22B888AF00450722 /* UITextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				B4439AA62263DA7700630663 /* AppHelper.swift in Sources */,
 				B4439ABB2263E6A100630663 /* String.swift in Sources */,
+				B4EFAA9D22B888AF00450722 /* UITextField.swift in Sources */,
 				B4439AF62263F4F000630663 /* presentDisclaimer.swift in Sources */,
 				B4439AB52263E39A00630663 /* Array.swift in Sources */,
 				B4439A8D2263D2AD00630663 /* UIView.swift in Sources */,
