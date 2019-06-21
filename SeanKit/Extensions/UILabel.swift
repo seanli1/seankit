@@ -22,4 +22,9 @@ public extension UILabel {
         return labelTextSize.height > bounds.size.height
     }
     
+    
+    var isBlank: Bool {
+        return self.text == nil || self.text?.count == 0 || self.text?.replacingOccurrences(of: "\n", with: "").count == 0 || self.text?.replacingOccurrences(of: " ", with: "").count == 0
+    }
+    
 }

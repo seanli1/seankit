@@ -23,4 +23,9 @@ public extension UITextView {
         resignFirstResponder()
     }
     
+    
+    var isBlank: Bool {
+        return self.text == nil || self.text?.count == 0 || self.text?.replacingOccurrences(of: "\n", with: "").count == 0 || self.text?.replacingOccurrences(of: " ", with: "").count == 0
+    }
+    
 }
