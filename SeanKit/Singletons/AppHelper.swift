@@ -18,6 +18,15 @@ public class AppHelper {
     static private let versionListKey = "versionListKey"
     static private let lastDateRunKey = "lastDateRunKey"
     
+    
+    
+    /// Generic initializer for every app. Simply put at top of `AppDelegate` `didFinishLaunchingWithOptions`, and it will run what's needed to maintain the app. Good to have this implemented since first release.
+    static public func initialize() {
+        updateVersionList()
+    }
+    
+    
+    
     /// Returns the currently running app version.
     static public func getCurrentAppVersion() -> String {
         let dictionary = Bundle.main.infoDictionary!
@@ -26,8 +35,8 @@ public class AppHelper {
         return "\(version)b\(build)"
     }
     
-    /// Update the version list. Good to have this implemented since first release.
-    static public func updateVersionList() -> [String] {
+    /// Update the version list stored. Good to have since first release.
+    static private func updateVersionList() -> [String] {
         var newArray: [String]!
         if let stored = userDefaults.value(forKey: versionListKey) as? [String] {
             newArray = stored
