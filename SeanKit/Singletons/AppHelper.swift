@@ -22,7 +22,7 @@ public class AppHelper {
     
     /// Generic initializer for every app. Simply put at top of `AppDelegate` `didFinishLaunchingWithOptions`, and it will run what's needed to maintain the app. Good to have this implemented since first release.
     static public func initialize() {
-        updateVersionList()
+        let _ = updateVersionList()
     }
     
     
