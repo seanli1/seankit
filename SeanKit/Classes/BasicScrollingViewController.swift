@@ -18,7 +18,7 @@ open class BasicScrollingViewController: UIViewController {
     public let messageTextView: UITextView = {
         let tv = UITextView()
         tv.isEditable = false
-        tv.isSelectable = false
+        tv.isSelectable = true
         tv.isScrollEnabled = false
         tv.textAlignment = .center
         tv.font = UIFont.systemFont(ofSize: 18, weight: .light)
