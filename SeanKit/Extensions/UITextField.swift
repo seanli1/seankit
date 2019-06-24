@@ -17,6 +17,9 @@ public extension UITextField {
         let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
         toolbar.barStyle = style
+        if style == .black || style == .blackTranslucent || style == .blackOpaque {
+            toolbar.tintColor = UIColor.white
+        }
         toolbar.items = [space, doneButton]
         inputAccessoryView = toolbar
     }
