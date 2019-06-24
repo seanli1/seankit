@@ -11,10 +11,11 @@ import UIKit
 public extension UITextView {
     
     /// Add a toolbar to the keyboard with a `Done` button on the right side.
-    func addDoneButton() {
+    func addDoneButton(_ style: UIBarStyle = .default) {
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonPressed))
         let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
+        toolbar.barStyle = style
         toolbar.items = [space, doneButton]
         inputAccessoryView = toolbar
     }

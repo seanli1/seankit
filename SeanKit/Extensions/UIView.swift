@@ -46,13 +46,12 @@ public extension UIView {
         })
     }
     
-    /// Add a gradient layer to this view. By default, goes diagonally across the entire view.
-    func setBackgroundGradient(_ colorOne: UIColor, _ colorTwo: UIColor, _ direction: GradientDirection) {
+    /// Add a gradient layer to this view. Because this sets a frame, it must be called after view is in its final position. Also, `zPosition` is set to `-1` by default.
+    func setBackgroundGradient(_ colorOne: UIColor, _ colorTwo: UIColor, _ direction: GradientDirection, _ zPosition: CGFloat = -1) {
         let gradLayer = CAGradientLayer()
         gradLayer.frame = bounds
         // start, end
         gradLayer.colors = [colorOne.cgColor, colorTwo.cgColor]
-//        gradLayer.locations = [0.0, 1.0]
         
         
         var startPoint: CGPoint!
@@ -93,6 +92,7 @@ public extension UIView {
         
         gradLayer.startPoint = startPoint
         gradLayer.endPoint = endPoint
+        gradLayer.zPosition = zPosition
         layer.insertSublayer(gradLayer, at: 0)
     }
     
