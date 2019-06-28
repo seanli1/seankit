@@ -15,18 +15,49 @@ public extension UIScrollView {
         setContentOffset(desiredOffset, animated: true)
     }
     
+    
+    enum WidthMode {
+        /// Use this if scroll view already exists, and you are just updating its height.
+        case inferFromCurrentState
+        
+        /// Use this to set the height constraint early in the view's existence. Enter the goal width for the view.
+        case predeterminedWidth(CGFloat)
+        
+        /// Use this to set the height constraint early in the view's existence. Enter the padding from screen edges. This is the same as using `predeterminedWidth` and setting it to `UIScreen.main.bounds.width - padding`.
+        case screenWidthMinusPadding(CGFloat)
+    }
+    
+    
     /**
      Update a text view's height. Must have already created a height constraint that is a constant because this adjusts it.
+     
+     If setting for the first time, it's good to include a `predeterminedWidth`
      
      Insert this wherever needed (viewWillAppear, textViewDidChange, etc.)
      
      Provide `predeterminedWidth` to use that as a hard and reliable reference. If not, it will infer the object's current width. Note that sometimes, the inferred width will be 0.0 if called at the wrong time.
      
      Completion block gives you access to the height that gets determined.
+     
+     Automatically sets the `isScrollEnabled` property to `false`.
      */
-    func updateHeightConstraint(predeterminedWidth: CGFloat?, completion: ((CGFloat)-> Void)?) {
+    func updateHeightConstraint(widthMode: WidthMode, completion: ((CGFloat)-> Void)?) {
         self.isScrollEnabled = false
-        let estimatedSize = self.sizeThatFits(CGSize(width: predeterminedWidth ?? self.frame.width, height: .infinity))
+        
+        var calcWidth: CGFloat
+        
+        switch widthMode {
+        case .inferFromCurrentState:
+            calcWidth = self.frame.width
+            
+        case .predeterminedWidth(let width):
+            calcWidth = width
+            
+        case .screenWidthMinusPadding(let padding):
+            calcWidth = UIScreen.main.bounds.width - padding
+        }
+        
+        let estimatedSize = self.sizeThatFits(CGSize(width: calcWidth, height: .infinity))
         let height = estimatedSize.height
         for constraint in self.constraints {
             if constraint.firstAttribute == .height {
