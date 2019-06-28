@@ -29,19 +29,13 @@ public extension UIScrollView {
     
     
     /**
-     Update a text view's height. Must have already created a height constraint that is a constant because this adjusts it.
-     
-     If setting for the first time, it's good to include a `predeterminedWidth`
-     
-     Insert this wherever needed (viewWillAppear, textViewDidChange, etc.)
-     
-     Provide `predeterminedWidth` to use that as a hard and reliable reference. If not, it will infer the object's current width. Note that sometimes, the inferred width will be 0.0 if called at the wrong time.
+     Update a text view's height constraint.
      
      Completion block gives you access to the height that gets determined.
      
      Automatically sets the `isScrollEnabled` property to `false`.
      */
-    func updateHeightConstraint(widthMode: WidthMode, completion: ((CGFloat)-> Void)?) {
+    func updateHeightConstraint(widthMode: WidthMode, completion: ((CGFloat?)-> Void)?) {
         self.isScrollEnabled = false
         
         var calcWidth: CGFloat
@@ -62,9 +56,9 @@ public extension UIScrollView {
         for constraint in self.constraints {
             if constraint.firstAttribute == .height {
                 constraint.constant = height
-                completion?(height)
             }
         }
+        completion?(height)
     }
     
 }
