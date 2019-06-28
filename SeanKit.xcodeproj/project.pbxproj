@@ -26,6 +26,7 @@
 		B4439AF62263F4F000630663 /* presentDisclaimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AF52263F4F000630663 /* presentDisclaimer.swift */; };
 		B4439B3D2264166600630663 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439B3C2264166600630663 /* UIImageView.swift */; };
 		B449627E2286A0F700845574 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449627D2286A0F700845574 /* UITableView.swift */; };
+		B451991722C6DAD700EA3353 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B451991622C6DAD700EA3353 /* UITabBarController.swift */; };
 		B4538A112266CD0700B14142 /* Vibrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB22263E23500630663 /* Vibrate.swift */; };
 		B4727EB1227625FC00743241 /* seanonthebeach.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B4727EB0227625FC00743241 /* seanonthebeach.jpeg */; };
 		B4727EB32276260900743241 /* ring.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4727EB22276260900743241 /* ring.wav */; };
@@ -62,6 +63,7 @@
 		B4439AF52263F4F000630663 /* presentDisclaimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presentDisclaimer.swift; sourceTree = "<group>"; };
 		B4439B3C2264166600630663 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		B449627D2286A0F700845574 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		B451991622C6DAD700EA3353 /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
 		B4727EB0227625FC00743241 /* seanonthebeach.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seanonthebeach.jpeg; sourceTree = "<group>"; };
 		B4727EB22276260900743241 /* ring.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ring.wav; sourceTree = "<group>"; };
 		B47BEF8122659E260075CEE3 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				B4A37CA222A6441200972488 /* UIViewController.swift */,
 				B40DC71B22B6DD970013C1C4 /* UITextView.swift */,
 				B4EFAA9C22B888AF00450722 /* UITextField.swift */,
+				B451991622C6DAD700EA3353 /* UITabBarController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				B4439AB92263E61E00630663 /* QRGenerator.swift in Sources */,
 				B4439ACC2263ED8300630663 /* dynamicActionSheet.swift in Sources */,
 				B4439AAD2263E12300630663 /* QuickAlert.swift in Sources */,
+				B451991722C6DAD700EA3353 /* UITabBarController.swift in Sources */,
 				B4439A992263D6F900630663 /* UIImage.swift in Sources */,
 				B4439AB12263E1BB00630663 /* Tester.swift in Sources */,
 				B4439AAB2263E0B100630663 /* topController.swift in Sources */,

@@ -35,7 +35,7 @@ public extension UIScrollView {
      
      Automatically sets the `isScrollEnabled` property to `false`.
      */
-    func updateHeightConstraint(widthMode: WidthMode, completion: ((CGFloat?)-> Void)?) {
+    func updateHeightConstraint(_ widthMode: WidthMode, completion: ((CGFloat?)-> Void)?) {
         self.isScrollEnabled = false
         
         var calcWidth: CGFloat
