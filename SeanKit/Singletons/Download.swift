@@ -9,6 +9,7 @@
 import Foundation
 
 public typealias AddressString = String
+public typealias SuccessBool = Bool
 
 /// Singleton for convenient downloading functions in SeanKit.
 public class Download {
@@ -77,7 +78,7 @@ public class Download {
      - parameter executeOnFirstOnly: Set to `true` to run the completion block after finding the first valid result. Set to `false` to run the completion block upon finding every valid result.
      - returns: The `address` used to obtain that particular `data` object.
      */
-    static public func dataFromAddresses(_ addresses: [String], executeOnFirstOnly: Bool, completion: @escaping (_ address: AddressString, _ data: Data) -> Void) {
+    static public func dataFromAddresses(_ addresses: [String], executeOnFirstOnly: Bool, completion: @escaping (_ success: SuccessBool, _ address: AddressString, _ data: Data) -> Void) {
         var urls = [URL]()
         for address in addresses {
             if URL(string: address) != nil {
@@ -90,23 +91,29 @@ public class Download {
             return !foundFirstResult || !executeOnFirstOnly
         }
         
-        for url in urls {
+        var errorCounter = 0
+        
+        for x in 0 ..< urls.count {
             
             DispatchQueue.global(qos: .utility).async {
                 do {
-                    let data = try Data(contentsOf: url)
-                    let address = url.absoluteString
+                    let data = try Data(contentsOf: urls[x])
+                    let address = urls[x].absoluteString
                     if keepLooking {
                         foundFirstResult = true
                         DispatchQueue.main.async {
-                            completion(address, data)
+                            completion(true, address, data)
                         }
                     }
                 } catch {
                     if keepLooking {
                         DispatchQueue.main.async {
-                            print("Bad URL: \(url.absoluteString)")
-                            print("May need to check spelling of this address.")
+                            errorCounter += 1
+                            print("Bad URL: \(urls[x].absoluteString)")
+                            print("May need to check internet connection or spelling of this address.")
+                            if errorCounter == urls.count {
+                                completion(false, "", Data())
+                            }
                         }
                     }
                 }
