@@ -162,8 +162,9 @@
 		B48CF259226CEAB900C3282C /* Singletons */ = {
 			isa = PBXGroup;
 			children = (
-				B49C9625229715C200A08B69 /* Specialized */,
 				B4439AB22263E23500630663 /* Vibrate.swift */,
+				B4439AB82263E61E00630663 /* QRGenerator.swift */,
+				B4439ABD2263E91200630663 /* EasterEgg.swift */,
 				B4439AAC2263E12300630663 /* QuickAlert.swift */,
 				B47BEF8122659E260075CEE3 /* Download.swift */,
 				B4439AB02263E1BB00630663 /* Tester.swift */,
@@ -171,15 +172,6 @@
 				B49C96282297235100A08B69 /* Manipulate.swift */,
 			);
 			path = Singletons;
-			sourceTree = "<group>";
-		};
-		B49C9625229715C200A08B69 /* Specialized */ = {
-			isa = PBXGroup;
-			children = (
-				B4439AB82263E61E00630663 /* QRGenerator.swift */,
-				B4439ABD2263E91200630663 /* EasterEgg.swift */,
-			);
-			path = Specialized;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -23,7 +23,7 @@ public extension UIViewController {
         } else {
             if show {
                 let alert = UIAlertController(title: "Can't Send Email", message: "This device is not configured to send email.", preferredStyle: .alert)
-                alert.addAction(title: "Ok", style: .default, handler: nil)
+                alert.addAction("Ok", .default, handler: nil)
                 self.present(alert, animated: true, completion: nil)
             } else {
                 print("This device is not configured to send email.")
@@ -31,8 +31,8 @@ public extension UIViewController {
         }
     }
     
-    /// Present an alert that has an Ok button.
-    func presentOkAlert(title: String?, message: String?, style: UIAlertController.Style, okPressedAction: ((UIAlertAction) -> Void)?) {
+    /// Present an alert with an "Ok" button only. Set `customButtonText` to text for the button, otherwise set to `nil` to use default "Ok" text.
+    func presentOkAlert(_ title: String?, message: String?, _ style: UIAlertController.Style = .alert, _ customButtonText: String? = nil, okPressedAction: ((UIAlertAction) -> Void)? = nil) {
         var alert: UIAlertController
         switch style {
         case .actionSheet:
@@ -40,7 +40,7 @@ public extension UIViewController {
         default:
             alert = UIAlertController(title: title, message: message, preferredStyle: style)
         }
-        alert.addOk(handler: okPressedAction)
+        alert.addOk(customButtonText, handler: okPressedAction)
         present(alert, animated: true, completion: nil)
     }
     

@@ -10,19 +10,19 @@ import UIKit
 
 public extension UIAlertController {
     
-    /// Shortcut to adding a UIAlertAction with `.cancel` style.
-    func addCancel(title: String?, handler: ((UIAlertAction) -> Void)?) {
-        self.addAction(title: title, style: .cancel, handler: handler)
+    /// Shortcut to adding a "Cancel" button. Enter custom text or set to `nil` to use default text.
+    func addCancel(_ customText: String? = nil, handler: ((UIAlertAction) -> Void)? = nil) {
+        self.addAction(customText ?? "Cancel", .cancel, handler: handler)
     }
     
     /// Shortcut to adding a UIAlertAction.
-    func addAction(title: String?, style: UIAlertAction.Style, handler:((UIAlertAction) -> Void)?) {
+    func addAction(_ title: String, _ style: UIAlertAction.Style, handler: ((UIAlertAction) -> Void)?) {
         self.addAction(UIAlertAction(title: title, style: style, handler: handler))
     }
     
-    /// Shortcut to adding a default "Ok" UIAlertAction button.
-    func addOk(handler: ((UIAlertAction) -> Void)?) {
-        self.addAction(title: "Ok", style: .default, handler: handler)
+    /// Shortcut to adding an "Ok" button. Enter custom text or set to `nil` to use default text.
+    func addOk(_ customText: String? = nil, handler: ((UIAlertAction) -> Void)? = nil) {
+        self.addAction(customText ?? "Ok", .default, handler: handler)
     }
     
 }
