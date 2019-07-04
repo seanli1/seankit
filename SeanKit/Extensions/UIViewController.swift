@@ -19,12 +19,12 @@ public extension UIViewController {
             mailController.setSubject(subject ?? "")
             mailController.setMessageBody(body ?? "", isHTML: isHtml)
             mailController.mailComposeDelegate = delegate
-            present(mailController, animated: true, completion: nil)
+            present(mailController)
         } else {
             if show {
                 let alert = UIAlertController(title: "Can't Send Email", message: "This device is not configured to send email.", preferredStyle: .alert)
                 alert.addAction("Ok", .default, handler: nil)
-                self.present(alert, animated: true, completion: nil)
+                self.present(alert)
             } else {
                 print("This device is not configured to send email.")
             }
@@ -41,7 +41,12 @@ public extension UIViewController {
             alert = UIAlertController(title: title, message: message, preferredStyle: style)
         }
         alert.addOk(customButtonText, handler: okPressedAction)
-        present(alert, animated: true, completion: nil)
+        present(alert)
+    }
+    
+    /// Present a view controller animated with no completion by default.
+    func present(_ viewControllerToPresent: UIViewController, completion: (()->())? = nil) {
+        present(viewControllerToPresent, animated: true, completion: completion)
     }
     
 }

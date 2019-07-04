@@ -28,7 +28,7 @@ public extension UIViewController {
         text.addAttribute(.font, value: UIFont.systemFont(ofSize: 22, weight: .medium), range: NSRange(location: 0, length: title?.count ?? 0))
         destVC.textView.attributedText = text
         
-        present(destVC, animated: true, completion: nil)
+        present(destVC)
     }
 }
 
