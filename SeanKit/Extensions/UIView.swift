@@ -48,16 +48,16 @@ public extension UIView {
     
     
     /// Add a gradient layer to this view. Because this sets a frame, it must be called after view is in its final position. Also, `zPosition` is set to `-1` by default, and `coverWholeScreen` is set to `true` (otherwise if the view ever changed its bounds, the layer would remain unchanged).
-    func setBackgroundGradient(_ colorOne: UIColor, _ colorTwo: UIColor, _ direction: GradientDirection, _ zPosition: CGFloat = -1, coverWholeScreen: Bool = true) {
+    func setBackgroundGradient(_ bgGradPattern: BgGradPattern, _ zPosition: CGFloat = -1, coverWholeScreen: Bool = true) {
         let gradLayer = CAGradientLayer()
         gradLayer.frame = coverWholeScreen ? UIScreen.main.bounds : bounds
         // start, end
-        gradLayer.colors = [colorOne.cgColor, colorTwo.cgColor]
+        gradLayer.colors = [bgGradPattern.colorOne.cgColor, bgGradPattern.colorTwo.cgColor]
         
         
         var startPoint: CGPoint!
         var endPoint: CGPoint!
-        switch direction {
+        switch bgGradPattern.gradDirection {
         case .bottomLeftToTopRight:
             startPoint = CGPoint(x: 0, y: 1)
             endPoint = CGPoint(x: 1, y: 0)
@@ -108,4 +108,19 @@ public extension UIView {
         case bottomLeftToTopRight
         case leftToRight
     }
+
+}
+
+/// Struct used to pass color pattern more conveniently.
+public struct BgGradPattern {
+    
+    public init(_ colorOne: UIColor, _ colorTwo: UIColor, _ gradDirection: UIView.GradientDirection) {
+        self.colorOne = colorOne
+        self.colorTwo = colorTwo
+        self.gradDirection = gradDirection
+    }
+    
+    let colorOne: UIColor
+    let colorTwo: UIColor
+    let gradDirection: UIView.GradientDirection
 }
