@@ -14,13 +14,23 @@ public class Vibrate {
     
     private init() {}
     
-    /// Vibrates with specific intensity. If entered nil, plays a default system vibrate.
-    public static func withIntensity(_ intensity: UIImpactFeedbackGenerator.FeedbackStyle?) {
-        if let intensity = intensity {
-            let generator = UIImpactFeedbackGenerator(style: intensity)
-            generator.impactOccurred()
-        } else {
-            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
-        }
+    /// Standard long buzz.
+    public static func standard() {
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+    }
+    
+    /// Used to provide the "touch counterpart" to UI changes for look and feel.
+    public static func touch(_ intensity: UIImpactFeedbackGenerator.FeedbackStyle) {
+        UIImpactFeedbackGenerator(style: intensity).impactOccurred()
+    }
+    
+    /// Used for selection haptic feedback (i.e. `UIPickerView` selection changes).
+    public static func select() {
+        UISelectionFeedbackGenerator().selectionChanged()
+    }
+    
+    /// Used to notify the user of certain events occurring.
+    public static func notify(_ type: UINotificationFeedbackGenerator.FeedbackType) {
+        UINotificationFeedbackGenerator().notificationOccurred(type)
     }
 }
