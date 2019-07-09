@@ -34,6 +34,7 @@
 		B49C96292297235100A08B69 /* Manipulate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49C96282297235100A08B69 /* Manipulate.swift */; };
 		B4A37CA122A63F6700972488 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A37CA022A63F6700972488 /* UIAlertController.swift */; };
 		B4A37CA322A6441200972488 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A37CA222A6441200972488 /* UIViewController.swift */; };
+		B4AA859222D4AE7300BA4B28 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AA859122D4AE7300BA4B28 /* UIStackView.swift */; };
 		B4B76043226A93AB00A489FC /* getDocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B76042226A93AB00A489FC /* getDocumentsDirectory.swift */; };
 		B4BB00BD22A5F8BE00F607DE /* DispatchGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BB00BC22A5F8BE00F607DE /* DispatchGroup.swift */; };
 		B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C91BC72280E78A00618A33 /* UIScrollView.swift */; };
@@ -70,6 +71,7 @@
 		B49C96282297235100A08B69 /* Manipulate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manipulate.swift; sourceTree = "<group>"; };
 		B4A37CA022A63F6700972488 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		B4A37CA222A6441200972488 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		B4AA859122D4AE7300BA4B28 /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		B4B76042226A93AB00A489FC /* getDocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getDocumentsDirectory.swift; sourceTree = "<group>"; };
 		B4BB00BC22A5F8BE00F607DE /* DispatchGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroup.swift; sourceTree = "<group>"; };
 		B4C91BC72280E78A00618A33 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				B40DC71B22B6DD970013C1C4 /* UITextView.swift */,
 				B4EFAA9C22B888AF00450722 /* UITextField.swift */,
 				B451991622C6DAD700EA3353 /* UITabBarController.swift */,
+				B4AA859122D4AE7300BA4B28 /* UIStackView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				B4439AF62263F4F000630663 /* presentDisclaimer.swift in Sources */,
 				B4439AB52263E39A00630663 /* Array.swift in Sources */,
 				B4439A8D2263D2AD00630663 /* UIView.swift in Sources */,
+				B4AA859222D4AE7300BA4B28 /* UIStackView.swift in Sources */,
 				B4538A112266CD0700B14142 /* Vibrate.swift in Sources */,
 				B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */,
 				B40DC71C22B6DD970013C1C4 /* UITextView.swift in Sources */,

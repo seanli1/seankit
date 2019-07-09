@@ -10,6 +10,10 @@ import Foundation
 
 public extension UIView {
     
+    func addSubviews(_ views: [UIView]) {
+        views.forEach( { addSubview($0) } )
+    }
+    
     /// Attempt to get the parent view controller of any UIView subclass.
     var parentViewController: UIViewController? {
         var parentResponder: UIResponder? = self
