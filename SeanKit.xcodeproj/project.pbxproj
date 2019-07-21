@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B40DC71C22B6DD970013C1C4 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DC71B22B6DD970013C1C4 /* UITextView.swift */; };
 		B40DC71E22B6EB4C0013C1C4 /* VerticallyAlignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DC71D22B6EB4C0013C1C4 /* VerticallyAlignableLabel.swift */; };
+		B424DA5022DBFEA100EA0C3B /* print.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424DA4F22DBFEA100EA0C3B /* print.swift */; };
 		B4439A862263CDCA00630663 /* SeanKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B4439A842263CDCA00630663 /* SeanKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4439A8D2263D2AD00630663 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439A8C2263D2AD00630663 /* UIView.swift */; };
 		B4439A992263D6F900630663 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439A982263D6F900630663 /* UIImage.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		B40DC71B22B6DD970013C1C4 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
 		B40DC71D22B6EB4C0013C1C4 /* VerticallyAlignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticallyAlignableLabel.swift; sourceTree = "<group>"; };
+		B424DA4F22DBFEA100EA0C3B /* print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = print.swift; sourceTree = "<group>"; };
 		B4439A812263CDCA00630663 /* SeanKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SeanKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4439A842263CDCA00630663 /* SeanKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeanKit.h; sourceTree = "<group>"; };
 		B4439A852263CDCA00630663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				B4439AAA2263E0B100630663 /* topController.swift */,
 				B4439AF52263F4F000630663 /* presentDisclaimer.swift */,
 				B4B76042226A93AB00A489FC /* getDocumentsDirectory.swift */,
+				B424DA4F22DBFEA100EA0C3B /* print.swift */,
 			);
 			path = "Convenience Functions";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4439AA62263DA7700630663 /* AppHelper.swift in Sources */,
+				B424DA5022DBFEA100EA0C3B /* print.swift in Sources */,
 				B4439ABB2263E6A100630663 /* String.swift in Sources */,
 				B4EFAA9D22B888AF00450722 /* UITextField.swift in Sources */,
 				B4439AF62263F4F000630663 /* presentDisclaimer.swift in Sources */,

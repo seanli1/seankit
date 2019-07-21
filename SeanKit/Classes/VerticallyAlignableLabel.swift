@@ -8,7 +8,7 @@
 
 import UIKit
 
-
+/// Simply allows you to set `contentMode` to `.bottom` or `.top`.
 public class VerticallyAlignableLabel: UILabel {
     
     public override func drawText(in rect: CGRect) {
