@@ -32,6 +32,7 @@
 		B4538A112266CD0700B14142 /* SKVibrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB22263E23500630663 /* SKVibrate.swift */; };
 		B4560D5C2471A9A6002824EC /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4560D5B2471A9A6002824EC /* UIScreen.swift */; };
 		B4560D5F2471AF69002824EC /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4560D5E2471AF69002824EC /* MailView.swift */; };
+		B4560D6B2471DA5B002824EC /* SKReducedCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4560D6A2471DA5B002824EC /* SKReducedCircle.swift */; };
 		B4727EB1227625FC00743241 /* seanonthebeach.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B4727EB0227625FC00743241 /* seanonthebeach.jpeg */; };
 		B4727EB32276260900743241 /* ring.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4727EB22276260900743241 /* ring.wav */; };
 		B47BEF8222659E260075CEE3 /* SKDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47BEF8122659E260075CEE3 /* SKDownload.swift */; };
@@ -73,6 +74,7 @@
 		B451B0E02471A30200980571 /* SKFontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKFontManager.swift; sourceTree = "<group>"; };
 		B4560D5B2471A9A6002824EC /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 		B4560D5E2471AF69002824EC /* MailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		B4560D6A2471DA5B002824EC /* SKReducedCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKReducedCircle.swift; sourceTree = "<group>"; };
 		B4727EB0227625FC00743241 /* seanonthebeach.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seanonthebeach.jpeg; sourceTree = "<group>"; };
 		B4727EB22276260900743241 /* ring.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ring.wav; sourceTree = "<group>"; };
 		B47BEF8122659E260075CEE3 /* SKDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKDownload.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				B48CF259226CEAB900C3282C /* Singletons */,
 				B4439AA92263E07900630663 /* Classes */,
+				B4560D692471DA41002824EC /* Shapes */,
 				B4439A8E2263D2B000630663 /* Extensions */,
 				B4439AAE2263E18B00630663 /* Convenience Functions */,
 				B4560D5A2471A945002824EC /* Other FIles */,
@@ -179,6 +182,14 @@
 				B4727EB22276260900743241 /* ring.wav */,
 			);
 			path = "Other FIles";
+			sourceTree = "<group>";
+		};
+		B4560D692471DA41002824EC /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				B4560D6A2471DA5B002824EC /* SKReducedCircle.swift */,
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 		B48CF259226CEAB900C3282C /* Singletons */ = {
@@ -289,6 +300,7 @@
 				B4439A8D2263D2AD00630663 /* UIView.swift in Sources */,
 				B4560D5C2471A9A6002824EC /* UIScreen.swift in Sources */,
 				B4AA859222D4AE7300BA4B28 /* UIStackView.swift in Sources */,
+				B4560D6B2471DA5B002824EC /* SKReducedCircle.swift in Sources */,
 				B4538A112266CD0700B14142 /* SKVibrate.swift in Sources */,
 				B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */,
 				B40DC71C22B6DD970013C1C4 /* UITextView.swift in Sources */,
