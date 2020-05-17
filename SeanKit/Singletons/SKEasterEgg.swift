@@ -9,7 +9,7 @@
 import Foundation
 import AVFoundation
 
-public class EasterEgg {
+public class SKEasterEgg {
     
     private init() {}
     

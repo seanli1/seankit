@@ -8,31 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		B40DC71C22B6DD970013C1C4 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DC71B22B6DD970013C1C4 /* UITextView.swift */; };
-		B40DC71E22B6EB4C0013C1C4 /* VerticallyAlignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DC71D22B6EB4C0013C1C4 /* VerticallyAlignableLabel.swift */; };
+		B40DC71E22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DC71D22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift */; };
 		B424DA5022DBFEA100EA0C3B /* print.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424DA4F22DBFEA100EA0C3B /* print.swift */; };
 		B4439A862263CDCA00630663 /* SeanKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B4439A842263CDCA00630663 /* SeanKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4439A8D2263D2AD00630663 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439A8C2263D2AD00630663 /* UIView.swift */; };
 		B4439A992263D6F900630663 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439A982263D6F900630663 /* UIImage.swift */; };
 		B4439A9F2263D85100630663 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439A9E2263D85100630663 /* UILabel.swift */; };
-		B4439AA62263DA7700630663 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AA52263DA7700630663 /* AppHelper.swift */; };
+		B4439AA62263DA7700630663 /* SKAppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AA52263DA7700630663 /* SKAppHelper.swift */; };
 		B4439AAB2263E0B100630663 /* topController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AAA2263E0B100630663 /* topController.swift */; };
-		B4439AAD2263E12300630663 /* QuickAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AAC2263E12300630663 /* QuickAlert.swift */; };
-		B4439AB12263E1BB00630663 /* Tester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB02263E1BB00630663 /* Tester.swift */; };
+		B4439AAD2263E12300630663 /* SKQuickAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AAC2263E12300630663 /* SKQuickAlert.swift */; };
+		B4439AB12263E1BB00630663 /* SKTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB02263E1BB00630663 /* SKTester.swift */; };
 		B4439AB52263E39A00630663 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB42263E39A00630663 /* Array.swift */; };
-		B4439AB72263E48E00630663 /* BasicScrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB62263E48E00630663 /* BasicScrollingViewController.swift */; };
-		B4439AB92263E61E00630663 /* QRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB82263E61E00630663 /* QRGenerator.swift */; };
+		B4439AB72263E48E00630663 /* SKBasicScrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB62263E48E00630663 /* SKBasicScrollingViewController.swift */; };
+		B4439AB92263E61E00630663 /* SKQRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB82263E61E00630663 /* SKQRGenerator.swift */; };
 		B4439ABB2263E6A100630663 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439ABA2263E6A100630663 /* String.swift */; };
-		B4439ABE2263E91200630663 /* EasterEgg.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439ABD2263E91200630663 /* EasterEgg.swift */; };
+		B4439ABE2263E91200630663 /* SKEasterEgg.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439ABD2263E91200630663 /* SKEasterEgg.swift */; };
 		B4439ACC2263ED8300630663 /* dynamicActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AA72263DFE800630663 /* dynamicActionSheet.swift */; };
 		B4439AF62263F4F000630663 /* presentDisclaimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AF52263F4F000630663 /* presentDisclaimer.swift */; };
 		B4439B3D2264166600630663 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439B3C2264166600630663 /* UIImageView.swift */; };
 		B449627E2286A0F700845574 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449627D2286A0F700845574 /* UITableView.swift */; };
 		B451991722C6DAD700EA3353 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B451991622C6DAD700EA3353 /* UITabBarController.swift */; };
-		B4538A112266CD0700B14142 /* Vibrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB22263E23500630663 /* Vibrate.swift */; };
+		B451B0E12471A30200980571 /* SKFontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B451B0E02471A30200980571 /* SKFontManager.swift */; };
+		B4538A112266CD0700B14142 /* SKVibrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB22263E23500630663 /* SKVibrate.swift */; };
+		B4560D5C2471A9A6002824EC /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4560D5B2471A9A6002824EC /* UIScreen.swift */; };
+		B4560D5F2471AF69002824EC /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4560D5E2471AF69002824EC /* MailView.swift */; };
 		B4727EB1227625FC00743241 /* seanonthebeach.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B4727EB0227625FC00743241 /* seanonthebeach.jpeg */; };
 		B4727EB32276260900743241 /* ring.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4727EB22276260900743241 /* ring.wav */; };
-		B47BEF8222659E260075CEE3 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47BEF8122659E260075CEE3 /* Download.swift */; };
-		B49C96292297235100A08B69 /* Manipulate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49C96282297235100A08B69 /* Manipulate.swift */; };
+		B47BEF8222659E260075CEE3 /* SKDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47BEF8122659E260075CEE3 /* SKDownload.swift */; };
+		B49C96292297235100A08B69 /* SKManipulate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49C96282297235100A08B69 /* SKManipulate.swift */; };
 		B4A37CA122A63F6700972488 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A37CA022A63F6700972488 /* UIAlertController.swift */; };
 		B4A37CA322A6441200972488 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A37CA222A6441200972488 /* UIViewController.swift */; };
 		B4AA859222D4AE7300BA4B28 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AA859122D4AE7300BA4B28 /* UIStackView.swift */; };
@@ -44,7 +47,7 @@
 
 /* Begin PBXFileReference section */
 		B40DC71B22B6DD970013C1C4 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
-		B40DC71D22B6EB4C0013C1C4 /* VerticallyAlignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticallyAlignableLabel.swift; sourceTree = "<group>"; };
+		B40DC71D22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKVerticallyAlignableLabel.swift; sourceTree = "<group>"; };
 		B424DA4F22DBFEA100EA0C3B /* print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = print.swift; sourceTree = "<group>"; };
 		B4439A812263CDCA00630663 /* SeanKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SeanKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4439A842263CDCA00630663 /* SeanKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeanKit.h; sourceTree = "<group>"; };
@@ -52,25 +55,28 @@
 		B4439A8C2263D2AD00630663 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		B4439A982263D6F900630663 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		B4439A9E2263D85100630663 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
-		B4439AA52263DA7700630663 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
+		B4439AA52263DA7700630663 /* SKAppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKAppHelper.swift; sourceTree = "<group>"; };
 		B4439AA72263DFE800630663 /* dynamicActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dynamicActionSheet.swift; sourceTree = "<group>"; };
 		B4439AAA2263E0B100630663 /* topController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topController.swift; sourceTree = "<group>"; };
-		B4439AAC2263E12300630663 /* QuickAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAlert.swift; sourceTree = "<group>"; };
-		B4439AB02263E1BB00630663 /* Tester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tester.swift; sourceTree = "<group>"; };
-		B4439AB22263E23500630663 /* Vibrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibrate.swift; sourceTree = "<group>"; };
+		B4439AAC2263E12300630663 /* SKQuickAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKQuickAlert.swift; sourceTree = "<group>"; };
+		B4439AB02263E1BB00630663 /* SKTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKTester.swift; sourceTree = "<group>"; };
+		B4439AB22263E23500630663 /* SKVibrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKVibrate.swift; sourceTree = "<group>"; };
 		B4439AB42263E39A00630663 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		B4439AB62263E48E00630663 /* BasicScrollingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicScrollingViewController.swift; sourceTree = "<group>"; };
-		B4439AB82263E61E00630663 /* QRGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGenerator.swift; sourceTree = "<group>"; };
+		B4439AB62263E48E00630663 /* SKBasicScrollingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKBasicScrollingViewController.swift; sourceTree = "<group>"; };
+		B4439AB82263E61E00630663 /* SKQRGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKQRGenerator.swift; sourceTree = "<group>"; };
 		B4439ABA2263E6A100630663 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		B4439ABD2263E91200630663 /* EasterEgg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasterEgg.swift; sourceTree = "<group>"; };
+		B4439ABD2263E91200630663 /* SKEasterEgg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKEasterEgg.swift; sourceTree = "<group>"; };
 		B4439AF52263F4F000630663 /* presentDisclaimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presentDisclaimer.swift; sourceTree = "<group>"; };
 		B4439B3C2264166600630663 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		B449627D2286A0F700845574 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		B451991622C6DAD700EA3353 /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
+		B451B0E02471A30200980571 /* SKFontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKFontManager.swift; sourceTree = "<group>"; };
+		B4560D5B2471A9A6002824EC /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		B4560D5E2471AF69002824EC /* MailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 		B4727EB0227625FC00743241 /* seanonthebeach.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seanonthebeach.jpeg; sourceTree = "<group>"; };
 		B4727EB22276260900743241 /* ring.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ring.wav; sourceTree = "<group>"; };
-		B47BEF8122659E260075CEE3 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
-		B49C96282297235100A08B69 /* Manipulate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manipulate.swift; sourceTree = "<group>"; };
+		B47BEF8122659E260075CEE3 /* SKDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKDownload.swift; sourceTree = "<group>"; };
+		B49C96282297235100A08B69 /* SKManipulate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKManipulate.swift; sourceTree = "<group>"; };
 		B4A37CA022A63F6700972488 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		B4A37CA222A6441200972488 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		B4AA859122D4AE7300BA4B28 /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
@@ -114,10 +120,9 @@
 				B4439AA92263E07900630663 /* Classes */,
 				B4439A8E2263D2B000630663 /* Extensions */,
 				B4439AAE2263E18B00630663 /* Convenience Functions */,
+				B4560D5A2471A945002824EC /* Other FIles */,
 				B4439A842263CDCA00630663 /* SeanKit.h */,
 				B4439A852263CDCA00630663 /* Info.plist */,
-				B4727EB0227625FC00743241 /* seanonthebeach.jpeg */,
-				B4727EB22276260900743241 /* ring.wav */,
 			);
 			path = SeanKit;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 				B4EFAA9C22B888AF00450722 /* UITextField.swift */,
 				B451991622C6DAD700EA3353 /* UITabBarController.swift */,
 				B4AA859122D4AE7300BA4B28 /* UIStackView.swift */,
+				B4560D5B2471A9A6002824EC /* UIScreen.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -147,8 +153,9 @@
 		B4439AA92263E07900630663 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B4439AB62263E48E00630663 /* BasicScrollingViewController.swift */,
-				B40DC71D22B6EB4C0013C1C4 /* VerticallyAlignableLabel.swift */,
+				B4439AB62263E48E00630663 /* SKBasicScrollingViewController.swift */,
+				B40DC71D22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift */,
+				B4560D5E2471AF69002824EC /* MailView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -165,17 +172,27 @@
 			path = "Convenience Functions";
 			sourceTree = "<group>";
 		};
+		B4560D5A2471A945002824EC /* Other FIles */ = {
+			isa = PBXGroup;
+			children = (
+				B4727EB0227625FC00743241 /* seanonthebeach.jpeg */,
+				B4727EB22276260900743241 /* ring.wav */,
+			);
+			path = "Other FIles";
+			sourceTree = "<group>";
+		};
 		B48CF259226CEAB900C3282C /* Singletons */ = {
 			isa = PBXGroup;
 			children = (
-				B4439AB22263E23500630663 /* Vibrate.swift */,
-				B4439AB82263E61E00630663 /* QRGenerator.swift */,
-				B4439ABD2263E91200630663 /* EasterEgg.swift */,
-				B4439AAC2263E12300630663 /* QuickAlert.swift */,
-				B47BEF8122659E260075CEE3 /* Download.swift */,
-				B4439AB02263E1BB00630663 /* Tester.swift */,
-				B4439AA52263DA7700630663 /* AppHelper.swift */,
-				B49C96282297235100A08B69 /* Manipulate.swift */,
+				B451B0E02471A30200980571 /* SKFontManager.swift */,
+				B4439AB22263E23500630663 /* SKVibrate.swift */,
+				B4439AB82263E61E00630663 /* SKQRGenerator.swift */,
+				B4439ABD2263E91200630663 /* SKEasterEgg.swift */,
+				B4439AAC2263E12300630663 /* SKQuickAlert.swift */,
+				B47BEF8122659E260075CEE3 /* SKDownload.swift */,
+				B4439AB02263E1BB00630663 /* SKTester.swift */,
+				B4439AA52263DA7700630663 /* SKAppHelper.swift */,
+				B49C96282297235100A08B69 /* SKManipulate.swift */,
 			);
 			path = Singletons;
 			sourceTree = "<group>";
@@ -233,6 +250,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B4439A772263CDCA00630663;
 			productRefGroup = B4439A822263CDCA00630663 /* Products */;
@@ -261,35 +279,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4439AA62263DA7700630663 /* AppHelper.swift in Sources */,
+				B4439AA62263DA7700630663 /* SKAppHelper.swift in Sources */,
 				B424DA5022DBFEA100EA0C3B /* print.swift in Sources */,
 				B4439ABB2263E6A100630663 /* String.swift in Sources */,
 				B4EFAA9D22B888AF00450722 /* UITextField.swift in Sources */,
+				B4560D5F2471AF69002824EC /* MailView.swift in Sources */,
 				B4439AF62263F4F000630663 /* presentDisclaimer.swift in Sources */,
 				B4439AB52263E39A00630663 /* Array.swift in Sources */,
 				B4439A8D2263D2AD00630663 /* UIView.swift in Sources */,
+				B4560D5C2471A9A6002824EC /* UIScreen.swift in Sources */,
 				B4AA859222D4AE7300BA4B28 /* UIStackView.swift in Sources */,
-				B4538A112266CD0700B14142 /* Vibrate.swift in Sources */,
+				B4538A112266CD0700B14142 /* SKVibrate.swift in Sources */,
 				B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */,
 				B40DC71C22B6DD970013C1C4 /* UITextView.swift in Sources */,
 				B4439A9F2263D85100630663 /* UILabel.swift in Sources */,
-				B40DC71E22B6EB4C0013C1C4 /* VerticallyAlignableLabel.swift in Sources */,
-				B4439AB72263E48E00630663 /* BasicScrollingViewController.swift in Sources */,
+				B40DC71E22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift in Sources */,
+				B4439AB72263E48E00630663 /* SKBasicScrollingViewController.swift in Sources */,
 				B4A37CA122A63F6700972488 /* UIAlertController.swift in Sources */,
 				B4BB00BD22A5F8BE00F607DE /* DispatchGroup.swift in Sources */,
-				B49C96292297235100A08B69 /* Manipulate.swift in Sources */,
+				B49C96292297235100A08B69 /* SKManipulate.swift in Sources */,
 				B4439B3D2264166600630663 /* UIImageView.swift in Sources */,
-				B4439ABE2263E91200630663 /* EasterEgg.swift in Sources */,
+				B4439ABE2263E91200630663 /* SKEasterEgg.swift in Sources */,
 				B4A37CA322A6441200972488 /* UIViewController.swift in Sources */,
-				B4439AB92263E61E00630663 /* QRGenerator.swift in Sources */,
+				B4439AB92263E61E00630663 /* SKQRGenerator.swift in Sources */,
 				B4439ACC2263ED8300630663 /* dynamicActionSheet.swift in Sources */,
-				B4439AAD2263E12300630663 /* QuickAlert.swift in Sources */,
+				B451B0E12471A30200980571 /* SKFontManager.swift in Sources */,
+				B4439AAD2263E12300630663 /* SKQuickAlert.swift in Sources */,
 				B451991722C6DAD700EA3353 /* UITabBarController.swift in Sources */,
 				B4439A992263D6F900630663 /* UIImage.swift in Sources */,
-				B4439AB12263E1BB00630663 /* Tester.swift in Sources */,
+				B4439AB12263E1BB00630663 /* SKTester.swift in Sources */,
 				B4439AAB2263E0B100630663 /* topController.swift in Sources */,
 				B449627E2286A0F700845574 /* UITableView.swift in Sources */,
-				B47BEF8222659E260075CEE3 /* Download.swift in Sources */,
+				B47BEF8222659E260075CEE3 /* SKDownload.swift in Sources */,
 				B4B76043226A93AB00A489FC /* getDocumentsDirectory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,7 +457,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SeanKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,7 +485,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SeanKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

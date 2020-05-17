@@ -11,7 +11,7 @@ import Foundation
 public let userDefaults = UserDefaults.standard
 
 /// Helps handle tracking the version the user has installed.
-public class AppHelper {
+public class SKAppHelper {
     
     private init() {}
     
@@ -23,6 +23,14 @@ public class AppHelper {
     /// Generic initializer for every app. Simply put at top of `AppDelegate` `didFinishLaunchingWithOptions`, and it will run what's needed to maintain the app. Good to have this implemented since first release.
     static public func initialize() {
         let _ = updateVersionList()
+    }
+    
+    static public func hadPreviousVersion() -> Bool {
+        if updateVersionList() == [] {
+            return false
+        } else {
+            return true
+        }
     }
     
     
@@ -47,9 +55,7 @@ public class AppHelper {
         newArray.removeDuplicates()
         
         userDefaults.set(newArray, forKey: versionListKey)
-        
         print("Latest version list: \(newArray!)")
-        
         return newArray
     }
     
@@ -80,7 +86,7 @@ public class AppHelper {
             "https://bitbucket.org/seanli1/appfiles/raw/master/shared/check",
             "https://bitbucket.org/seanli1/githubappfiles/raw/master/shared/check"
         ]
-        Download.dataFromAddresses(addresses, executeOnFirstOnly: false) { (success, address, data) in
+        SKDownload.dataFromAddresses(addresses, executeOnFirstOnly: false) { (success, address, data) in
             
             if success {
                 guard let stringResult = String(data: data, encoding: .utf8) else { return }

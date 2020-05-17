@@ -9,7 +9,7 @@
 import Foundation
 
 
-open class BasicScrollingViewController: UIViewController {
+open class SKBasicScrollingViewController: UIViewController {
     
     /********************************************************************************
      PROPERTIES

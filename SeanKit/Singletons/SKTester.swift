@@ -9,7 +9,7 @@
 import Foundation
 
 /// Singleton for convenient app testing functions in SeanKit.
-public class Tester {
+public class SKTester {
     
     private init() {}
     

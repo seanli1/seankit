@@ -18,5 +18,12 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>BRIDGE.TTF</string>
+		<string>BRIDGEB.TTF</string>
+		<string>BRIDGEBL.TTF</string>
+		<string>BRIDGES.TTF</string>
+	</array>
 </dict>
 </plist>

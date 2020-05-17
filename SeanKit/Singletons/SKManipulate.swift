@@ -9,7 +9,7 @@
 import Foundation
 
 
-public class Manipulate {
+public class SKManipulate {
     
     private init() {}
     

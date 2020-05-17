@@ -9,7 +9,7 @@
 import Foundation
 
 /// Singleton for convenient Alert functions in SeanKit.
-public class QuickAlert {
+public class SKAlerts {
 
     private init () {}
     

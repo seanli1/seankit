@@ -12,7 +12,7 @@ public typealias AddressString = String
 public typealias SuccessBool = Bool
 
 /// Singleton for convenient downloading functions in SeanKit.
-public class Download {
+public class SKDownload {
     
     private init() {}
     
