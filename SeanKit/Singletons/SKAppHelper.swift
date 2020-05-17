@@ -8,7 +8,7 @@
 
 import Foundation
 
-public let userDefaults = UserDefaults.standard
+private let userDefaults = UserDefaults.standard
 
 /// Helps handle tracking the version the user has installed.
 public class SKAppHelper {
@@ -17,7 +17,7 @@ public class SKAppHelper {
     
     static private let versionListKey = "versionListKey"
     static private let lastDateRunKey = "lastDateRunKey"
-    
+    static private let userHasEverRunApp = "userHasEverRunApp"
     
     
     /// Generic initializer for every app. Simply put at top of `AppDelegate` `didFinishLaunchingWithOptions`, and it will run what's needed to maintain the app. Good to have this implemented since first release.
@@ -33,6 +33,16 @@ public class SKAppHelper {
         }
     }
     
+    /// Returns whether user has ever run app before, across all versions.
+    /// - parameter hasRun: If user has run app before.
+    static public func userHasEverRunApp(_ completion: (_ hasRun: Bool) -> ()) {
+        if let hasRun = userDefaults.value(forKey: userHasEverRunApp) as? Bool, hasRun {
+            completion(true)
+        } else {
+            completion(false)
+            userDefaults.setValue(true, forKey: userHasEverRunApp)
+        }
+    }
     
     
     /// Returns the currently running app version.

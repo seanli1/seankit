@@ -15,7 +15,7 @@ public extension UIViewController {
     
     /// Presents disclaimer in a view presented modally. Automatically handles checking user defaults and saving to user defaults if accepted.
     func presentDisclaimer(title: String?, message: String) {
-        if let disclaimerSaved = userDefaults.value(forKey: disclaimer) as? Bool {
+        if let disclaimerSaved = UserDefaults.standard.value(forKey: disclaimer) as? Bool {
             if disclaimerSaved { return } // Only returns if there was a disclaimer saved. Otherwise, all other cases move on.
         }
         
@@ -84,7 +84,7 @@ private class DisclaimerVC: UIViewController {
     
     
     @objc func buttonPressed() {
-        userDefaults.set(true, forKey: disclaimer)
+        UserDefaults.standard.set(true, forKey: disclaimer)
         textView.text = ""
         UIView.animate(withDuration: 0.5) {
             self.view.backgroundColor = UIColor(red: 0.8, green: 1, blue: 0.8, alpha: 1)
