@@ -10,7 +10,7 @@ import SwiftUI
 import UIKit
 import MessageUI
 
-
+@available(iOS 13, *)
 public struct MailView: UIViewControllerRepresentable {
     
     @Environment(\.presentationMode) var presentation

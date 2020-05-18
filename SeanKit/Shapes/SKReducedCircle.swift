@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+@available(iOS 13, *)
 public struct SKReducedCircle: Shape {
     
     let multiple: CGFloat

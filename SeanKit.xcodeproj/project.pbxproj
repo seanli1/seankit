@@ -16,7 +16,7 @@
 		B4439A9F2263D85100630663 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439A9E2263D85100630663 /* UILabel.swift */; };
 		B4439AA62263DA7700630663 /* SKAppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AA52263DA7700630663 /* SKAppHelper.swift */; };
 		B4439AAB2263E0B100630663 /* topController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AAA2263E0B100630663 /* topController.swift */; };
-		B4439AAD2263E12300630663 /* SKQuickAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AAC2263E12300630663 /* SKQuickAlert.swift */; };
+		B4439AAD2263E12300630663 /* SKAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AAC2263E12300630663 /* SKAlerts.swift */; };
 		B4439AB12263E1BB00630663 /* SKTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB02263E1BB00630663 /* SKTester.swift */; };
 		B4439AB52263E39A00630663 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB42263E39A00630663 /* Array.swift */; };
 		B4439AB72263E48E00630663 /* SKBasicScrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB62263E48E00630663 /* SKBasicScrollingViewController.swift */; };
@@ -59,7 +59,7 @@
 		B4439AA52263DA7700630663 /* SKAppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKAppHelper.swift; sourceTree = "<group>"; };
 		B4439AA72263DFE800630663 /* dynamicActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dynamicActionSheet.swift; sourceTree = "<group>"; };
 		B4439AAA2263E0B100630663 /* topController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topController.swift; sourceTree = "<group>"; };
-		B4439AAC2263E12300630663 /* SKQuickAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKQuickAlert.swift; sourceTree = "<group>"; };
+		B4439AAC2263E12300630663 /* SKAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKAlerts.swift; sourceTree = "<group>"; };
 		B4439AB02263E1BB00630663 /* SKTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKTester.swift; sourceTree = "<group>"; };
 		B4439AB22263E23500630663 /* SKVibrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKVibrate.swift; sourceTree = "<group>"; };
 		B4439AB42263E39A00630663 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
@@ -199,7 +199,7 @@
 				B4439AB22263E23500630663 /* SKVibrate.swift */,
 				B4439AB82263E61E00630663 /* SKQRGenerator.swift */,
 				B4439ABD2263E91200630663 /* SKEasterEgg.swift */,
-				B4439AAC2263E12300630663 /* SKQuickAlert.swift */,
+				B4439AAC2263E12300630663 /* SKAlerts.swift */,
 				B47BEF8122659E260075CEE3 /* SKDownload.swift */,
 				B4439AB02263E1BB00630663 /* SKTester.swift */,
 				B4439AA52263DA7700630663 /* SKAppHelper.swift */,
@@ -316,7 +316,7 @@
 				B4439AB92263E61E00630663 /* SKQRGenerator.swift in Sources */,
 				B4439ACC2263ED8300630663 /* dynamicActionSheet.swift in Sources */,
 				B451B0E12471A30200980571 /* SKFontManager.swift in Sources */,
-				B4439AAD2263E12300630663 /* SKQuickAlert.swift in Sources */,
+				B4439AAD2263E12300630663 /* SKAlerts.swift in Sources */,
 				B451991722C6DAD700EA3353 /* UITabBarController.swift in Sources */,
 				B4439A992263D6F900630663 /* UIImage.swift in Sources */,
 				B4439AB12263E1BB00630663 /* SKTester.swift in Sources */,
@@ -384,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -444,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -469,7 +469,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SeanKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,7 +497,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SeanKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
