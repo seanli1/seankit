@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Get the top `UIViewController` in a navigation stack.
 public func topController() -> UIViewController? {
     if var topController = UIApplication.shared.keyWindow?.rootViewController {
         while let presentedController = topController.presentedViewController {
