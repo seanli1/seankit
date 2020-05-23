@@ -8,12 +8,14 @@
 
 import Foundation
 
-private let userDefaults = UserDefaults.standard
+
 
 /// Helps handle tracking the version the user has installed.
 public class SKAppHelper {
     
     private init() {}
+    
+    static private let userDefaults = UserDefaults.standard
     
     static private let versionListKey = "versionListKey"
     static private let lastDateRunKey = "lastDateRunKey"
@@ -36,7 +38,7 @@ public class SKAppHelper {
     /// Returns whether user has ever run app before, across all versions.
     /// - parameter hasRun: If user has run app before.
     static public func userHasEverRunApp(_ completion: (_ hasRun: Bool) -> ()) {
-        if let hasRun = userDefaults.value(forKey: userHasEverRunApp) as? Bool, hasRun {
+        if let hasRun = SKAppHelper.userDefaults.value(forKey: userHasEverRunApp) as? Bool, hasRun {
             completion(true)
         } else {
             completion(false)
@@ -62,7 +64,7 @@ public class SKAppHelper {
             newArray = []
         }
         newArray.append(getCurrentAppVersion())
-        newArray.removeDuplicates()
+        newArray.skRemoveDuplicates()
         
         userDefaults.set(newArray, forKey: versionListKey)
         print("Latest version list: \(newArray!)")

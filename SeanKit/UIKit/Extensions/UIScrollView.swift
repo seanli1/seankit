@@ -10,13 +10,13 @@ import Foundation
 
 public extension UIScrollView {
     
-    func scrollToTop() {
+    func skScrollToTop() {
         let desiredOffset = CGPoint(x: 0, y: -contentInset.top)
         setContentOffset(desiredOffset, animated: true)
     }
     
     
-    enum WidthMode {
+    enum SKWidthMode {
         /// Use this if scroll view already exists, and you are just updating its height.
         case inferFromCurrentState
         
@@ -35,7 +35,7 @@ public extension UIScrollView {
      
      Automatically sets the `isScrollEnabled` property to `false`.
      */
-    func updateHeightConstraint(_ widthMode: WidthMode, completion: ((CGFloat?)-> Void)?) {
+    func skUpdateHeightConstraint(_ widthMode: SKWidthMode, completion: ((CGFloat?)-> Void)?) {
         self.isScrollEnabled = false
         
         var calcWidth: CGFloat

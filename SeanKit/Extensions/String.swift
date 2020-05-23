@@ -11,8 +11,10 @@ import Foundation
 
 public extension String {
     
+    // MARK: Formatting text
+    
     /// Remove all `www.` and `http://` type stuff at the beginning of the string, if any.
-    mutating func makeCleanURL() {
+    mutating func skMakeCleanURL() {
         if self.hasPrefix("http://") {
             self.removeFirst(7)
         } else if self.hasPrefix("https://") {
@@ -24,26 +26,23 @@ public extension String {
     }
     
     /// Makes any string start with `https://www.`, even if it started with a different version of it.
-    mutating func makeProperURL(addSForHttps: Bool) {
-        self.makeCleanURL()
-        self.addWwwPrefix()
-        self.addHttpPrefix(addSForHttps: addSForHttps)
+    mutating func skMakeProperURL(addSForHttps: Bool) {
+        self.skMakeCleanURL()
+        self.skAddWwwPrefix()
+        self.skAddHttpPrefix(addSForHttps: addSForHttps)
     }
     
-    
     /// Returns a variation of any string that starts with `https://www.`, even if it started with a different version of it.
-    func asProperURL(addSForHttps: Bool) -> String {
+    func skAsProperURL(addSForHttps: Bool) -> String {
         var str = self
-        str.makeCleanURL()
-        str.addWwwPrefix()
-        str.addHttpPrefix(addSForHttps: addSForHttps)
+        str.skMakeCleanURL()
+        str.skAddWwwPrefix()
+        str.skAddHttpPrefix(addSForHttps: addSForHttps)
         return str
     }
     
-    
-    
     /// Adds `www.` if there is not one at the beginning. Does nothing if string is empty.
-    mutating func addWwwPrefix() {
+    mutating func skAddWwwPrefix() {
         if self == "" {
             return
         }
@@ -52,9 +51,8 @@ public extension String {
         }
     }
     
-    
     /// Adds `http://` if there is not one included. Does nothing if string is empty.
-    mutating func addHttpPrefix(addSForHttps: Bool) {
+    mutating func skAddHttpPrefix(addSForHttps: Bool) {
         if self == "" {
             return
         }
@@ -64,8 +62,7 @@ public extension String {
         }
     }
     
-    
-    mutating func formatAsPhoneNumber() {
+    mutating func skFormatAsPhoneNumber() {
         if self.count == 11 { // US numbers with country code
             for x in (0 ..< self.count).reversed() {
                 if x == 1 || x == 4 || x == 7 {
@@ -93,8 +90,10 @@ public extension String {
     }
     
     
+    // MARK: Other functions
+    
     /// Same results as `contains(other:StringProtocol)`, except with ability to ignore the case.
-    func contains(_ string: String, caseSensitive: Bool) -> Bool {
+    func skContains(_ string: String, caseSensitive: Bool) -> Bool {
         if caseSensitive {
             return self.contains(string)
         }

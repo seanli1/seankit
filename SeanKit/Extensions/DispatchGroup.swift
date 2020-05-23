@@ -10,7 +10,8 @@ import Foundation
 
 public extension DispatchGroup {
     
-    var count: Int? {
+    /// Returns the count of dispatch group items.
+    var skCount: Int? {
         let debugDescription = self.debugDescription
         let components = debugDescription.components(separatedBy: ",")
         let componentWithCount = components.filter( {$0.contains("count")} )

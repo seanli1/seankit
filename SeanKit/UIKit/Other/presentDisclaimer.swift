@@ -8,33 +8,34 @@
 
 import Foundation
 
-public var firstTime = false
-private let disclaimer = "disclaimer" // Save key
+public var skFirstTime = false
+private let skDisclaimer = "disclaimer" // Save key
 
 public extension UIViewController {
     
-    /// Presents disclaimer in a view presented modally. Automatically handles checking user defaults and saving to user defaults if accepted.
-    func presentDisclaimer(title: String?, message: String) {
-        if let disclaimerSaved = UserDefaults.standard.value(forKey: disclaimer) as? Bool {
+    /// Presents disclaimer in a view presented modally if disclaimer not already passed. Automatically handles checking user defaults and saving to user defaults if accepted.
+    func skPresentDisclaimer(title: String?, message: String) {
+        
+        if let disclaimerSaved = UserDefaults.standard.value(forKey: skDisclaimer) as? Bool {
             if disclaimerSaved { return } // Only returns if there was a disclaimer saved. Otherwise, all other cases move on.
         }
         
-        firstTime = true
-        let destVC = DisclaimerVC()
+        skFirstTime = true
+        let destVC = SKDisclaimerVC()
         
         let string = "\(title ?? "")\n\n\(message)"
         let text = NSMutableAttributedString(string: string)
         text.addAttribute(.font, value: UIFont.systemFont(ofSize: 18, weight: .light), range: NSRange(location: 0, length: string.count))
         text.addAttribute(.font, value: UIFont.systemFont(ofSize: 22, weight: .medium), range: NSRange(location: 0, length: title?.count ?? 0))
         destVC.textView.attributedText = text
-        
-        present(destVC)
+        destVC.modalPresentationStyle = .fullScreen
+        skPresent(destVC)
     }
 }
 
 
 
-private class DisclaimerVC: UIViewController {
+private class SKDisclaimerVC: UIViewController {
     
     let textView: UITextView = {
         let tv = UITextView()
@@ -51,7 +52,7 @@ private class DisclaimerVC: UIViewController {
         button.layer.cornerRadius = 10
         button.clipsToBounds = true
         button.titleLabel?.textAlignment = .center
-        button.backgroundColor = UIColor.blue.withAlphaComponent(0.7)
+        button.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 1, alpha: 1)
         button.tintColor = UIColor.white
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
@@ -65,9 +66,9 @@ private class DisclaimerVC: UIViewController {
     
     
     func setUpViews() {
-        view.backgroundColor = UIColor.white
         view.addSubview(textView)
         view.addSubview(button)
+        
         NSLayoutConstraint.activate([
             textView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
             textView.bottomAnchor.constraint(equalTo: button.topAnchor, constant: -20),
@@ -79,12 +80,21 @@ private class DisclaimerVC: UIViewController {
             button.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -40)
             ])
         textView.textAlignment = .center
+        
+        if #available(iOS 13, *), SKDevice.style() == .dark {
+            view.backgroundColor = UIColor(white: 0.2, alpha: 1)
+            textView.textColor = UIColor.white
+        } else {
+            view.backgroundColor = UIColor.white
+            textView.textColor = UIColor.darkGray
+        }
+        
         button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
     }
     
     
     @objc func buttonPressed() {
-        UserDefaults.standard.set(true, forKey: disclaimer)
+        UserDefaults.standard.set(true, forKey: skDisclaimer)
         textView.text = ""
         UIView.animate(withDuration: 0.5) {
             self.view.backgroundColor = UIColor(red: 0.8, green: 1, blue: 0.8, alpha: 1)

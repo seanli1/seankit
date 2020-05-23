@@ -11,18 +11,18 @@ import UIKit
 public extension UIAlertController {
     
     /// Shortcut to adding a "Cancel" button. Enter custom text or set to `nil` to use default text.
-    func addCancel(_ customText: String? = nil, handler: ((UIAlertAction) -> Void)? = nil) {
-        self.addAction(customText ?? "Cancel", .cancel, handler: handler)
+    func skAddCancel(_ customText: String? = nil, handler: ((UIAlertAction) -> Void)? = nil) {
+        self.skAddAction(customText ?? "Cancel", .cancel, handler: handler)
     }
     
     /// Shortcut to adding a UIAlertAction.
-    func addAction(_ title: String, _ style: UIAlertAction.Style, handler: ((UIAlertAction) -> Void)?) {
+    func skAddAction(_ title: String, _ style: UIAlertAction.Style, handler: ((UIAlertAction) -> Void)?) {
         self.addAction(UIAlertAction(title: title, style: style, handler: handler))
     }
     
     /// Shortcut to adding an "Ok" button. Enter custom text or set to `nil` to use default text.
-    func addOk(_ customText: String? = nil, handler: ((UIAlertAction) -> Void)? = nil) {
-        self.addAction(customText ?? "Ok", .default, handler: handler)
+    func skAddOk(_ customText: String? = nil, handler: ((UIAlertAction) -> Void)? = nil) {
+        self.skAddAction(customText ?? "Ok", .default, handler: handler)
     }
     
 }

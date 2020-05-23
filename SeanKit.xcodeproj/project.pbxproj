@@ -16,7 +16,6 @@
 		B4439AA62263DA7700630663 /* SKAppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AA52263DA7700630663 /* SKAppHelper.swift */; };
 		B4439AAB2263E0B100630663 /* topController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AAA2263E0B100630663 /* topController.swift */; };
 		B4439AAD2263E12300630663 /* SKAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AAC2263E12300630663 /* SKAlerts.swift */; };
-		B4439AB12263E1BB00630663 /* SKTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB02263E1BB00630663 /* SKTester.swift */; };
 		B4439AB52263E39A00630663 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB42263E39A00630663 /* Array.swift */; };
 		B4439AB72263E48E00630663 /* SKBasicScrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB62263E48E00630663 /* SKBasicScrollingViewController.swift */; };
 		B4439AB92263E61E00630663 /* SKQRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB82263E61E00630663 /* SKQRGenerator.swift */; };
@@ -30,7 +29,7 @@
 		B451B0E12471A30200980571 /* SKFontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B451B0E02471A30200980571 /* SKFontManager.swift */; };
 		B4538A112266CD0700B14142 /* SKVibrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB22263E23500630663 /* SKVibrate.swift */; };
 		B4560D5C2471A9A6002824EC /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4560D5B2471A9A6002824EC /* UIScreen.swift */; };
-		B4560D5F2471AF69002824EC /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4560D5E2471AF69002824EC /* MailView.swift */; };
+		B4560D5F2471AF69002824EC /* SKMailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4560D5E2471AF69002824EC /* SKMailView.swift */; };
 		B4560D6B2471DA5B002824EC /* SKReducedCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4560D6A2471DA5B002824EC /* SKReducedCircle.swift */; };
 		B4727EB1227625FC00743241 /* seanonthebeach.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B4727EB0227625FC00743241 /* seanonthebeach.jpeg */; };
 		B4727EB32276260900743241 /* ring.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4727EB22276260900743241 /* ring.wav */; };
@@ -39,8 +38,10 @@
 		B4A37CA122A63F6700972488 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A37CA022A63F6700972488 /* UIAlertController.swift */; };
 		B4A37CA322A6441200972488 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A37CA222A6441200972488 /* UIViewController.swift */; };
 		B4AA859222D4AE7300BA4B28 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AA859122D4AE7300BA4B28 /* UIStackView.swift */; };
-		B4B76043226A93AB00A489FC /* getDocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B76042226A93AB00A489FC /* getDocumentsDirectory.swift */; };
+		B4B76043226A93AB00A489FC /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B76042226A93AB00A489FC /* URL.swift */; };
 		B4BB00BD22A5F8BE00F607DE /* DispatchGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BB00BC22A5F8BE00F607DE /* DispatchGroup.swift */; };
+		B4BEF1BD247856A100943652 /* SKDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEF1BC247856A100943652 /* SKDevice.swift */; };
+		B4BEF1BF2478A7A900943652 /* Skit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEF1BE2478A7A900943652 /* Skit.swift */; };
 		B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C91BC72280E78A00618A33 /* UIScrollView.swift */; };
 		B4EFAA9D22B888AF00450722 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EFAA9C22B888AF00450722 /* UITextField.swift */; };
 /* End PBXBuildFile section */
@@ -58,7 +59,6 @@
 		B4439AA72263DFE800630663 /* dynamicActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dynamicActionSheet.swift; sourceTree = "<group>"; };
 		B4439AAA2263E0B100630663 /* topController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topController.swift; sourceTree = "<group>"; };
 		B4439AAC2263E12300630663 /* SKAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKAlerts.swift; sourceTree = "<group>"; };
-		B4439AB02263E1BB00630663 /* SKTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKTester.swift; sourceTree = "<group>"; };
 		B4439AB22263E23500630663 /* SKVibrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKVibrate.swift; sourceTree = "<group>"; };
 		B4439AB42263E39A00630663 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		B4439AB62263E48E00630663 /* SKBasicScrollingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKBasicScrollingViewController.swift; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 		B451991622C6DAD700EA3353 /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
 		B451B0E02471A30200980571 /* SKFontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKFontManager.swift; sourceTree = "<group>"; };
 		B4560D5B2471A9A6002824EC /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
-		B4560D5E2471AF69002824EC /* MailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		B4560D5E2471AF69002824EC /* SKMailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKMailView.swift; sourceTree = "<group>"; };
 		B4560D6A2471DA5B002824EC /* SKReducedCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKReducedCircle.swift; sourceTree = "<group>"; };
 		B4727EB0227625FC00743241 /* seanonthebeach.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seanonthebeach.jpeg; sourceTree = "<group>"; };
 		B4727EB22276260900743241 /* ring.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ring.wav; sourceTree = "<group>"; };
@@ -80,8 +80,10 @@
 		B4A37CA022A63F6700972488 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		B4A37CA222A6441200972488 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		B4AA859122D4AE7300BA4B28 /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
-		B4B76042226A93AB00A489FC /* getDocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getDocumentsDirectory.swift; sourceTree = "<group>"; };
+		B4B76042226A93AB00A489FC /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		B4BB00BC22A5F8BE00F607DE /* DispatchGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroup.swift; sourceTree = "<group>"; };
+		B4BEF1BC247856A100943652 /* SKDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKDevice.swift; sourceTree = "<group>"; };
+		B4BEF1BE2478A7A900943652 /* Skit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skit.swift; sourceTree = "<group>"; };
 		B4C91BC72280E78A00618A33 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
 		B4EFAA9C22B888AF00450722 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +99,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B42DE7EF2478396C00A3887F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B4439AF52263F4F000630663 /* presentDisclaimer.swift */,
+				B4439AA72263DFE800630663 /* dynamicActionSheet.swift */,
+				B4439AAA2263E0B100630663 /* topController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		B4439A772263CDCA00630663 = {
 			isa = PBXGroup;
 			children = (
@@ -156,23 +168,13 @@
 			path = Custom_Classes;
 			sourceTree = "<group>";
 		};
-		B4439AAE2263E18B00630663 /* Convenience Functions */ = {
-			isa = PBXGroup;
-			children = (
-				B4439AA72263DFE800630663 /* dynamicActionSheet.swift */,
-				B4439AAA2263E0B100630663 /* topController.swift */,
-				B4439AF52263F4F000630663 /* presentDisclaimer.swift */,
-			);
-			path = "Convenience Functions";
-			sourceTree = "<group>";
-		};
 		B447802B24759709003CCB41 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				B4BB00BC22A5F8BE00F607DE /* DispatchGroup.swift */,
 				B4439AB42263E39A00630663 /* Array.swift */,
 				B4439ABA2263E6A100630663 /* String.swift */,
-				B4B76042226A93AB00A489FC /* getDocumentsDirectory.swift */,
+				B4B76042226A93AB00A489FC /* URL.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -180,7 +182,7 @@
 		B447802C2475973D003CCB41 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				B4439AAE2263E18B00630663 /* Convenience Functions */,
+				B42DE7EF2478396C00A3887F /* Other */,
 				B4439AA92263E07900630663 /* Custom_Classes */,
 				B4439A8E2263D2B000630663 /* Extensions */,
 			);
@@ -199,7 +201,7 @@
 		B447802E247599BF003CCB41 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B4560D5E2471AF69002824EC /* MailView.swift */,
+				B4560D5E2471AF69002824EC /* SKMailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,15 +226,16 @@
 		B48CF259226CEAB900C3282C /* Singletons */ = {
 			isa = PBXGroup;
 			children = (
+				B4BEF1BE2478A7A900943652 /* Skit.swift */,
 				B451B0E02471A30200980571 /* SKFontManager.swift */,
 				B4439AB22263E23500630663 /* SKVibrate.swift */,
 				B4439AB82263E61E00630663 /* SKQRGenerator.swift */,
 				B4439ABD2263E91200630663 /* SKEasterEgg.swift */,
 				B4439AAC2263E12300630663 /* SKAlerts.swift */,
 				B47BEF8122659E260075CEE3 /* SKDownload.swift */,
-				B4439AB02263E1BB00630663 /* SKTester.swift */,
 				B4439AA52263DA7700630663 /* SKAppHelper.swift */,
 				B49C96282297235100A08B69 /* SKManipulate.swift */,
+				B4BEF1BC247856A100943652 /* SKDevice.swift */,
 			);
 			path = Singletons;
 			sourceTree = "<group>";
@@ -322,9 +325,11 @@
 				B4439AA62263DA7700630663 /* SKAppHelper.swift in Sources */,
 				B4439ABB2263E6A100630663 /* String.swift in Sources */,
 				B4EFAA9D22B888AF00450722 /* UITextField.swift in Sources */,
-				B4560D5F2471AF69002824EC /* MailView.swift in Sources */,
+				B4560D5F2471AF69002824EC /* SKMailView.swift in Sources */,
+				B4BEF1BF2478A7A900943652 /* Skit.swift in Sources */,
 				B4439AF62263F4F000630663 /* presentDisclaimer.swift in Sources */,
 				B4439AB52263E39A00630663 /* Array.swift in Sources */,
+				B4BEF1BD247856A100943652 /* SKDevice.swift in Sources */,
 				B4439A8D2263D2AD00630663 /* UIView.swift in Sources */,
 				B4560D5C2471A9A6002824EC /* UIScreen.swift in Sources */,
 				B4AA859222D4AE7300BA4B28 /* UIStackView.swift in Sources */,
@@ -347,11 +352,10 @@
 				B4439AAD2263E12300630663 /* SKAlerts.swift in Sources */,
 				B451991722C6DAD700EA3353 /* UITabBarController.swift in Sources */,
 				B4439A992263D6F900630663 /* UIImage.swift in Sources */,
-				B4439AB12263E1BB00630663 /* SKTester.swift in Sources */,
 				B4439AAB2263E0B100630663 /* topController.swift in Sources */,
 				B449627E2286A0F700845574 /* UITableView.swift in Sources */,
 				B47BEF8222659E260075CEE3 /* SKDownload.swift in Sources */,
-				B4B76043226A93AB00A489FC /* getDocumentsDirectory.swift in Sources */,
+				B4B76043226A93AB00A489FC /* URL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +510,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.86houses.SeanKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -534,6 +539,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.86houses.SeanKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

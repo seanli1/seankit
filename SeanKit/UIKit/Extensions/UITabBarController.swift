@@ -13,7 +13,7 @@ public extension UITabBarController {
     /**
      If the selected view controller is a `UINavigationController`, then pop it to its root if the tab is tapped twice. Place this in the `tabBar(_ tabBar:didSelect item:)` delegate function.
      */
-    func popToRootIfDoubleTapped() {
+    func skPopToRootIfDoubleTapped() {
         
         guard let vc = selectedViewController as? UINavigationController else { return }
         

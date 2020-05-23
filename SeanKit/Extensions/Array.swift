@@ -11,21 +11,19 @@ import Foundation
 public extension Array where Element: Hashable {
     
     /// Return an array with duplicates removed. Elements must be Hashable.
-    func removingDuplicates() -> [Element] {
+    func skRemovingDuplicates() -> [Element] {
         var addedDict = [Element: Bool]()
         return filter {
             addedDict.updateValue(true, forKey: $0) == nil
         }
     }
     
-    
     /// Removes duplicates from an array. Elements must be hashable.
-    mutating func removeDuplicates() {
-        self = self.removingDuplicates()
+    mutating func skRemoveDuplicates() {
+        self = self.skRemovingDuplicates()
     }
     
-    
-    func getIndexOf(string: String) -> Int? {
+    func skGetIndexOf(string: String) -> Int? {
         for x in 0 ..< count {
             if self[x] as? String == string {
                 return x

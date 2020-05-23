@@ -11,7 +11,7 @@ import Foundation
 
 public extension UIImageView {
     
-    func isEmpty() -> Bool {
+    func skIsEmpty() -> Bool {
         if let image = image {
             if image.size == CGSize(width: 0, height: 0) {
                 return true

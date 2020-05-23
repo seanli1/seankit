@@ -10,7 +10,7 @@ import UIKit
 
 public extension UITableView {
     
-    func heightOfVisibleCells() -> CGFloat {
+    func skHeightOfVisibleCells() -> CGFloat {
         var addedHeight: CGFloat = 0
         for cell in self.visibleCells {
             addedHeight += cell.frame.height

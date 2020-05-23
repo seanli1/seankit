@@ -23,7 +23,7 @@ public class SKEasterEgg {
             var correctFramework: Bundle?
             
             for x in Bundle.allFrameworks {
-                if x.bundlePath.contains("SeanKit", caseSensitive: false) {
+                if x.bundlePath.skContains("SeanKit", caseSensitive: false) {
                     correctFramework = x
                 }
             }
@@ -67,7 +67,7 @@ public class SKEasterEgg {
             }
             guard let window = UIApplication.shared.keyWindow else { return }
             
-            let resizedImage = image!.resized(to: CGSize(width: (window.frame.height * image!.size.width) / image!.size.height, height: window.frame.height))
+            let resizedImage = image!.skResized(to: CGSize(width: (window.frame.height * image!.size.width) / image!.size.height, height: window.frame.height))
             let imageView = UIImageView(image: resizedImage)
             
             window.addSubview(imageView)

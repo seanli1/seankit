@@ -13,13 +13,10 @@ public class SKManipulate {
     
     private init() {}
     
-    /// Convert text to an array (specifying separators) that's easier to code with.
+    /// Convert text to an array `[String]`.
     static public func textToArray(_ text: String, separator: String, ignoreBlank: Bool) -> [String] {
-        
         let array = text.components(separatedBy: separator)
-        
         var result = [String]()
-        
         for item in array {
             if !(item == "" && ignoreBlank) {
                 result.append(item)

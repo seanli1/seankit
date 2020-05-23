@@ -17,7 +17,7 @@ public class SKAlerts {
     public static func ok(_ title: String?, _ message: String?, _ viewController: UIViewController) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-        viewController.present(alert)
+        viewController.skPresent(alert)
     }
     
 }

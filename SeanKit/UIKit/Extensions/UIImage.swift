@@ -25,7 +25,7 @@ public extension UIImage {
 //        }
 //    }
     
-    func resized(to: CGSize) -> UIImage {
+    func skResized(to: CGSize) -> UIImage {
         let renderer = UIGraphicsImageRenderer(size: to)
         let image = renderer.image { _ in
             self.draw(in: CGRect.init(origin: CGPoint.zero, size: to))

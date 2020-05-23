@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIScreen {
     
-        static let width = UIScreen.main.bounds.width
-        static let height = UIScreen.main.bounds.height
+        static let skWidth = UIScreen.main.bounds.width
+        static let skHeight = UIScreen.main.bounds.height
     
 }

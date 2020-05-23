@@ -10,7 +10,7 @@ import Foundation
 
 public extension UILabel {
     
-    var isTruncated: Bool {
+    var skIsTruncated: Bool {
         guard let labelText = text else {
             return false
         }
@@ -23,7 +23,7 @@ public extension UILabel {
     }
     
     /// Returns `true` if text is blank after removing white spaces and returns.
-    var isBlank: Bool {
+    var skIsBlank: Bool {
         return self.text == nil || self.text?.count == 0 || self.text?.replacingOccurrences(of: "\n", with: "").count == 0 || self.text?.replacingOccurrences(of: " ", with: "").count == 0
     }
     
