@@ -12,10 +12,14 @@ public extension Array where Element: Hashable {
     
     /// Return an array with duplicates removed. Elements must be Hashable.
     func skRemovingDuplicates() -> [Element] {
-        var addedDict = [Element: Bool]()
-        return filter {
-            addedDict.updateValue(true, forKey: $0) == nil
+        var result: [Element] = []
+        
+        for each in self {
+            if !result.contains(each) {
+                result.append(each)
+            }
         }
+        return result
     }
     
     /// Removes duplicates from an array. Elements must be hashable.

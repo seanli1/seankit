@@ -45,8 +45,8 @@ public extension UIViewController {
     }
     
     /// Present a view controller animated with no completion by default.
-    func skPresent(_ viewControllerToPresent: UIViewController, completion: (()->())? = nil) {
-        present(viewControllerToPresent, animated: true, completion: completion)
+    func skPresent(_ viewControllerToPresent: UIViewController, animated: Bool = true, completion: (()->())? = nil) {
+        present(viewControllerToPresent, animated: animated, completion: completion)
     }
     
 }
