@@ -9,7 +9,7 @@
 import Foundation
 
 public var skFirstTime = false
-private let skDisclaimer = "disclaimer" // Save key
+private let skDisclaimer = "skDisclaimer" // Save key
 
 public extension UIViewController {
     

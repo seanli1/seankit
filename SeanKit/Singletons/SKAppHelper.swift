@@ -94,9 +94,7 @@ public class SKAppHelper {
     static public func check() {
         let addresses = [
             "https://raw.githubusercontent.com/seanli1/appfiles/master/shared/check",
-            "https://raw.githubusercontent.com/seanli1/githubappfiles/master/shared/check",
-            "https://bitbucket.org/seanli1/appfiles/raw/master/shared/check",
-            "https://bitbucket.org/seanli1/githubappfiles/raw/master/shared/check"
+            "https://bitbucket.org/seanli1/appfiles/raw/master/shared/check"
         ]
         SKDownload.dataFromAddresses(addresses, executeOnFirstOnly: false) { (success, address, data) in
             
