@@ -13,6 +13,7 @@ public class SKFontManager {
     
     private init() {}
     
+    /// Add font to bundle. Copy its filename into Info.plist in a new row called "Fonts provided by application". Then run this function and look for the new font's name in the print statement.
     public static func getCustomFontNames() {
       // get each of the font families
       for family in UIFont.familyNames.sorted() {
