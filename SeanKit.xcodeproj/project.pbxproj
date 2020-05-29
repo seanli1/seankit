@@ -38,7 +38,8 @@
 		B4A37CA122A63F6700972488 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A37CA022A63F6700972488 /* UIAlertController.swift */; };
 		B4A37CA322A6441200972488 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A37CA222A6441200972488 /* UIViewController.swift */; };
 		B4AA859222D4AE7300BA4B28 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AA859122D4AE7300BA4B28 /* UIStackView.swift */; };
-		B4B4B28324810F980028C72C /* SKScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B4B28224810F980028C72C /* SKScannerViewController.swift */; };
+		B4B4B28324810F980028C72C /* SKQRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B4B28224810F980028C72C /* SKQRScannerVC.swift */; };
+		B4B4B286248114520028C72C /* SKQRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B4B285248114520028C72C /* SKQRScannerView.swift */; };
 		B4B76043226A93AB00A489FC /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B76042226A93AB00A489FC /* URL.swift */; };
 		B4BB00BD22A5F8BE00F607DE /* DispatchGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BB00BC22A5F8BE00F607DE /* DispatchGroup.swift */; };
 		B4BEF1BD247856A100943652 /* SKDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEF1BC247856A100943652 /* SKDevice.swift */; };
@@ -81,7 +82,8 @@
 		B4A37CA022A63F6700972488 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		B4A37CA222A6441200972488 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		B4AA859122D4AE7300BA4B28 /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
-		B4B4B28224810F980028C72C /* SKScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKScannerViewController.swift; sourceTree = "<group>"; };
+		B4B4B28224810F980028C72C /* SKQRScannerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKQRScannerVC.swift; sourceTree = "<group>"; };
+		B4B4B285248114520028C72C /* SKQRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKQRScannerView.swift; sourceTree = "<group>"; };
 		B4B76042226A93AB00A489FC /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		B4BB00BC22A5F8BE00F607DE /* DispatchGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroup.swift; sourceTree = "<group>"; };
 		B4BEF1BC247856A100943652 /* SKDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKDevice.swift; sourceTree = "<group>"; };
@@ -165,7 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				B4439AB62263E48E00630663 /* SKBasicScrollingViewController.swift */,
-				B4B4B28224810F980028C72C /* SKScannerViewController.swift */,
+				B4B4B28224810F980028C72C /* SKQRScannerVC.swift */,
 				B40DC71D22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift */,
 			);
 			path = Custom_Classes;
@@ -205,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				B4560D5E2471AF69002824EC /* SKMailView.swift */,
+				B4B4B285248114520028C72C /* SKQRScannerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				B4560D6B2471DA5B002824EC /* SKReducedCircle.swift in Sources */,
 				B4538A112266CD0700B14142 /* SKVibrate.swift in Sources */,
 				B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */,
+				B4B4B286248114520028C72C /* SKQRScannerView.swift in Sources */,
 				B40DC71C22B6DD970013C1C4 /* UITextView.swift in Sources */,
 				B4439A9F2263D85100630663 /* UILabel.swift in Sources */,
 				B40DC71E22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift in Sources */,
@@ -353,7 +357,7 @@
 				B4439ACC2263ED8300630663 /* dynamicActionSheet.swift in Sources */,
 				B451B0E12471A30200980571 /* SKFontManager.swift in Sources */,
 				B4439AAD2263E12300630663 /* SKAlerts.swift in Sources */,
-				B4B4B28324810F980028C72C /* SKScannerViewController.swift in Sources */,
+				B4B4B28324810F980028C72C /* SKQRScannerVC.swift in Sources */,
 				B451991722C6DAD700EA3353 /* UITabBarController.swift in Sources */,
 				B4439A992263D6F900630663 /* UIImage.swift in Sources */,
 				B4439AAB2263E0B100630663 /* topController.swift in Sources */,

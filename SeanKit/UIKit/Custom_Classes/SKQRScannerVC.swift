@@ -1,5 +1,5 @@
 //
-//  SKScannerViewController.swift
+//  SKQRScannerVC.swift
 //  SeanKit
 //
 //  Created by Sean Li on 4/16/19.
@@ -9,13 +9,13 @@
 import AVFoundation
 import UIKit
 
-public protocol SKScannerViewControllerDelegate {
+public protocol SKQRScannerDelegate {
     func found(code: String)
 }
 
-public class SKScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+public class SKQRScannerVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
-    public var scannerDelegate: SKScannerViewControllerDelegate!
+    public var scannerDelegate: SKQRScannerDelegate!
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
     
