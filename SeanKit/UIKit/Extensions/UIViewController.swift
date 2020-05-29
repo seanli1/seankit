@@ -22,7 +22,7 @@ public extension UIViewController {
             skPresent(mailController)
         } else {
             if show {
-                let alert = UIAlertController(title: "Can't Send Email", message: "This device is not configured to send email.", preferredStyle: .alert)
+                let alert = UIAlertController(title: "Can't Send Email", message: "Cannot reach the Mail app to send email.", preferredStyle: .alert)
                 alert.skAddAction("Ok", .default, handler: nil)
                 self.skPresent(alert)
             } else {
