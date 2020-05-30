@@ -9,35 +9,37 @@
 import SwiftUI
 
 @available(iOS 13, *)
-/// QR Scanner for SwiftUI. Completion returns the result found.
+/// QR Scanner for SwiftUI.
 public struct SKQRScannerView: UIViewControllerRepresentable {
     
     @Binding var isPresented: Bool
-    let completion: ((String) -> ())
+    @Binding var codeFound: String
     
-    public init(isPresented: Binding<Bool>, codeFound: @escaping ((String)->())) {
+    public init(isPresented: Binding<Bool>, codeFound: Binding<String>) {
         self._isPresented = isPresented
-        self.completion = codeFound
+        self._codeFound = codeFound
     }
+    
     
     public class Coordinator: NSObject, SKQRScannerDelegate {
         
         var isPresented: Binding<Bool>
-        let completion: ((String) -> ())
+        var codeFound: Binding<String>
         
         public func found(code: String) {
-            completion(code)
+            codeFound.wrappedValue = code
             isPresented.wrappedValue = false
         }
         
-        public init(isPresented: Binding<Bool>, completion: @escaping ((String)->())) {
+        public init(isPresented: Binding<Bool>, codeFound: Binding<String>) {
             self.isPresented = isPresented
-            self.completion = completion
+            self.codeFound = codeFound
         }
     }
     
+    
     public func makeCoordinator() -> Coordinator {
-        return Coordinator(isPresented: $isPresented, completion: completion)
+        return Coordinator(isPresented: $isPresented, codeFound: $codeFound)
     }
     
     public func makeUIViewController(context: Context) -> SKQRScannerVC {
@@ -45,6 +47,7 @@ public struct SKQRScannerView: UIViewControllerRepresentable {
         scannerVC.scannerDelegate = context.coordinator
         return scannerVC
     }
+    
     public func updateUIViewController(_ uiViewController: SKQRScannerVC, context: Context) {
         
     }
