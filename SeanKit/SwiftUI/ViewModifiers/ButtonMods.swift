@@ -8,12 +8,15 @@
 
 import SwiftUI
 
-@available (iOS 13, *)
+@available(iOS 13, *)
+
 public class SKViewMods {
     private init() {}
 
     /// Remember to add `.resizable()` before this modifier.
     public struct NavBarBtnSize: ViewModifier {
+        
+        public init() {}
         
         public func body(content: Content) -> some View {
             content
@@ -24,6 +27,8 @@ public class SKViewMods {
 
     /// Remember to add `.resizable()` before this modifier.
     public struct TabBarBtnSize: ViewModifier {
+        
+        public init() {}
         
         public func body(content: Content) -> some View {
             content
