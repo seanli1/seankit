@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B40DC71C22B6DD970013C1C4 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DC71B22B6DD970013C1C4 /* UITextView.swift */; };
 		B40DC71E22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DC71D22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift */; };
+		B442942B2485BA2A000A3AA1 /* SKBadgeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B442942A2485BA2A000A3AA1 /* SKBadgeCounter.swift */; };
 		B4439A862263CDCA00630663 /* SeanKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B4439A842263CDCA00630663 /* SeanKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4439A8D2263D2AD00630663 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439A8C2263D2AD00630663 /* UIView.swift */; };
 		B4439A992263D6F900630663 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439A982263D6F900630663 /* UIImage.swift */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		B40DC71B22B6DD970013C1C4 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
 		B40DC71D22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKVerticallyAlignableLabel.swift; sourceTree = "<group>"; };
+		B442942A2485BA2A000A3AA1 /* SKBadgeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKBadgeCounter.swift; sourceTree = "<group>"; };
 		B4439A812263CDCA00630663 /* SeanKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SeanKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4439A842263CDCA00630663 /* SeanKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeanKit.h; sourceTree = "<group>"; };
 		B4439A852263CDCA00630663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			children = (
 				B4560D5E2471AF69002824EC /* SKMailView.swift */,
 				B4B4B285248114520028C72C /* SKQRScannerView.swift */,
+				B442942A2485BA2A000A3AA1 /* SKBadgeCounter.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				B4439B3D2264166600630663 /* UIImageView.swift in Sources */,
 				B4439ABE2263E91200630663 /* SKEasterEgg.swift in Sources */,
 				B4A37CA322A6441200972488 /* UIViewController.swift in Sources */,
+				B442942B2485BA2A000A3AA1 /* SKBadgeCounter.swift in Sources */,
 				B4439AB92263E61E00630663 /* SKQRGenerator.swift in Sources */,
 				B4439ACC2263ED8300630663 /* dynamicActionSheet.swift in Sources */,
 				B451B0E12471A30200980571 /* SKFontManager.swift in Sources */,
