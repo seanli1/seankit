@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 /// Singleton for convenient QR generation functions in SeanKit.
 public class SKQRGenerator {
@@ -26,5 +27,4 @@ public class SKQRGenerator {
             return UIImage()
         }
     }
-    
 }
