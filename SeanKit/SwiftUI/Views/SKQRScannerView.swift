@@ -13,9 +13,9 @@ import SwiftUI
 public struct SKQRScannerView: UIViewControllerRepresentable {
     
     @Binding var isPresented: Bool
-    @Binding var codeFound: String
+    @Binding var codeFound: String?
     
-    public init(isPresented: Binding<Bool>, codeFound: Binding<String>) {
+    public init(isPresented: Binding<Bool>, codeFound: Binding<String?>) {
         self._isPresented = isPresented
         self._codeFound = codeFound
     }
@@ -24,14 +24,14 @@ public struct SKQRScannerView: UIViewControllerRepresentable {
     public class Coordinator: NSObject, SKQRScannerDelegate {
         
         var isPresented: Binding<Bool>
-        var codeFound: Binding<String>
+        var codeFound: Binding<String?>
         
         public func found(code: String) {
             codeFound.wrappedValue = code
             isPresented.wrappedValue = false
         }
         
-        public init(isPresented: Binding<Bool>, codeFound: Binding<String>) {
+        public init(isPresented: Binding<Bool>, codeFound: Binding<String?>) {
             self.isPresented = isPresented
             self.codeFound = codeFound
         }
