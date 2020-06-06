@@ -49,6 +49,7 @@
 		B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C91BC72280E78A00618A33 /* UIScrollView.swift */; };
 		B4CFB7CD2487921200198172 /* SKQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CFB7CC2487921200198172 /* SKQRView.swift */; };
 		B4EFAA9D22B888AF00450722 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EFAA9C22B888AF00450722 /* UITextField.swift */; };
+		B4FE84B8248B623F00AAD1BD /* SKScrollControlProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE84B7248B623F00AAD1BD /* SKScrollControlProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		B4C91BC72280E78A00618A33 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
 		B4CFB7CC2487921200198172 /* SKQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKQRView.swift; sourceTree = "<group>"; };
 		B4EFAA9C22B888AF00450722 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		B4FE84B7248B623F00AAD1BD /* SKScrollControlProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKScrollControlProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 				B4560D5E2471AF69002824EC /* SKMailView.swift */,
 				B4B4B285248114520028C72C /* SKQRScannerView.swift */,
 				B4CFB7CC2487921200198172 /* SKQRView.swift */,
+				B4FE84B7248B623F00AAD1BD /* SKScrollControlProxy.swift */,
 				B442942A2485BA2A000A3AA1 /* SKBadgeCounter.swift */,
 			);
 			path = Views;
@@ -366,6 +369,7 @@
 				B4AF9EB924839B2D004EB2AE /* ButtonMods.swift in Sources */,
 				B4439AB72263E48E00630663 /* SKBasicScrollingViewController.swift in Sources */,
 				B4A37CA122A63F6700972488 /* UIAlertController.swift in Sources */,
+				B4FE84B8248B623F00AAD1BD /* SKScrollControlProxy.swift in Sources */,
 				B4BB00BD22A5F8BE00F607DE /* DispatchGroup.swift in Sources */,
 				B49C96292297235100A08B69 /* SKManipulate.swift in Sources */,
 				B4439B3D2264166600630663 /* UIImageView.swift in Sources */,
