@@ -28,11 +28,11 @@ public struct SKScrollControlHelper: UIViewRepresentable {
     public init(proxy: SKScrollControlProxy) {
         self.proxy = proxy
     }
-
+    
     public func makeUIView(context: Context) -> UIView {
         return UIView() // managed by SwiftUI, no overloads
     }
-
+    
     public func updateUIView(_ uiView: UIView, context: Context) {
         proxy.catchScrollView(for: uiView) // here UIView is in view hierarchy
     }
@@ -53,17 +53,22 @@ public class SKScrollControlProxy {
         case top
         case point(point: CGPoint)
         case offset(point: CGPoint, listHeight: CGFloat)
-//        case toItem(item: Int)
+        case item(item: Int, cellHeight: CGFloat, position: ItemPosition)
     }
-
+    
+    public enum ItemPosition {
+        case bottom
+        case top
+    }
+    
     private var scrollView: UIScrollView?
-
+    
     public func catchScrollView(for view: UIView) {
         if nil == scrollView {
             scrollView = view.enclosingScrollView()
         }
     }
-
+    
     public func scrollTo(_ action: Action, animated: Bool) {
         if let scroller = scrollView {
             scroller.isUserInteractionEnabled = isUserInteractionEnabled
@@ -71,6 +76,7 @@ public class SKScrollControlProxy {
             switch action {
                 
             case .offset(let point, let height):
+                // offset the current scroll offset
                 var newOffset = scroller.contentOffset
                 newOffset.y += point.y
                 if newOffset.y < 1 {
@@ -82,21 +88,30 @@ public class SKScrollControlProxy {
                 }
                 scroller.setContentOffset(newOffset, animated: animated)
                 
-//            case .toItem(let item):
+            case .item(let item, let cellHeight, let pos):
+                // scroll to the item, putting it at either the top or bottom of the list frame
+                var offset = CGPoint.zero
+                switch pos {
+                case .top:
+                    offset.y = cellHeight * CGFloat(item)
+                case .bottom:
+                    offset.y = (cellHeight * CGFloat(item)) - (cellHeight * 3)
+                }
+                scroller.setContentOffset(offset, animated: animated)
                 
-                
-                
-                case .end:
-                    rect.origin.y = scroller.contentSize.height +
-                        scroller.contentInset.bottom + scroller.contentInset.top - 1
+            case .end:
+                // scroll to the end
+                rect.origin.y = scroller.contentSize.height +
+                    scroller.contentInset.bottom + scroller.contentInset.top - 1
                 scroller.scrollRectToVisible(rect, animated: animated)
-                case .point(let point):
-                    rect.origin.y = point.y
+            case .point(let point):
+                // scroll to a point
+                rect.origin.y = point.y
                 scroller.scrollRectToVisible(rect, animated: animated)
-                default: {
-                    // default goes to top
-                    scroller.scrollRectToVisible(rect, animated: animated)
-                }()
+            default: {
+                // default goes to top
+                scroller.scrollRectToVisible(rect, animated: animated)
+            }()
             }
         }
     }
