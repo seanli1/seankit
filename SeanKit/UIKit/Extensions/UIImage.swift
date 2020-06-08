@@ -25,12 +25,46 @@ public extension UIImage {
 //        }
 //    }
     
-    func skResized(to: CGSize) -> UIImage {
-        let renderer = UIGraphicsImageRenderer(size: to)
-        let image = renderer.image { _ in
-            self.draw(in: CGRect.init(origin: CGPoint.zero, size: to))
+    enum ResizeStyle {
+        case scaleToFill, squeezeToFit
+    }
+    
+    func skResized(to: CGSize, style: ResizeStyle) -> UIImage {
+        
+        switch style {
+        case .scaleToFill:
+            let renderer = UIGraphicsImageRenderer(size: to)
+            let image = renderer.image { _ in
+                
+                if self.size.width > self.size.height {
+                    let ratio = self.size.width / self.size.height
+                    let drawSize = CGSize(width: to.width * ratio, height: to.height)
+                    
+                    let diff = drawSize.width - drawSize.height
+                    let side = diff / 2
+                    
+                    self.draw(in: CGRect.init(origin: CGPoint(x: -side, y: 0), size: drawSize))
+                } else {
+                    let ratio = self.size.height / self.size.width
+                    let drawSize = CGSize(width: to.width, height: to.height * ratio)
+                    
+                    let diff = drawSize.height - drawSize.width
+                    let side = diff / 2
+                    
+                    self.draw(in: CGRect.init(origin: CGPoint(x: 0, y: -side), size: drawSize))
+                }
+            }
+            return image
+            
+            
+            
+        case .squeezeToFit:
+            let renderer = UIGraphicsImageRenderer(size: to)
+            let image = renderer.image { _ in
+                self.draw(in: CGRect.init(origin: CGPoint.zero, size: to))
+            }
+            return image
         }
-        return image
     }
 
 //    Why the heck is this not working??

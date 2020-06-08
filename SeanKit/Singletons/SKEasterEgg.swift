@@ -67,7 +67,7 @@ public class SKEasterEgg {
             }
             guard let window = UIApplication.shared.keyWindow else { return }
             
-            let resizedImage = image!.skResized(to: CGSize(width: (window.frame.height * image!.size.width) / image!.size.height, height: window.frame.height))
+            let resizedImage = image!.skResized(to: CGSize(width: (window.frame.height * image!.size.width) / image!.size.height, height: window.frame.height), style: .squeezeToFit)
             let imageView = UIImageView(image: resizedImage)
             
             window.addSubview(imageView)

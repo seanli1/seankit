@@ -9,6 +9,9 @@
 import SwiftUI
 
 /*
+ 
+ Core functionality by StackOverflow user Asperi
+ 
  Implementation:
  
  Make a SwiftUI List whose List content offset can be controlled.
@@ -39,14 +42,15 @@ public struct SKScrollControlHelper: UIViewRepresentable {
 }
 
 
-@available(iOS 13,*)
+@available(iOS 13, *)
 public class SKScrollControlProxy {
     
-    public init(isUserInteractionEnabled: Bool) {
-        self.isUserInteractionEnabled = isUserInteractionEnabled
-    }
+    public init() {}
     
-    let isUserInteractionEnabled: Bool
+    
+    public func setScrollingEnabled(to: Bool) {
+        scrollView?.isScrollEnabled = to
+    }
     
     public enum Action {
         case end
@@ -71,7 +75,6 @@ public class SKScrollControlProxy {
     
     public func scrollTo(_ action: Action, animated: Bool) {
         if let scroller = scrollView {
-            scroller.isUserInteractionEnabled = isUserInteractionEnabled
             var rect = CGRect(origin: .zero, size: CGSize(width: 1, height: 1))
             switch action {
                 
@@ -104,6 +107,7 @@ public class SKScrollControlProxy {
                 rect.origin.y = scroller.contentSize.height +
                     scroller.contentInset.bottom + scroller.contentInset.top - 1
                 scroller.scrollRectToVisible(rect, animated: animated)
+                
             case .point(let point):
                 // scroll to a point
                 rect.origin.y = point.y
