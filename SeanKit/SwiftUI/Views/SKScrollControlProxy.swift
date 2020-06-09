@@ -57,7 +57,7 @@ public class SKScrollControlProxy {
         case top
         case point(point: CGPoint)
         case offset(point: CGPoint, listHeight: CGFloat)
-        case item(item: Int, cellHeight: CGFloat, position: ItemPosition)
+        case item(item: Int, cellHeight: CGFloat, cellsOnScreen: Int, position: ItemPosition)
     }
     
     public enum ItemPosition {
@@ -91,14 +91,14 @@ public class SKScrollControlProxy {
                 }
                 scroller.setContentOffset(newOffset, animated: animated)
                 
-            case .item(let item, let cellHeight, let pos):
+            case .item(let item, let cellHeight, let cellsOnScreen, let pos):
                 // scroll to the item, putting it at either the top or bottom of the list frame
                 var offset = CGPoint.zero
                 switch pos {
                 case .top:
                     offset.y = cellHeight * CGFloat(item)
                 case .bottom:
-                    offset.y = (cellHeight * CGFloat(item)) - (cellHeight * 3)
+                    offset.y = (cellHeight * CGFloat(item)) - (cellHeight * CGFloat(cellsOnScreen - 1))
                 }
                 scroller.setContentOffset(offset, animated: animated)
                 
