@@ -20,6 +20,14 @@ public struct SKMailView: UIViewControllerRepresentable {
     let body: String
     let bodyIsHTML: Bool
     
+    public init(to recipients: [String], subject: String, body: String, bodyIsHTML: Bool, result: Binding<Result<MFMailComposeResult, Error>?>) {
+        self.recipients = recipients
+        self.subject = subject
+        self.body = body
+        self.bodyIsHTML = bodyIsHTML
+        self._result = result
+    }
+    
     public class Coordinator: NSObject, MFMailComposeViewControllerDelegate {
         
         @Binding var presentation: PresentationMode
