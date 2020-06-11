@@ -47,11 +47,6 @@ public class SKScrollControlProxy {
     
     public init() {}
     
-    
-    public func setScrollingEnabled(to: Bool) {
-        scrollView?.isScrollEnabled = to
-    }
-    
     public enum Action {
         case end
         case top
