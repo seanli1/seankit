@@ -12,7 +12,7 @@ import SwiftUI
 
 // Values as of 6/12/2020
 
-extension CGFloat {
+public extension CGFloat {
     
     static let navBarCardStyleHeight: CGFloat = 44
     static let listCellHeight: CGFloat = 44
