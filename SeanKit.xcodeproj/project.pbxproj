@@ -44,6 +44,7 @@
 		B4B3A7D3248F6CE800CBAF04 /* SKImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B3A7D2248F6CE800CBAF04 /* SKImagePickerView.swift */; };
 		B4B4B28324810F980028C72C /* SKQRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B4B28224810F980028C72C /* SKQRScannerVC.swift */; };
 		B4B4B286248114520028C72C /* SKQRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B4B285248114520028C72C /* SKQRScannerView.swift */; };
+		B4B4F0DB249406D300B65F5F /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B4F0DA249406D300B65F5F /* CGFloat.swift */; };
 		B4B76043226A93AB00A489FC /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B76042226A93AB00A489FC /* URL.swift */; };
 		B4BB00BD22A5F8BE00F607DE /* DispatchGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BB00BC22A5F8BE00F607DE /* DispatchGroup.swift */; };
 		B4BEF1BD247856A100943652 /* SKDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEF1BC247856A100943652 /* SKDevice.swift */; };
@@ -94,6 +95,7 @@
 		B4B3A7D2248F6CE800CBAF04 /* SKImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKImagePickerView.swift; sourceTree = "<group>"; };
 		B4B4B28224810F980028C72C /* SKQRScannerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKQRScannerVC.swift; sourceTree = "<group>"; };
 		B4B4B285248114520028C72C /* SKQRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKQRScannerView.swift; sourceTree = "<group>"; };
+		B4B4F0DA249406D300B65F5F /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		B4B76042226A93AB00A489FC /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		B4BB00BC22A5F8BE00F607DE /* DispatchGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroup.swift; sourceTree = "<group>"; };
 		B4BEF1BC247856A100943652 /* SKDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKDevice.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 		B447802B24759709003CCB41 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B4B4F0DA249406D300B65F5F /* CGFloat.swift */,
 				B4BB00BC22A5F8BE00F607DE /* DispatchGroup.swift */,
 				B4439AB42263E39A00630663 /* Array.swift */,
 				B4439ABA2263E6A100630663 /* String.swift */,
@@ -381,6 +384,7 @@
 				B49C96292297235100A08B69 /* SKManipulate.swift in Sources */,
 				B4439B3D2264166600630663 /* UIImageView.swift in Sources */,
 				B4439ABE2263E91200630663 /* SKEasterEgg.swift in Sources */,
+				B4B4F0DB249406D300B65F5F /* CGFloat.swift in Sources */,
 				B4A37CA322A6441200972488 /* UIViewController.swift in Sources */,
 				B442942B2485BA2A000A3AA1 /* SKBadgeCounter.swift in Sources */,
 				B4439AB92263E61E00630663 /* SKQRGenerator.swift in Sources */,
