@@ -101,4 +101,16 @@ public extension String {
         let testSelf = self.lowercased()
         return testSelf.contains(testString)
     }
+    
+    /// Remove spaces at beginning and end of a string. `" something something  "` becomes `"something something"`.
+    func skRemovingEdgeSpaces() -> String {
+        var str = self
+        while self.first == " " {
+            str.removeFirst()
+        }
+        while self.last == " " {
+            str.removeLast()
+        }
+        return str
+    }
 }
