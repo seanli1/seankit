@@ -50,7 +50,7 @@
 		B4BEF1BD247856A100943652 /* SKDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEF1BC247856A100943652 /* SKDevice.swift */; };
 		B4BEF1BF2478A7A900943652 /* Skit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEF1BE2478A7A900943652 /* Skit.swift */; };
 		B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C91BC72280E78A00618A33 /* UIScrollView.swift */; };
-		B4CFB7CD2487921200198172 /* SKQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CFB7CC2487921200198172 /* SKQRView.swift */; };
+		B4CFB7CD2487921200198172 /* SKQRImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CFB7CC2487921200198172 /* SKQRImage.swift */; };
 		B4EFAA9D22B888AF00450722 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EFAA9C22B888AF00450722 /* UITextField.swift */; };
 		B4FE84B8248B623F00AAD1BD /* SKScrollControlProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE84B7248B623F00AAD1BD /* SKScrollControlProxy.swift */; };
 /* End PBXBuildFile section */
@@ -101,7 +101,7 @@
 		B4BEF1BC247856A100943652 /* SKDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKDevice.swift; sourceTree = "<group>"; };
 		B4BEF1BE2478A7A900943652 /* Skit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skit.swift; sourceTree = "<group>"; };
 		B4C91BC72280E78A00618A33 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
-		B4CFB7CC2487921200198172 /* SKQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKQRView.swift; sourceTree = "<group>"; };
+		B4CFB7CC2487921200198172 /* SKQRImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKQRImage.swift; sourceTree = "<group>"; };
 		B4EFAA9C22B888AF00450722 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		B4FE84B7248B623F00AAD1BD /* SKScrollControlProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKScrollControlProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,7 +225,7 @@
 			children = (
 				B4560D5E2471AF69002824EC /* SKMailView.swift */,
 				B4B4B285248114520028C72C /* SKQRScannerView.swift */,
-				B4CFB7CC2487921200198172 /* SKQRView.swift */,
+				B4CFB7CC2487921200198172 /* SKQRImage.swift */,
 				B4FE84B7248B623F00AAD1BD /* SKScrollControlProxy.swift */,
 				B442942A2485BA2A000A3AA1 /* SKBadgeCounter.swift */,
 				B4B3A7D2248F6CE800CBAF04 /* SKImagePickerView.swift */,
@@ -389,7 +389,7 @@
 				B442942B2485BA2A000A3AA1 /* SKBadgeCounter.swift in Sources */,
 				B4439AB92263E61E00630663 /* SKQRGenerator.swift in Sources */,
 				B4439ACC2263ED8300630663 /* dynamicActionSheet.swift in Sources */,
-				B4CFB7CD2487921200198172 /* SKQRView.swift in Sources */,
+				B4CFB7CD2487921200198172 /* SKQRImage.swift in Sources */,
 				B451B0E12471A30200980571 /* SKFontManager.swift in Sources */,
 				B4439AAD2263E12300630663 /* SKAlerts.swift in Sources */,
 				B4B4B28324810F980028C72C /* SKQRScannerVC.swift in Sources */,
