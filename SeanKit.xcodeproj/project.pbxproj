@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B401CC5C249B37A800F5435B /* SKCancelChevron.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401CC5B249B37A800F5435B /* SKCancelChevron.swift */; };
+		B401CC5E249B40A300F5435B /* SKLoadingSlidingCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401CC5D249B40A300F5435B /* SKLoadingSlidingCircles.swift */; };
 		B40DC71C22B6DD970013C1C4 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DC71B22B6DD970013C1C4 /* UITextView.swift */; };
 		B40DC71E22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DC71D22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift */; };
 		B442942B2485BA2A000A3AA1 /* SKBadgeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B442942A2485BA2A000A3AA1 /* SKBadgeCounter.swift */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		B401CC5B249B37A800F5435B /* SKCancelChevron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCancelChevron.swift; sourceTree = "<group>"; };
+		B401CC5D249B40A300F5435B /* SKLoadingSlidingCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKLoadingSlidingCircles.swift; sourceTree = "<group>"; };
 		B40DC71B22B6DD970013C1C4 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
 		B40DC71D22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKVerticallyAlignableLabel.swift; sourceTree = "<group>"; };
 		B442942A2485BA2A000A3AA1 /* SKBadgeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKBadgeCounter.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				B4560D5E2471AF69002824EC /* SKMailView.swift */,
+				B401CC5D249B40A300F5435B /* SKLoadingSlidingCircles.swift */,
 				B401CC5B249B37A800F5435B /* SKCancelChevron.swift */,
 				B4B4B285248114520028C72C /* SKQRScannerView.swift */,
 				B4CFB7CC2487921200198172 /* SKQRImage.swift */,
@@ -395,6 +398,7 @@
 				B4439ACC2263ED8300630663 /* dynamicActionSheet.swift in Sources */,
 				B4CFB7CD2487921200198172 /* SKQRImage.swift in Sources */,
 				B451B0E12471A30200980571 /* SKFontManager.swift in Sources */,
+				B401CC5E249B40A300F5435B /* SKLoadingSlidingCircles.swift in Sources */,
 				B4439AAD2263E12300630663 /* SKAlerts.swift in Sources */,
 				B4B4B28324810F980028C72C /* SKQRScannerVC.swift in Sources */,
 				B4B3A7CF248F423D00CBAF04 /* SKAlertItem_SKActionSheetItem.swift in Sources */,
