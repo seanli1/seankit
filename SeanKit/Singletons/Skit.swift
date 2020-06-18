@@ -11,5 +11,6 @@ import Foundation
 /// Contains functions and properties of SeanKit.
 public struct Skit {
     private init() {}
-    // Use extensions to add stuff to `Skit`.
+    
+
 }

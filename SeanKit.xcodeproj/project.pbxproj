@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B401CC5C249B37A800F5435B /* SKCancelChevron.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401CC5B249B37A800F5435B /* SKCancelChevron.swift */; };
 		B40DC71C22B6DD970013C1C4 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DC71B22B6DD970013C1C4 /* UITextView.swift */; };
 		B40DC71E22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DC71D22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift */; };
 		B442942B2485BA2A000A3AA1 /* SKBadgeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B442942A2485BA2A000A3AA1 /* SKBadgeCounter.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B401CC5B249B37A800F5435B /* SKCancelChevron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCancelChevron.swift; sourceTree = "<group>"; };
 		B40DC71B22B6DD970013C1C4 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
 		B40DC71D22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKVerticallyAlignableLabel.swift; sourceTree = "<group>"; };
 		B442942A2485BA2A000A3AA1 /* SKBadgeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKBadgeCounter.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				B4560D5E2471AF69002824EC /* SKMailView.swift */,
+				B401CC5B249B37A800F5435B /* SKCancelChevron.swift */,
 				B4B4B285248114520028C72C /* SKQRScannerView.swift */,
 				B4CFB7CC2487921200198172 /* SKQRImage.swift */,
 				B4FE84B7248B623F00AAD1BD /* SKScrollControlProxy.swift */,
@@ -362,6 +365,7 @@
 				B4EFAA9D22B888AF00450722 /* UITextField.swift in Sources */,
 				B4560D5F2471AF69002824EC /* SKMailView.swift in Sources */,
 				B4BEF1BF2478A7A900943652 /* Skit.swift in Sources */,
+				B401CC5C249B37A800F5435B /* SKCancelChevron.swift in Sources */,
 				B4439AF62263F4F000630663 /* presentDisclaimer.swift in Sources */,
 				B4439AB52263E39A00630663 /* Array.swift in Sources */,
 				B4BEF1BD247856A100943652 /* SKDevice.swift in Sources */,
