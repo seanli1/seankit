@@ -38,6 +38,7 @@
 		B4727EB32276260900743241 /* ring.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4727EB22276260900743241 /* ring.wav */; };
 		B47BEF8222659E260075CEE3 /* SKDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47BEF8122659E260075CEE3 /* SKDownload.swift */; };
 		B49C96292297235100A08B69 /* SKManipulate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49C96282297235100A08B69 /* SKManipulate.swift */; };
+		B4A2C1E8249C473500BBFB6D /* SKActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A2C1E7249C473500BBFB6D /* SKActivityView.swift */; };
 		B4A37CA122A63F6700972488 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A37CA022A63F6700972488 /* UIAlertController.swift */; };
 		B4A37CA322A6441200972488 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A37CA222A6441200972488 /* UIViewController.swift */; };
 		B4AA859222D4AE7300BA4B28 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AA859122D4AE7300BA4B28 /* UIStackView.swift */; };
@@ -91,6 +92,7 @@
 		B4727EB22276260900743241 /* ring.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ring.wav; sourceTree = "<group>"; };
 		B47BEF8122659E260075CEE3 /* SKDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKDownload.swift; sourceTree = "<group>"; };
 		B49C96282297235100A08B69 /* SKManipulate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKManipulate.swift; sourceTree = "<group>"; };
+		B4A2C1E7249C473500BBFB6D /* SKActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKActivityView.swift; sourceTree = "<group>"; };
 		B4A37CA022A63F6700972488 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		B4A37CA222A6441200972488 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		B4AA859122D4AE7300BA4B28 /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				B4560D5E2471AF69002824EC /* SKMailView.swift */,
+				B4A2C1E7249C473500BBFB6D /* SKActivityView.swift */,
 				B401CC5D249B40A300F5435B /* SKLoadingSlidingCircles.swift */,
 				B401CC5B249B37A800F5435B /* SKCancelChevron.swift */,
 				B4B4B285248114520028C72C /* SKQRScannerView.swift */,
@@ -386,6 +389,7 @@
 				B4439AB72263E48E00630663 /* SKBasicScrollingViewController.swift in Sources */,
 				B4B3A7D3248F6CE800CBAF04 /* SKImagePickerView.swift in Sources */,
 				B4A37CA122A63F6700972488 /* UIAlertController.swift in Sources */,
+				B4A2C1E8249C473500BBFB6D /* SKActivityView.swift in Sources */,
 				B4FE84B8248B623F00AAD1BD /* SKScrollControlProxy.swift in Sources */,
 				B4BB00BD22A5F8BE00F607DE /* DispatchGroup.swift in Sources */,
 				B49C96292297235100A08B69 /* SKManipulate.swift in Sources */,
