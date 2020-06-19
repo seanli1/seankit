@@ -29,7 +29,7 @@ public struct SKCancelChevron: View {
                 .frame(width: 30, height: 30)
         }
         .offset(y: -(UIScreen.skHeight / 2) + 80)
-        .foregroundColor(Color.white.opacity(0.3))
+        .foregroundColor(Color.white.opacity(0.2))
     }
 }
 

@@ -9,6 +9,7 @@
 import SwiftUI
 
 @available(iOS 13, *)
+/// 1.5x scale is nice if it is not accompanied by anything (like text).
 public struct SKActivityView: UIViewRepresentable {
     
     public let scale: CGFloat
