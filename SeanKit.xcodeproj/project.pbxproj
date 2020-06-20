@@ -11,6 +11,8 @@
 		B401CC5E249B40A300F5435B /* SKLoadingSlidingCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401CC5D249B40A300F5435B /* SKLoadingSlidingCircles.swift */; };
 		B40DC71C22B6DD970013C1C4 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DC71B22B6DD970013C1C4 /* UITextView.swift */; };
 		B40DC71E22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DC71D22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift */; };
+		B419D436249ECBE8009A38BC /* SKLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419D435249ECBE8009A38BC /* SKLoadingView.swift */; };
+		B419D438249ECD3E009A38BC /* SKConditionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419D437249ECD3E009A38BC /* SKConditionalView.swift */; };
 		B442942B2485BA2A000A3AA1 /* SKBadgeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B442942A2485BA2A000A3AA1 /* SKBadgeCounter.swift */; };
 		B4439A862263CDCA00630663 /* SeanKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B4439A842263CDCA00630663 /* SeanKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4439A8D2263D2AD00630663 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439A8C2263D2AD00630663 /* UIView.swift */; };
@@ -63,6 +65,8 @@
 		B401CC5D249B40A300F5435B /* SKLoadingSlidingCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKLoadingSlidingCircles.swift; sourceTree = "<group>"; };
 		B40DC71B22B6DD970013C1C4 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
 		B40DC71D22B6EB4C0013C1C4 /* SKVerticallyAlignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKVerticallyAlignableLabel.swift; sourceTree = "<group>"; };
+		B419D435249ECBE8009A38BC /* SKLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKLoadingView.swift; sourceTree = "<group>"; };
+		B419D437249ECD3E009A38BC /* SKConditionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKConditionalView.swift; sourceTree = "<group>"; };
 		B442942A2485BA2A000A3AA1 /* SKBadgeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKBadgeCounter.swift; sourceTree = "<group>"; };
 		B4439A812263CDCA00630663 /* SeanKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SeanKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4439A842263CDCA00630663 /* SeanKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeanKit.h; sourceTree = "<group>"; };
@@ -238,6 +242,8 @@
 				B4FE84B7248B623F00AAD1BD /* SKScrollControlProxy.swift */,
 				B442942A2485BA2A000A3AA1 /* SKBadgeCounter.swift */,
 				B4B3A7D2248F6CE800CBAF04 /* SKImagePickerView.swift */,
+				B419D435249ECBE8009A38BC /* SKLoadingView.swift */,
+				B419D437249ECD3E009A38BC /* SKConditionalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -381,6 +387,7 @@
 				B4560D6B2471DA5B002824EC /* SKReducedCircle.swift in Sources */,
 				B4538A112266CD0700B14142 /* SKVibrate.swift in Sources */,
 				B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */,
+				B419D438249ECD3E009A38BC /* SKConditionalView.swift in Sources */,
 				B4B4B286248114520028C72C /* SKQRScannerView.swift in Sources */,
 				B40DC71C22B6DD970013C1C4 /* UITextView.swift in Sources */,
 				B4439A9F2263D85100630663 /* UILabel.swift in Sources */,
@@ -408,6 +415,7 @@
 				B4B3A7CF248F423D00CBAF04 /* SKAlertItem_SKActionSheetItem.swift in Sources */,
 				B451991722C6DAD700EA3353 /* UITabBarController.swift in Sources */,
 				B4439A992263D6F900630663 /* UIImage.swift in Sources */,
+				B419D436249ECBE8009A38BC /* SKLoadingView.swift in Sources */,
 				B4439AAB2263E0B100630663 /* topController.swift in Sources */,
 				B449627E2286A0F700845574 /* UITableView.swift in Sources */,
 				B47BEF8222659E260075CEE3 /* SKDownload.swift in Sources */,
