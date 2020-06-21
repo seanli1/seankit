@@ -1,5 +1,5 @@
 //
-//  SKShowMod.swift
+//  SKVisible.swift
 //  SeanKit
 //
 //  Created by Sean Li on 6/20/20.
@@ -11,7 +11,7 @@ import SwiftUI
 
 /// Pass boolean binding that determines if this is showing or not.
 @available(iOS 13, *)
-public struct SKShowMod: ViewModifier {
+public struct SKVisible: ViewModifier {
     
     @Binding var isShowing: Bool
     
