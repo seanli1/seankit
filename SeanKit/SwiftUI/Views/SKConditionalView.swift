@@ -1,5 +1,5 @@
 //
-//  SKConditionalView.swift
+//  SKSwitchView.swift
 //  SeanKit
 //
 //  Created by Sean Li on 6/20/20.
@@ -9,9 +9,9 @@
 import SwiftUI
 
 
-@available(iOS 13,*)
 /// If condition is true, shows `first`, otherwise shows `second`.
-public struct SKConditionalView<U: View, V: View>: View {
+@available(iOS 13,*)
+public struct SKSwitchView<U: View, V: View>: View {
     
     @Binding var condition: Bool
     let first: U
