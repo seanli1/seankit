@@ -23,5 +23,11 @@ public class SKDevice {
     public static func idiom() -> UIUserInterfaceIdiom {
         return UIDevice.current.userInterfaceIdiom
     }
+}
+
+public class SKScreen {
+    private init() {}
     
+    public static let width: CGFloat = UIScreen.main.bounds.width
+    public static let height: CGFloat = UIScreen.main.bounds.height
 }
