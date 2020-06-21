@@ -53,6 +53,7 @@
 		B4BEF1BD247856A100943652 /* SKDevice_SKScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEF1BC247856A100943652 /* SKDevice_SKScreen.swift */; };
 		B4BEF1BF2478A7A900943652 /* Skit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEF1BE2478A7A900943652 /* Skit.swift */; };
 		B4C91BC82280E78A00618A33 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C91BC72280E78A00618A33 /* UIScrollView.swift */; };
+		B4CAE8D8249EF922005E1BEC /* SKShowMod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CAE8D7249EF922005E1BEC /* SKShowMod.swift */; };
 		B4CFB7CD2487921200198172 /* SKQRImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CFB7CC2487921200198172 /* SKQRImage.swift */; };
 		B4EFAA9D22B888AF00450722 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EFAA9C22B888AF00450722 /* UITextField.swift */; };
 		B4FE84B8248B623F00AAD1BD /* SKScrollControlProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE84B7248B623F00AAD1BD /* SKScrollControlProxy.swift */; };
@@ -107,6 +108,7 @@
 		B4BEF1BC247856A100943652 /* SKDevice_SKScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKDevice_SKScreen.swift; sourceTree = "<group>"; };
 		B4BEF1BE2478A7A900943652 /* Skit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skit.swift; sourceTree = "<group>"; };
 		B4C91BC72280E78A00618A33 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
+		B4CAE8D7249EF922005E1BEC /* SKShowMod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKShowMod.swift; sourceTree = "<group>"; };
 		B4CFB7CC2487921200198172 /* SKQRImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKQRImage.swift; sourceTree = "<group>"; };
 		B4EFAA9C22B888AF00450722 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		B4FE84B7248B623F00AAD1BD /* SKScrollControlProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKScrollControlProxy.swift; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				B4AF9EB824839B2D004EB2AE /* ButtonMods.swift */,
+				B4CAE8D7249EF922005E1BEC /* SKShowMod.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				B4B4B28324810F980028C72C /* SKQRScannerVC.swift in Sources */,
 				B4B3A7CF248F423D00CBAF04 /* SKAlertItem_SKActionSheetItem.swift in Sources */,
 				B451991722C6DAD700EA3353 /* UITabBarController.swift in Sources */,
+				B4CAE8D8249EF922005E1BEC /* SKShowMod.swift in Sources */,
 				B4439A992263D6F900630663 /* UIImage.swift in Sources */,
 				B419D436249ECBE8009A38BC /* SKLoadingView.swift in Sources */,
 				B4439AAB2263E0B100630663 /* topController.swift in Sources */,
