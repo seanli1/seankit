@@ -105,10 +105,10 @@ public extension String {
     /// Remove spaces at beginning and end of a string. `" something something  "` becomes `"something something"`.
     func skRemovingEdgeSpaces() -> String {
         var str = self
-        while self.first == " " {
+        while str.first == " " {
             str.removeFirst()
         }
-        while self.last == " " {
+        while str.last == " " {
             str.removeLast()
         }
         return str
