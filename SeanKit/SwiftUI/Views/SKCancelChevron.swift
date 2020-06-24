@@ -14,9 +14,11 @@ import SwiftUI
 public struct SKCancelChevron: View {
     
     public let customText: String?
+    public let customColor: Color?
     
-    public init(_ customText: String? = nil) {
+    public init(_ customText: String? = nil, _ customColor: Color? = nil) {
         self.customText = customText
+        self.customColor = customColor
     }
     
     public var body: some View {
@@ -29,7 +31,7 @@ public struct SKCancelChevron: View {
                 .frame(width: 30, height: 30)
         }
         .offset(y: -(SKScreen.height / 2) + 80)
-        .foregroundColor(Color.white.opacity(0.2))
+        .foregroundColor(self.customColor ?? Color.white.opacity(0.2))
     }
 }
 
