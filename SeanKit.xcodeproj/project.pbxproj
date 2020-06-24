@@ -34,6 +34,7 @@
 		B4538A112266CD0700B14142 /* SKVibrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB22263E23500630663 /* SKVibrate.swift */; };
 		B4560D5F2471AF69002824EC /* SKMailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4560D5E2471AF69002824EC /* SKMailView.swift */; };
 		B4560D6B2471DA5B002824EC /* SKReducedCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4560D6A2471DA5B002824EC /* SKReducedCircle.swift */; };
+		B45C4A3024A3F58B00AC2E83 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45C4A2F24A3F58B00AC2E83 /* ErrorMessage.swift */; };
 		B4727EB1227625FC00743241 /* seanonthebeach.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B4727EB0227625FC00743241 /* seanonthebeach.jpeg */; };
 		B4727EB32276260900743241 /* ring.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4727EB22276260900743241 /* ring.wav */; };
 		B47BEF8222659E260075CEE3 /* SKDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47BEF8122659E260075CEE3 /* SKDownload.swift */; };
@@ -87,6 +88,7 @@
 		B451B0E02471A30200980571 /* SKFontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKFontManager.swift; sourceTree = "<group>"; };
 		B4560D5E2471AF69002824EC /* SKMailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKMailView.swift; sourceTree = "<group>"; };
 		B4560D6A2471DA5B002824EC /* SKReducedCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKReducedCircle.swift; sourceTree = "<group>"; };
+		B45C4A2F24A3F58B00AC2E83 /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		B4727EB0227625FC00743241 /* seanonthebeach.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seanonthebeach.jpeg; sourceTree = "<group>"; };
 		B4727EB22276260900743241 /* ring.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ring.wav; sourceTree = "<group>"; };
 		B47BEF8122659E260075CEE3 /* SKDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKDownload.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 		B4439A832263CDCA00630663 /* SeanKit */ = {
 			isa = PBXGroup;
 			children = (
+				B45C4A2F24A3F58B00AC2E83 /* ErrorMessage.swift */,
 				B48CF259226CEAB900C3282C /* Singletons */,
 				B447802B24759709003CCB41 /* Extensions */,
 				B447802D24759748003CCB41 /* SwiftUI */,
@@ -373,6 +376,7 @@
 				B4439AB52263E39A00630663 /* Array.swift in Sources */,
 				B4BEF1BD247856A100943652 /* SKDevice-SKScreen.swift in Sources */,
 				B4439A8D2263D2AD00630663 /* UIView.swift in Sources */,
+				B45C4A3024A3F58B00AC2E83 /* ErrorMessage.swift in Sources */,
 				B4AA859222D4AE7300BA4B28 /* UIStackView.swift in Sources */,
 				B4560D6B2471DA5B002824EC /* SKReducedCircle.swift in Sources */,
 				B4538A112266CD0700B14142 /* SKVibrate.swift in Sources */,
