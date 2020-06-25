@@ -20,6 +20,8 @@ public struct SKMailView: UIViewControllerRepresentable {
     let body: String
     let bodyIsHTML: Bool
     
+    public static let cannotSendMailAlert = Alert(title: Text("Can't Send Email"), message: Text("Sorry, this device isn't configured to send email. Make sure you have the Mail app installed."), dismissButton: .default(Text("Ok")))
+    
     public init(to recipients: [String], subject: String, body: String, bodyIsHTML: Bool, result: Binding<Result<MFMailComposeResult, Error>?>) {
         self.recipients = recipients
         self.subject = subject
