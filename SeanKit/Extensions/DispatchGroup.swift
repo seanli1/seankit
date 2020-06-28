@@ -21,4 +21,11 @@ public extension DispatchGroup {
         return count
     }
     
+    /// Checks that count is > 0 before leaving, to prevent crash.
+    func skLeaveSafely() {
+        if self.skCount ?? 0 > 0 {
+            self.leave()
+        }
+    }
+    
 }
