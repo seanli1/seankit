@@ -121,10 +121,11 @@ public class SKScrollControlProxy {
                 // scroll to a point
                 rect.origin.y = point.y
                 scroller.scrollRectToVisible(rect, animated: animated)
-            default: {
+                
+            default:
                 // default goes to top
                 scroller.scrollRectToVisible(rect, animated: animated)
-            }()
+                
             }
         }
     }
