@@ -30,4 +30,5 @@ public class SKScreen {
     
     public static let width: CGFloat = UIScreen.main.bounds.width
     public static let height: CGFloat = UIScreen.main.bounds.height
+    
 }

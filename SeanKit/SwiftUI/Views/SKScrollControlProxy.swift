@@ -33,11 +33,21 @@ public struct SKScrollControlHelper: UIViewRepresentable {
     }
     
     public func makeUIView(context: Context) -> UIView {
-        return UIView() // managed by SwiftUI, no overloads
+        let view = UIView()
+        return view // managed by SwiftUI, no overloads
     }
     
     public func updateUIView(_ uiView: UIView, context: Context) {
-        proxy.catchScrollView(for: uiView) // here UIView is in view hierarchy
+        proxy.catchScrollView(for: uiView) // here UIView is in view hierarchy (usually the case in simple situations)
+        
+        // However if not, use this timer to continuously check.
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { (timer) in
+            if self.proxy.scrollView == nil {
+                self.proxy.catchScrollView(for: uiView)
+            } else {
+                timer.invalidate()
+            }
+        }
     }
 }
 
@@ -60,7 +70,7 @@ public class SKScrollControlProxy {
         case top
     }
     
-    private var scrollView: UIScrollView?
+    var scrollView: UIScrollView?
     
     public func catchScrollView(for view: UIView) {
         if nil == scrollView {
@@ -69,7 +79,9 @@ public class SKScrollControlProxy {
     }
     
     public func scrollTo(_ action: Action, animated: Bool) {
+        
         if let scroller = scrollView {
+            
             var rect = CGRect(origin: .zero, size: CGSize(width: 1, height: 1))
             switch action {
                 
@@ -87,6 +99,7 @@ public class SKScrollControlProxy {
                 scroller.setContentOffset(newOffset, animated: animated)
                 
             case .item(let item, let cellHeight, let cellsOnScreen, let pos):
+                
                 // scroll to the item, putting it at either the top or bottom of the list frame
                 var offset = CGPoint.zero
                 switch pos {
@@ -95,6 +108,7 @@ public class SKScrollControlProxy {
                 case .bottom:
                     offset.y = (cellHeight * CGFloat(item)) - (cellHeight * CGFloat(cellsOnScreen - 1))
                 }
+                
                 scroller.setContentOffset(offset, animated: animated)
                 
             case .end:
@@ -120,6 +134,7 @@ public class SKScrollControlProxy {
 
 private extension UIView {
     func enclosingScrollView() -> UIScrollView? {
+        
         var next: UIView? = self
         repeat {
             next = next?.superview
