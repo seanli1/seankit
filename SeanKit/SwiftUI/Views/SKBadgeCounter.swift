@@ -9,7 +9,7 @@
 import SwiftUI
 
 
-/// Put this in a `ZStack(alignment: .bottomLeading)` alongside the `TabView`, and enclose everything inside a `GeometryReader`.
+/// Put this in a `ZStack(alignment: .bottomLeading)` alongside the `TabView`, and enclose everything inside a `GeometryReader`. Remember `badgePosition` starts at `1`, not `0`. Also use a computed property for `value`.
 /// - parameter badgePosition: Enter which tab this is for. Starts at `1`, not `0`.
 /// - parameter value: Use a computed property for this.
 @available(iOS 13, *)
