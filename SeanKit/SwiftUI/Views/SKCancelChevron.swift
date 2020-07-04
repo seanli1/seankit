@@ -29,10 +29,12 @@ public struct SKCancelChevron: View {
     
     public let header: Header?
     public let customColor: Color?
+    public let adjustOffset: CGFloat?
     
-    public init(_ header: Header? = nil, _ customColor: Color? = nil) {
+    public init(_ header: Header? = nil, _ customColor: Color? = nil, adjOffset: CGFloat? = nil) {
         self.header = header
         self.customColor = customColor
+        self.adjustOffset = adjOffset
     }
     
     public var body: some View {
@@ -46,7 +48,7 @@ public struct SKCancelChevron: View {
                 .scaledToFit()
                 .frame(width: 30, height: 30)
         }
-        .offset(y: -(SKScreen.height / 2) + 70)
+        .offset(y: -(SKScreen.height / 2) + 70 + (self.adjustOffset ?? 0))
         .foregroundColor(self.customColor ?? Color.white.opacity(0.2))
     }
 }
