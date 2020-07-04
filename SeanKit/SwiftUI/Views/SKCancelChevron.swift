@@ -13,24 +13,40 @@ import SwiftUI
 @available(iOS 13, *)
 public struct SKCancelChevron: View {
     
-    public let customText: String?
+    public enum Header {
+        case cancel
+        case close
+        case custom(String)
+        
+        func text() -> String {
+            switch self {
+            case .cancel:           return "Cancel"
+            case .close:            return "Close"
+            case .custom(let str):  return str
+            }
+        }
+    }
+    
+    public let header: Header?
     public let customColor: Color?
     
-    public init(_ customText: String? = nil, _ customColor: Color? = nil) {
-        self.customText = customText
+    public init(_ header: Header? = nil, _ customColor: Color? = nil) {
+        self.header = header
         self.customColor = customColor
     }
     
     public var body: some View {
         VStack(spacing: -5) {
-            Text(self.customText ?? "Cancel")
-                .font(.headline)
+            if self.header != nil {
+                Text(self.header!.text())
+                    .font(.headline)
+            }
             Image(systemName: "chevron.compact.down")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 30, height: 30)
         }
-        .offset(y: -(SKScreen.height / 2) + 80)
+        .offset(y: -(SKScreen.height / 2) + 70)
         .foregroundColor(self.customColor ?? Color.white.opacity(0.2))
     }
 }
