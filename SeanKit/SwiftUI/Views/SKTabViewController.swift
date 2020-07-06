@@ -13,28 +13,27 @@ import SwiftUI
 @available (iOS 13, *)
 public struct SKTabViewController: UIViewControllerRepresentable {
     
-    public var viewControllers: [(SKTabScheme, String?)]
-//    var badgeValue: String?
+    public var viewControllers: [SKTabScheme]
     
-    public init(_ viewControllers: [(SKTabScheme, String?)]) {
+    public init(_ viewControllers: [SKTabScheme]) {
         self.viewControllers = viewControllers
     }
     
     public func makeUIViewController(context: Context) -> UITabBarController {
         for vc in viewControllers {
-            if let badgeValue = vc.1 {
-                vc.0.tabBarItem.badgeValue = "\(badgeValue)"
+            if let badgeValue = vc.badgeValue {
+                vc.tabBarItem.badgeValue = "\(badgeValue)"
             }
         }
         let customTabView = UITabBarController()
-            customTabView.setViewControllers(viewControllers.map({$0.0}), animated: false)
+            customTabView.setViewControllers(viewControllers.map({$0}), animated: false)
         
         return customTabView
     }
     public func updateUIViewController(_ uiViewController: UITabBarController, context: Context) {
         guard uiViewController.viewControllers != nil else { return }
         for x in 0 ..< uiViewController.viewControllers!.count {
-            if let badgeValue = self.viewControllers[x].1 {
+            if let badgeValue = self.viewControllers[x].badgeValue {
                 uiViewController.viewControllers![x].tabBarItem.badgeValue = "\(badgeValue)"
             }
         }
@@ -45,13 +44,18 @@ public struct SKTabViewController: UIViewControllerRepresentable {
 /// Pass this to `SKTabViewController` as its `viewControllers`. This is the same as passing a `UIHostingController`, except this includes the ability for adding a `tabBarItem` built in.
 @available (iOS 13, *)
 public class SKTabView<V: View>: UIHostingController<V>, SKTabScheme {
-    public convenience init(_ rootView: V, _ tabBarItem: UITabBarItem) {
+    
+    public var badgeValue: String?
+    
+    public convenience init(_ rootView: V, _ tabBarItem: UITabBarItem, badgeValue: String? = nil) {
         self.init(rootView: rootView)
         self.tabBarItem = tabBarItem
-//        if let value = badgeValue {
-//
-//        }
+        if let value = badgeValue {
+            self.badgeValue = value
+        }
     }
 }
 
-public protocol SKTabScheme: UIViewController {}
+public protocol SKTabScheme: UIViewController {
+    var badgeValue: String? { get set }
+}
