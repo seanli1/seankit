@@ -24,7 +24,7 @@ public struct SKTabViewController: UIViewControllerRepresentable {
             vc.tabBarItem.badgeValue = vc.badgeValue
         }
         let customTabView = UITabBarController()
-        customTabView.setViewControllers(viewControllers.map({$0}), animated: false)
+        customTabView.setViewControllers(viewControllers, animated: false)
         return customTabView
     }
     
