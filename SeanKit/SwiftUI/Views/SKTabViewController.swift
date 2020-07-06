@@ -9,7 +9,7 @@
 import SwiftUI
 
 
-/// Container view to hold `SKTabView`s.
+/// Container view to hold `SKTabView`s (which conform to `SKTabScheme`).
 @available (iOS 13, *)
 public struct SKTabViewController: UIViewControllerRepresentable {
     
