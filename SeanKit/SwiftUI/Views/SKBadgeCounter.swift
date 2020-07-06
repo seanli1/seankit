@@ -31,12 +31,13 @@ public struct SKBadgeCounter: View {
         ZStack {
             Circle()
                 .foregroundColor(.red)
+                .frame(width: 19, height: 19)
             Text("\(self.value)")
                 .foregroundColor(.white)
                 .font(Font.system(size: 12))
+                .frame(width: 24, height: 24)
         }
-        .frame(width: 15, height: 15)
-        .scaleEffect(1.1)
+//        .frame(width: 18, height: 18) // 15
         .offset(x: ( ( 2 * self.badgePosition) - 0.95 ) * ( geometry.size.width / ( 2 * self.numberOfTabs ) ) + 2, y: -25)
         .opacity(self.value == 0 ? 0 : 1.0)
     }
