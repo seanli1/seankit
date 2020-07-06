@@ -21,21 +21,17 @@ public struct SKTabViewController: UIViewControllerRepresentable {
     
     public func makeUIViewController(context: Context) -> UITabBarController {
         for vc in viewControllers {
-            if let badgeValue = vc.badgeValue {
-                vc.tabBarItem.badgeValue = "\(badgeValue)"
-            }
+            vc.tabBarItem.badgeValue = vc.badgeValue
         }
         let customTabView = UITabBarController()
-            customTabView.setViewControllers(viewControllers.map({$0}), animated: false)
-        
+        customTabView.setViewControllers(viewControllers.map({$0}), animated: false)
         return customTabView
     }
+    
     public func updateUIViewController(_ uiViewController: UITabBarController, context: Context) {
         guard uiViewController.viewControllers != nil else { return }
         for x in 0 ..< uiViewController.viewControllers!.count {
-            if let badgeValue = self.viewControllers[x].badgeValue {
-                uiViewController.viewControllers![x].tabBarItem.badgeValue = "\(badgeValue)"
-            }
+            uiViewController.viewControllers![x].tabBarItem.badgeValue = self.viewControllers[x].badgeValue
         }
     }
 }
@@ -50,9 +46,7 @@ public class SKTabView<V: View>: UIHostingController<V>, SKTabScheme {
     public convenience init(_ rootView: V, _ tabBarItem: UITabBarItem, badgeValue: String? = nil) {
         self.init(rootView: rootView)
         self.tabBarItem = tabBarItem
-        if let value = badgeValue {
-            self.badgeValue = value
-        }
+        self.badgeValue = badgeValue
     }
 }
 
