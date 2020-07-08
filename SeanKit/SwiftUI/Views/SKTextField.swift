@@ -22,11 +22,11 @@ public struct SKTextField: View {
     let clearButtonMode: UITextField.ViewMode
     let doneButton: Bool
     let standardViewMod: Bool
-    var isFirstResponder: Binding<Bool>?
+    var getFirstResponder: Binding<Bool>?
     
     
     // Default values go here, NOT in `_SKTextField`
-    public init(_ placeholder: String, text: Binding<String>, keyboardType: UIKeyboardType = .default, returnKeyType: UIReturnKeyType = .default, autocapitalizationType: UITextAutocapitalizationType = .sentences, autocorrectionType: UITextAutocorrectionType = .default, clearButtonMode: UITextField.ViewMode = .always, doneButton: Bool = true, standardViewMod: Bool = true, isFirstResponder: Binding<Bool>? = nil) {
+    public init(_ placeholder: String, text: Binding<String>, keyboardType: UIKeyboardType = .default, returnKeyType: UIReturnKeyType = .default, autocapitalizationType: UITextAutocapitalizationType = .sentences, autocorrectionType: UITextAutocorrectionType = .default, clearButtonMode: UITextField.ViewMode = .always, doneButton: Bool = true, standardViewMod: Bool = true, getFirstResponder: Binding<Bool>? = nil) {
         self._text = text
         self.placeholder = placeholder
         self.keyboardType = keyboardType
@@ -36,7 +36,7 @@ public struct SKTextField: View {
         self.clearButtonMode = clearButtonMode
         self.doneButton = doneButton
         self.standardViewMod = standardViewMod
-        self.isFirstResponder = isFirstResponder
+        self.getFirstResponder = getFirstResponder
     }
     
     
@@ -55,7 +55,7 @@ public struct SKTextField: View {
     }
     
     private func textField() -> some View {
-        _SKTextField(self.$text, placeholder: self.placeholder, keyboardType: self.keyboardType, returnKeyType: self.returnKeyType, autocapitalizationType: self.autocapitalizationType, autocorrectionType: self.autocorrectionType, clearButtonMode: self.clearButtonMode, doneButton: self.doneButton, isFirstResponder: self.isFirstResponder)
+        _SKTextField(self.$text, placeholder: self.placeholder, keyboardType: self.keyboardType, returnKeyType: self.returnKeyType, autocapitalizationType: self.autocapitalizationType, autocorrectionType: self.autocorrectionType, clearButtonMode: self.clearButtonMode, doneButton: self.doneButton, getFirstResponder: self.getFirstResponder)
             .frame(height: 24)
     }
     
@@ -87,11 +87,11 @@ struct _SKTextField: UIViewRepresentable {
     let autocorrectionType: UITextAutocorrectionType
     let clearButtonMode: UITextField.ViewMode
     let doneButton: Bool
-    var isFirstResponder: Binding<Bool>?
+    var getFirstResponder: Binding<Bool>?
     
     let tf = UITextField()
     
-    public init(_ text: Binding<String>, placeholder: String, keyboardType: UIKeyboardType, returnKeyType: UIReturnKeyType, autocapitalizationType: UITextAutocapitalizationType, autocorrectionType: UITextAutocorrectionType, clearButtonMode: UITextField.ViewMode, doneButton: Bool, isFirstResponder: Binding<Bool>?) {
+    public init(_ text: Binding<String>, placeholder: String, keyboardType: UIKeyboardType, returnKeyType: UIReturnKeyType, autocapitalizationType: UITextAutocapitalizationType, autocorrectionType: UITextAutocorrectionType, clearButtonMode: UITextField.ViewMode, doneButton: Bool, getFirstResponder: Binding<Bool>?) {
         self._text = text
         self.placeholder = placeholder
         self.keyboardType = keyboardType
@@ -100,20 +100,20 @@ struct _SKTextField: UIViewRepresentable {
         self.autocorrectionType = autocorrectionType
         self.clearButtonMode = clearButtonMode
         self.doneButton = doneButton
-        self.isFirstResponder = isFirstResponder
+        self.getFirstResponder = getFirstResponder
     }
     
     public class Coordinator: NSObject, UITextFieldDelegate {
         
         var textField: UITextField?
         var input: Binding<String>?
-        var isFirstResponder: Binding<Bool>?
+        var getFirstResponder: Binding<Bool>?
         
-        convenience init(textField: UITextField, input: Binding<String>, isFirstResponder: Binding<Bool>?) {
+        convenience init(textField: UITextField, input: Binding<String>, getFirstResponder: Binding<Bool>?) {
             self.init()
             self.textField = textField
             self.input = input
-            self.isFirstResponder = isFirstResponder
+            self.getFirstResponder = getFirstResponder
             
             NotificationCenter.default.addObserver(self, selector: #selector(textChanged), name: UITextField.textDidChangeNotification, object: nil)
         }
@@ -123,11 +123,11 @@ struct _SKTextField: UIViewRepresentable {
         }
         
         public func textFieldDidBeginEditing(_ textField: UITextField) {
-            isFirstResponder?.wrappedValue = true
+            getFirstResponder?.wrappedValue = true
         }
         
         public func textFieldDidEndEditing(_ textField: UITextField) {
-            isFirstResponder?.wrappedValue = false
+            getFirstResponder?.wrappedValue = false
         }
         
         public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -137,7 +137,7 @@ struct _SKTextField: UIViewRepresentable {
     }
     
     func makeCoordinator() -> Coordinator {
-        Coordinator(textField: tf, input: self.$text, isFirstResponder: self.isFirstResponder)
+        Coordinator(textField: tf, input: self.$text, getFirstResponder: self.getFirstResponder)
     }
     
     func makeUIView(context: Context) -> UITextField {
