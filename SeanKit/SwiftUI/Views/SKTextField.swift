@@ -49,6 +49,8 @@ struct _SKTextField: UIViewRepresentable {
     let autocorrectionType: UITextAutocorrectionType
     let doneButton: Bool
     
+    let tf = UITextField()
+    
     public init(_ text: Binding<String>, placeholder: String, keyboardType: UIKeyboardType = .default, returnKeyType: UIReturnKeyType = .default, autocapitalizationType: UITextAutocapitalizationType = .sentences, autocorrectionType: UITextAutocorrectionType = .default, doneButton: Bool = true) {
         self._text = text
         self.placeholder = placeholder
@@ -61,16 +63,19 @@ struct _SKTextField: UIViewRepresentable {
     
     public class Coordinator: NSObject, UITextFieldDelegate {
         
+        var textField: UITextField?
         var input: Binding<String>?
         
-        convenience init(input: Binding<String>) {
+        convenience init(textField: UITextField, input: Binding<String>) {
             self.init()
+            self.textField = textField
             self.input = input
+            
+            NotificationCenter.default.addObserver(self, selector: #selector(textChanged), name: UITextField.textDidChangeNotification, object: nil)
         }
         
-        func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-            self.input?.wrappedValue = textField.text ?? ""
-            return true
+        @objc func textChanged() {
+            self.input?.wrappedValue = textField?.text ?? ""
         }
         
         public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -80,11 +85,10 @@ struct _SKTextField: UIViewRepresentable {
     }
     
     func makeCoordinator() -> Coordinator {
-        Coordinator(input: self.$text)
+        Coordinator(textField: tf, input: self.$text)
     }
     
     func makeUIView(context: Context) -> UITextField {
-        let tf = UITextField()
         if doneButton {
             tf.skAddDoneButton()
         }
