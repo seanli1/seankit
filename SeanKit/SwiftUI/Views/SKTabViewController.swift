@@ -19,16 +19,23 @@ public struct SKTabViewController: UIViewControllerRepresentable {
         self.viewControllers = viewControllers
     }
     
-    public func makeUIViewController(context: Context) -> UITabBarController {
+    
+    
+    public class CustomTabBarController: UITabBarController {
+        
+    }
+    
+    
+    public func makeUIViewController(context: Context) -> CustomTabBarController {
         for vc in viewControllers {
             vc.tabBarItem.badgeValue = vc.badgeValue
         }
-        let customTabView = UITabBarController()
+        let customTabView = CustomTabBarController()
         customTabView.setViewControllers(viewControllers, animated: false)
         return customTabView
     }
     
-    public func updateUIViewController(_ uiViewController: UITabBarController, context: Context) {
+    public func updateUIViewController(_ uiViewController: CustomTabBarController, context: Context) {
         guard uiViewController.viewControllers != nil else { return }
         for x in 0 ..< uiViewController.viewControllers!.count {
             uiViewController.viewControllers![x].tabBarItem.badgeValue = self.viewControllers[x].badgeValue
