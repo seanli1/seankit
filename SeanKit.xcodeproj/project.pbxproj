@@ -34,6 +34,7 @@
 		B4538A112266CD0700B14142 /* SKVibrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4439AB22263E23500630663 /* SKVibrate.swift */; };
 		B4560D5F2471AF69002824EC /* SKMailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4560D5E2471AF69002824EC /* SKMailView.swift */; };
 		B4560D6B2471DA5B002824EC /* SKReducedCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4560D6A2471DA5B002824EC /* SKReducedCircle.swift */; };
+		B45BF86B24B54ABE00B6BBCF /* SKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45BF86A24B54ABE00B6BBCF /* SKTextField.swift */; };
 		B45C4A3024A3F58B00AC2E83 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45C4A2F24A3F58B00AC2E83 /* ErrorMessage.swift */; };
 		B4727EB1227625FC00743241 /* seanonthebeach.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B4727EB0227625FC00743241 /* seanonthebeach.jpeg */; };
 		B4727EB32276260900743241 /* ring.wav in Resources */ = {isa = PBXBuildFile; fileRef = B4727EB22276260900743241 /* ring.wav */; };
@@ -89,6 +90,7 @@
 		B451B0E02471A30200980571 /* SKFontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKFontManager.swift; sourceTree = "<group>"; };
 		B4560D5E2471AF69002824EC /* SKMailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKMailView.swift; sourceTree = "<group>"; };
 		B4560D6A2471DA5B002824EC /* SKReducedCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKReducedCircle.swift; sourceTree = "<group>"; };
+		B45BF86A24B54ABE00B6BBCF /* SKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKTextField.swift; sourceTree = "<group>"; };
 		B45C4A2F24A3F58B00AC2E83 /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		B4727EB0227625FC00743241 /* seanonthebeach.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seanonthebeach.jpeg; sourceTree = "<group>"; };
 		B4727EB22276260900743241 /* ring.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ring.wav; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				B419D435249ECBE8009A38BC /* SKLoadingView.swift */,
 				B419D437249ECD3E009A38BC /* SKSwitchView.swift */,
 				B486807524B34894000B2D6F /* SKTabViewController.swift */,
+				B45BF86A24B54ABE00B6BBCF /* SKTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				B442942B2485BA2A000A3AA1 /* SKBadgeCounter.swift in Sources */,
 				B4439AB92263E61E00630663 /* SKQRGenerator.swift in Sources */,
 				B4439ACC2263ED8300630663 /* dynamicActionSheet.swift in Sources */,
+				B45BF86B24B54ABE00B6BBCF /* SKTextField.swift in Sources */,
 				B4CFB7CD2487921200198172 /* SKQRImage.swift in Sources */,
 				B451B0E12471A30200980571 /* SKFontManager.swift in Sources */,
 				B401CC5E249B40A300F5435B /* SKLoadingSlidingCircles.swift in Sources */,
