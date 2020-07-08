@@ -123,11 +123,15 @@ struct _SKTextField: UIViewRepresentable {
         }
         
         public func textFieldDidBeginEditing(_ textField: UITextField) {
-            getFirstResponder?.wrappedValue = true
+            withAnimation {
+                getFirstResponder?.wrappedValue = true
+            }
         }
         
         public func textFieldDidEndEditing(_ textField: UITextField) {
-            getFirstResponder?.wrappedValue = false
+            withAnimation {
+                getFirstResponder?.wrappedValue = false
+            }
         }
         
         public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
