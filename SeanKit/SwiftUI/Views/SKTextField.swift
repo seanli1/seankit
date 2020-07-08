@@ -20,8 +20,9 @@ public struct SKTextField: View {
     let autocapitalizationType: UITextAutocapitalizationType
     let autocorrectionType: UITextAutocorrectionType
     let doneButton: Bool
+    let standardViewMod: Bool
     
-    public init(_ placeholder: String, text: Binding<String>, keyboardType: UIKeyboardType = .default, returnKeyType: UIReturnKeyType = .default, autocapitalizationType: UITextAutocapitalizationType = .sentences, autocorrectionType: UITextAutocorrectionType = .default, doneButton: Bool = true) {
+    public init(_ placeholder: String, text: Binding<String>, keyboardType: UIKeyboardType = .default, returnKeyType: UIReturnKeyType = .default, autocapitalizationType: UITextAutocapitalizationType = .sentences, autocorrectionType: UITextAutocorrectionType = .default, doneButton: Bool = true, standardViewMod: Bool = true) {
         self._text = text
         self.placeholder = placeholder
         self.keyboardType = keyboardType
@@ -29,11 +30,42 @@ public struct SKTextField: View {
         self.autocapitalizationType = autocapitalizationType
         self.autocorrectionType = autocorrectionType
         self.doneButton = doneButton
+        self.standardViewMod = standardViewMod
     }
     
+    
+    
+    
     public var body: some View {
+        Group {
+            if self.standardViewMod {
+                self.textField()
+                .modifier(SKTextFieldMod())
+            } else {
+                self.textField()
+            }
+        }
+        
+    }
+    
+    private func textField() -> some View {
         _SKTextField(self.$text, placeholder: self.placeholder, keyboardType: self.keyboardType, returnKeyType: self.returnKeyType, autocapitalizationType: self.autocapitalizationType)
             .frame(height: 24)
+    }
+    
+    /// Standard text field mod that looks nice.
+    public struct SKTextFieldMod: ViewModifier {
+        
+        public init() {}
+        
+        public func body(content: Content) -> some View {
+            content
+                .padding([.leading, .trailing])
+                .padding([.top, .bottom], 12)
+                .background(Color.black.opacity(0.5))
+                .cornerRadius(10)
+                .padding()
+        }
     }
 }
 
