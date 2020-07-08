@@ -98,7 +98,7 @@ struct _SKTextField: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UITextField, context: Context) {
-        
+        uiView.text = self.text
     }
 }
 
