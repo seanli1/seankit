@@ -19,16 +19,20 @@ public struct SKTextField: View {
     let returnKeyType: UIReturnKeyType
     let autocapitalizationType: UITextAutocapitalizationType
     let autocorrectionType: UITextAutocorrectionType
+    let clearButtonMode: UITextField.ViewMode
     let doneButton: Bool
     let standardViewMod: Bool
     
-    public init(_ placeholder: String, text: Binding<String>, keyboardType: UIKeyboardType = .default, returnKeyType: UIReturnKeyType = .default, autocapitalizationType: UITextAutocapitalizationType = .sentences, autocorrectionType: UITextAutocorrectionType = .default, doneButton: Bool = true, standardViewMod: Bool = true) {
+    
+    // Default values go here, NOT in `_SKTextField`
+    public init(_ placeholder: String, text: Binding<String>, keyboardType: UIKeyboardType = .default, returnKeyType: UIReturnKeyType = .default, autocapitalizationType: UITextAutocapitalizationType = .sentences, autocorrectionType: UITextAutocorrectionType = .default, clearButtonMode: UITextField.ViewMode = .always, doneButton: Bool = true, standardViewMod: Bool = true) {
         self._text = text
         self.placeholder = placeholder
         self.keyboardType = keyboardType
         self.returnKeyType = returnKeyType
         self.autocapitalizationType = autocapitalizationType
         self.autocorrectionType = autocorrectionType
+        self.clearButtonMode = clearButtonMode
         self.doneButton = doneButton
         self.standardViewMod = standardViewMod
     }
@@ -49,7 +53,7 @@ public struct SKTextField: View {
     }
     
     private func textField() -> some View {
-        _SKTextField(self.$text, placeholder: self.placeholder, keyboardType: self.keyboardType, returnKeyType: self.returnKeyType, autocapitalizationType: self.autocapitalizationType)
+        _SKTextField(self.$text, placeholder: self.placeholder, keyboardType: self.keyboardType, returnKeyType: self.returnKeyType, autocapitalizationType: self.autocapitalizationType, autocorrectionType: self.autocorrectionType, clearButtonMode: self.clearButtonMode, doneButton: self.doneButton)
             .frame(height: 24)
     }
     
@@ -79,17 +83,19 @@ struct _SKTextField: UIViewRepresentable {
     let returnKeyType: UIReturnKeyType
     let autocapitalizationType: UITextAutocapitalizationType
     let autocorrectionType: UITextAutocorrectionType
+    let clearButtonMode: UITextField.ViewMode
     let doneButton: Bool
     
     let tf = UITextField()
     
-    public init(_ text: Binding<String>, placeholder: String, keyboardType: UIKeyboardType = .default, returnKeyType: UIReturnKeyType = .default, autocapitalizationType: UITextAutocapitalizationType = .sentences, autocorrectionType: UITextAutocorrectionType = .default, doneButton: Bool = true) {
+    public init(_ text: Binding<String>, placeholder: String, keyboardType: UIKeyboardType, returnKeyType: UIReturnKeyType, autocapitalizationType: UITextAutocapitalizationType, autocorrectionType: UITextAutocorrectionType, clearButtonMode: UITextField.ViewMode, doneButton: Bool) {
         self._text = text
         self.placeholder = placeholder
         self.keyboardType = keyboardType
         self.returnKeyType = returnKeyType
         self.autocapitalizationType = autocapitalizationType
         self.autocorrectionType = autocorrectionType
+        self.clearButtonMode = clearButtonMode
         self.doneButton = doneButton
     }
     
@@ -129,6 +135,7 @@ struct _SKTextField: UIViewRepresentable {
         tf.returnKeyType = self.returnKeyType
         tf.autocapitalizationType = self.autocapitalizationType
         tf.autocorrectionType = self.autocorrectionType
+        tf.clearButtonMode = self.clearButtonMode
         tf.delegate = context.coordinator
         return tf
     }
