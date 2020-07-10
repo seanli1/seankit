@@ -29,7 +29,7 @@ public extension UITextView {
     
     /// Returns `true` if text is blank after removing white spaces and returns.
     var skIsBlank: Bool {
-        return self.text == nil || self.text?.count == 0 || self.text?.replacingOccurrences(of: "\n", with: "").count == 0 || self.text?.replacingOccurrences(of: " ", with: "").count == 0
+        return self.text == nil || self.text?.isEmpty ?? false || self.text?.replacingOccurrences(of: "\n", with: "").isEmpty ?? false || self.text?.replacingOccurrences(of: " ", with: "").isEmpty ?? false
     }
     
 }
